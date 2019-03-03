@@ -107,7 +107,7 @@ analytics:
 # Site Author
 author:
   name             : "Jose Reyes"
-  avatar           : "/assets/images/IMG_6136-small.jpg"
+  avatar           : "/images/IMG_6136-small.jpg"
   bio              : "I am an amazing person."
   location         : "Sydney NSW"
   email            :
