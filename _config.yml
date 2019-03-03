@@ -106,10 +106,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  name             : "Jose Reyes"
+  avatar           : "/assets/images/IMG_6136-small.jpg"
   bio              : "I am an amazing person."
-  location         : "Somewhere"
+  location         : "Sydney NSW"
   email            :
   links:
     - label: "Email"
