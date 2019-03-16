@@ -108,7 +108,7 @@ analytics:
 author:
   name             : "Jose Reyes"
   avatar           : "/images/IMG_6136-small.jpg"
-  bio              : "Keen marathoner and triathete. All around nice guy."
+  bio              : "Fullstack software developer, keen marathoner and triathete. All around nice guy.  🏊🏼‍♂️🚴🏼‍♂️🏃🏽"
   location         : "Sydney NSW"
   email            :
   links:
@@ -118,15 +118,18 @@ author:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/joreyes/"      
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
+      url: "https://twitter.com/JaeyowReyes"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/jaeyow/fullstack-developer"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -134,15 +137,18 @@ author:
 # Site Footer
 footer:
   links:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/joreyes/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url:
+      url: "https://twitter.com/JaeyowReyes"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/jaeyow/fullstack-developer"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
