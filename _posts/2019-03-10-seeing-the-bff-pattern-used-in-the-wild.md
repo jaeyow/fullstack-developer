@@ -6,6 +6,9 @@ modified: 2018-03-10
 published: true
 tags: [bff pattern, software development, microservices]
 comments: true
+header: 
+  overlay_image: ../images/martin-arusalu-252228-unsplash.jpg
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 ---
 
 <section id="table-of-contents" class="toc">
