@@ -4,7 +4,7 @@ title: Seeing the BFF Pattern used in the wild
 excerpt: "What is the BFF pattern and why you need it."
 modified: 2018-03-10
 published: true
-tags: [intro, beginner, jekyll, tutorial]
+tags: [bff pattern, software development, microservices]
 comments: true
 ---
 
@@ -27,14 +27,14 @@ This project was developed by a small team, about from 2 to 4 fullstack develope
 ## Anything but typical
 In a typical client application, like in a mobile app or a typical SPA, one directly calls the microservice endpoints. However as the application evolves, more information and functionality gets squeezed into each page, and it is not unusual to have to do multiple calls to different microservices and compose the page from the data from all these.
 <figure>
-	<a href="/images/direct-client-to-microservice.png"><img src="/images/direct-client-to-microservice.png"></a>
+	<a href="../images/direct-client-to-microservice.png"><img src="../images/direct-client-to-microservice.png"></a>
 	<figcaption>Figure 1: Direct client to microservices</figcaption>
 </figure>
 
 However, in this hybrid ASP.NET MVC/ReactJS app, the pattern used to compose the page is a bit different, so lets examine the situation. 
 
 <figure>
-	<a href="/images/hybrid-client-to-microservice.png"><img src="/images/hybrid-client-to-microservice.png"></a>
+	<a href="../images/hybrid-client-to-microservice.png"><img src="../images/hybrid-client-to-microservice.png"></a>
 	<figcaption>Figure 2: Hybrid ASP.NET MVC/React App to microservice</figcaption>
 </figure>
 
@@ -45,7 +45,7 @@ At first I was not quite clear why this separate Web API was required. Then afte
 The mobile application also followed a similar architecture - both the iOS and Android apps talked to the downstream services through a dedicated Web API in the middle. 
 
 <figure>
-	<a href="/images/mobile-client-to-microservice.png"><img src="/images/mobile-client-to-microservice.png"></a>
+	<a href="../images/mobile-client-to-microservice.png"><img src="../images/mobile-client-to-microservice.png"></a>
 	<figcaption>Figure 3: Mobile App to microservice</figcaption>
 </figure>
 
@@ -60,7 +60,7 @@ The mobile application also followed a similar architecture - both the iOS and A
 But they all point to the same BFF Pattern. Without having to repeat the articles in the previous section, let me say that BFF pattern is to simply have a backend API for each client, in which the development is owned by the client development team (shown in the blue shaded box in Figure 3).
 
 <figure>
-	<a href="/images/bff-vs-dev-ownership.png"><img src="/images/bff-vs-dev-ownership.png"></a>
+	<a href="../images/bff-vs-dev-ownership.png"><img src="../images/bff-vs-dev-ownership.png"></a>
 	<figcaption>Figure 3: API Gateway/BFF for each client application</figcaption>
 </figure>
 
