@@ -2,9 +2,10 @@
 layout: posts
 title: Seeing the BFF Pattern used in the wild
 excerpt: "What is the BFF pattern and why you need it."
-modified: 2018-03-10
+modified: 2019-03-10
+date: 2019-03-10
 published: true
-tags: [bff pattern, software development, microservices]
+tags: [bff, microservices, patterns]
 comments: true
 header: 
   overlay_image: /images/martin-arusalu-252228-unsplash.jpg
