@@ -4,12 +4,12 @@ title: Seeing the BFF Pattern used in the wild
 excerpt: "What is the BFF pattern and why you need it."
 modified: 2019-03-10
 date: 2019-03-10
-published: true
 tags: [bff, microservices, patterns]
-comments: true
 header: 
   overlay_image: /images/martin-arusalu-252228-unsplash.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+comments: true
+published: true
 ---
 
 <section id="table-of-contents" class="toc">
@@ -68,7 +68,7 @@ But they all point to the same BFF Pattern. Without having to repeat the article
 	<figcaption>Figure 3: API Gateway/BFF for each client application</figcaption>
 </figure>
 
-# Advantages of using the BFF Pattern
+## Advantages of using the BFF Pattern
 Using the BFF Pattern is more than just a data pass-through from data provider to the clients. These are the advantages for using this pattern:
 - it can serve as a **gateway routing/proxy server**: where the client talks to one API gateway, which routes the calls to multiple downstream services. This insulates the clients from changes when downstream services URL changes. 
   
@@ -82,7 +82,7 @@ Using the BFF Pattern is more than just a data pass-through from data provider t
 
 - enables **better maintainability**: because there is an inherent separation of concerns that this pattern promotes, this leads to better maintainability as parts of the system are insulated from certain changes. 
 
-# Disadvantages of using the BFF Pattern
+## Disadvantages of using the BFF Pattern
 - more **moving parts**: more moving parts means there is more things that we need to develop, build, deploy, and monitor. Put it simply there are more things that can go wrong. 
   
 - moving the **coupling around**: whereas previously there was client application to downstream services coupling, the coupling has now moved to between the BFF and the downstream services. In the case of a mobile app client, or any client for that matter, maybe that is a compromise you are willing to take.
@@ -93,14 +93,14 @@ Using the BFF Pattern is more than just a data pass-through from data provider t
 
 - more possibility of **code duplication**: because following the BFF pattern, we tend to create an API for each user experience, the tendency is to duplicate code from one BFF to another, specially in the cases of similar or same functionality. However, in my opinion this is a compromise I am willing to take, in the interests of agility and autonomy. 
 
-# Alternatives to the BFF Pattern
+## Alternatives to the BFF Pattern
 - **GraphQL**: The BFF pattern started because of the generic service providers that cannot give what the client actually needs. This is the problem that GraphQL can solve. This enables a service provider to only return what a client needs. There is no concept of a generic API anymore, now we have an API that gives us exactly what we need. As awesome as this may sound, this may need more thought as it can mean either rewriting the downstream services to use GraphQL, or actually writing your BFF in GraphQL. You will have to assess this in your project as to what is possible.
   
 - **Web Components** or some other frontend UI composition technique/technology: maybe there are better technologies in the frontend space that although we still have to deal with multiple requests aggregation, would allow us to structure and manage our frontends similar to how we do our microservice backend. This compromise might help us manage our solution much better. More on micro frontend approach in a future post perhaps.
 
 - **Don't change**: yes this is another option, but we will just have to be careful and manage the changes effectively. But, where's the fun in that?
 
-# Summary
+## Summary
   
   The arrival of microservices has contributed to software development challenges. Where previously apps talk to a general purpose API backend or service provider directly, this has proven to be problematic when changes need to be introduced both in the frontend, or at the backend. 
 
