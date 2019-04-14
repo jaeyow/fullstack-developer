@@ -14,18 +14,24 @@ layout: archive
   {% elsif page.date %}
     <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
   {% endif %}
+  <div>
+    {% if site.comments.provider and page.comments %}
+      {% include comments.html %}
+    {% endif %}
+  </div>
 </footer>
-
-<ul class="taxonomy__index">
-  {% assign postsInYear = site.posts | group_by_exp: 'post', 'post.date | date: "%Y"' %}
-  {% for year in postsInYear %}
-    <li>
-      <a href="#{{ year.name }}">
-        <strong>{{ year.name }}</strong> <span class="taxonomy__count">{{ year.items | size }}</span>
-      </a>
-    </li>
-  {% endfor %}
-</ul>
+<div>
+  <ul class="taxonomy__index">
+    {% assign postsInYear = site.posts | group_by_exp: 'post', 'post.date | date: "%Y"' %}
+    {% for year in postsInYear %}
+      <li>
+        <a href="#{{ year.name }}">
+          <strong>{{ year.name }}</strong> <span class="taxonomy__count">{{ year.items | size }}</span>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
 
 {% assign postsByYear = site.posts | group_by_exp: 'post', 'post.date | date: "%Y"' %}
 {% for year in postsByYear %}
