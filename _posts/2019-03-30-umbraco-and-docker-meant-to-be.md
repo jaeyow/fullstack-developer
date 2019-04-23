@@ -40,7 +40,7 @@ There are many uses of Docker, but for this post, we will focus on it being a pe
 
 ## Umbraco
 
-<img src="../images/umbraco-and-docker/UmbracoLogo.JPG">
+<img src="../images/umbraco-and-docker/UmbracoLogo.jpg">
 
 [Umbraco](https://umbraco.com/) is a .Net based CMS (Content Management System) and started much earlier in 2000 and even though it has had multiple versions ever since, its architecture has not changed much. Umbraco has proved its longevity in the industry, and remains as one of the most popular .NET based CMS for developers. So in comparison to Docker, an Umbraco-based website is a traditional application. But that cannot stop us from taking advantage of the benefits of Docker and combine it with the utility of Umbraco.
 
