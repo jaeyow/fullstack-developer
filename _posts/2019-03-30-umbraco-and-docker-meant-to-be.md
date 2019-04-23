@@ -22,19 +22,25 @@ published: true
   </div>
 </section>
 
+## Past meets the present (or future?)
+
+Today we will be invetigating how we can bring a traditional web application to the present/future by making it work with Docker containers.  We will be using a typical Umbraco MVC app, which thousands of websites are built with, and so many developers love. I know it's not the sexiest technology out there, however wait until you see it with Docker. 
+
+There may be plans to [migrate this to .NET Core (host in Linux, yay)](https://growcreate.co.uk/blog/umbraco-review-2017-developing-websites-with-umbraco/), but until then we are stuck with Windows and IIS. Without further delay, let's get the ball rolling!
+
 ## Docker containers
 
 <img src="../images/umbraco-and-docker/Docker_logo_011.0.png">
 
 After it's release in 2013, the popularity of [Docker](https://www.docker.com/) has grown through the years. It allowed one to run software in containers - a virtualization technology which is comparable to virtual machines in its practical use. However, unlike virtual machines, it is much more compact, and more dynamic in its resource usage where you do not have to permanently set aside hardware for it. It enables portability where we can define images which are self contained, with all the dependencies it needs.
 
-These Docker images are portable in that we can distribute them for others to run and get exactly the same behaviour everywhere, without the need to manually install all the elements that make up the image. The time savings is clear when you don't have to wait through all the number of installations that make up the single image. And you get the exact same running container as what the image creator had intended. 
+These **Docker images are portable** in that we can distribute them for others to run and get exactly the same behaviour everywhere, without the need to manually install all the elements that make up the image. The time savings is clear when you don't have to wait through all the number of installations that make up the single image. And you get the exact same running container as what the image creator had intended. 
 
-There are many uses of Docker, but for this post, we will focus on it being a perfect candidate to use in a development team, to help in develoment environment standardization. In addition to that, when you work in a team, there is nothing more frustrating than trying to fix a bug and in the end find out that it was caused by a slightly differing configuration between developers. Using containers will make sure that all developers are working on the same environment. And because we are using containers, we can easily setup a new developer, and get them up and contributing quickly.
+There are many uses of Docker, but for this post, we will focus on it being a perfect candidate to use in a development team, to help in **develoment environment standardization**. In addition to that, when you work in a team, there is nothing more frustrating than trying to fix a bug and in the end find out that it was caused by a slightly differing configuration between developers. Using containers will make sure that all developers are working on the same environment. And because we are using containers, we can easily setup a new developer, and get them up and contributing quickly.
 
 ## Umbraco
 
-<img src="../images/umbraco-and-docker/UmbracoLogo.jpg">
+<img src="../images/umbraco-and-docker/UmbracoLogo.JPG">
 
 [Umbraco](https://umbraco.com/) is a .Net based CMS (Content Management System) and started much earlier in 2000 and even though it has had multiple versions ever since, its architecture has not changed much. Umbraco has proved its longevity in the industry, and remains as one of the most popular .NET based CMS for developers. So in comparison to Docker, an Umbraco-based website is a traditional application. But that cannot stop us from taking advantage of the benefits of Docker and combine it with the utility of Umbraco.
 
@@ -103,7 +109,7 @@ We will be using [Docker Compose](https://docs.docker.com/compose/) to define ou
 
 1. If you the type **docker ps -a** on the terminal window, to check on the running containers, you will see 2 containers running, one is for the Umbraco SQL DB, and the other one is our Umbraco Web application:
     <figure>
-	    <a href="../images/umbraco-and-docker/umbraco-install-4.jpg"><img src="../images/umbraco-and-docker/umbraco-install-4.jpg"></a>
+	    <a href="../images/umbraco-and-docker/umbraco-install-4.JPG"><img src="../images/umbraco-and-docker/umbraco-install-4.JPG"></a>
 	    <figcaption>Figure: Check our running containers</figcaption>
     </figure>
 > **Tip #2** - Running Windows-based containers require Hyper-V enabled on your PC through a BIOS setting. However in a Bootcamp partition on a Mac like mine, there is no BIOS setting. The workaround for this to first boot up into your Mac. Choose Apple menu > System Preferences, then click Startup Disk. Click the lock icon and enter your administrator password. Select your Windows partition as the startup disk, then restart by clicking the "Restart" button next to it. This is important I think, as it enables the hardware virtualization mode, even after you reboot to the Windows partition. What a hack.
@@ -114,13 +120,13 @@ We will be using [Docker Compose](https://docs.docker.com/compose/) to define ou
 
 1. After Ctrl-F5, you should see the Umbraco web application running, prompting you to complete the installation. Fill in the details and click on Customize button. We want to avoid using default Windows CE DB, but our own Dockerized DB we created today.
     <figure>
-	    <a href="../images/umbraco-and-docker/umbraco-install-1.jpg"><img src="../images/umbraco-and-docker/umbraco-install-1.jpg"></a>
+	    <a href="../images/umbraco-and-docker/umbraco-install-1.JPG"><img src="../images/umbraco-and-docker/umbraco-install-1.JPG"></a>
 	    <figcaption>Figure: Completing the Umbraco installation</figcaption>
     </figure>
 
 1. Input **Microsoft SQL Server** as the **database type**, find and input the **DB Server IP Address**, manually create **umbraco-cms** DB with Management Studio and enter the **Database name** in the form. Input the **Login user**, and **Password** and click on the Continue button. This should then proceed with the final steps for the installation, and the final page should then be the following, yes we've successfully installed Umbraco!
     <figure>
-	    <a href="../images/umbraco-and-docker/umbraco-install-2.jpg"><img src="../images/umbraco-and-docker/umbraco-install-2.jpg"></a>
+	    <a href="../images/umbraco-and-docker/umbraco-install-2.JPG"><img src="../images/umbraco-and-docker/umbraco-install-2.JPG"></a>
 	    <figcaption>Figure: Completing the Umbraco installation</figcaption>
     </figure>
 > **Tip #3** - To find the IP address of a Docker container, type `docker inspect <containerId>`. The container's IP address will be displayed towards the bottom of the output.
@@ -131,7 +137,7 @@ We will be using [Docker Compose](https://docs.docker.com/compose/) to define ou
 
 1. If you followed all the instructions, your Umbraco installation should have completed successfully! Now you can go and give yourself a pat on the back. You now have a Docker-based development environment that you can distibute among your team to help you become productive in no time at all. 
     <figure>
-	    <a href="../images/umbraco-and-docker/umbraco-install-3.jpg"><img src="../images/umbraco-and-docker/umbraco-install-3.jpg"></a>
+	    <a href="../images/umbraco-and-docker/umbraco-install-3.JPG"><img src="../images/umbraco-and-docker/umbraco-install-3.JPG"></a>
 	    <figcaption>Figure: Umbraco installation completed!</figcaption>
     </figure>    
 
