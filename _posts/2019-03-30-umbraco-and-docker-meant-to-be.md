@@ -24,9 +24,9 @@ published: true
 
 ## Past meets the present (or future?)
 
-Today we will be invetigating how we can bring a traditional web application to the present/future by making it work with Docker containers.  We will be using a typical Umbraco MVC app, which thousands of websites are built with, and so many developers love. I know it's not the sexiest technology out there, however wait until you see it with Docker. 
+Today we will be invetigating how we can bring a traditional web application to the present/future by making it work with Docker containers.  We will be using a typical Umbraco MVC app, which thousands of websites are built with, and so many developers love. I know it's not the latest and sexiest technology out there, however wait until you see it with Docker. 
 
-There may be plans to [migrate this to .NET Core (host in Linux, yay)](https://growcreate.co.uk/blog/umbraco-review-2017-developing-websites-with-umbraco/), but until then we are stuck with Windows and IIS. Without further delay, let's get the ball rolling!
+There may be plans to [migrate Umbraco to .NET Core (host in Linux, yay)](https://growcreate.co.uk/blog/umbraco-review-2017-developing-websites-with-umbraco/), but until then we are stuck with Windows and IIS. Without further delay, let's get the ball rolling!
 
 ## Docker containers
 
@@ -156,7 +156,9 @@ We will be using [Docker Compose](https://docs.docker.com/compose/) to define ou
 
 
 ## Summary
-To be completed...
+If you have reached this part, you have a patience of a monk. In this rather long article, we have explored the viability of using Docker containers as a strategy for making local dev environments easy to work with. When a new developer starts, it will be a breeze to just use the images and get them up and productive in no time. But it doesn't have to be just Umbraco projects. Docker containers can be used for many different types and classes of applications, old and new. Maybe in a later post we can continue where we left off and try our hand with orchestration software to extend our use of Docker for deployments too.
+
+Until then, see ya. 
 
 ## Resources
 - [Understanding Docker with Visual Studio 2017](https://www.scrum-tips.com/2017/12/27/understanding-docker-with-visual-studio-2017-part-2/)
