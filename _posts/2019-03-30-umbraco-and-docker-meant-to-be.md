@@ -1,7 +1,7 @@
 ---
 layout: posts
 title:  Docker and Umbraco - meant to be?
-excerpt: "Trials with Docker and Umbraco for building a portable development environment, plus find 3 handy tips inside!"
+excerpt: "Trials with Docker and Umbraco for building a portable development environment, plus find 4 handy tips inside!"
 modified: 2019-03-30
 date: 2019-03-30
 tags: [docker, development environment, umbraco, tips]
