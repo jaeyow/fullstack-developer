@@ -24,7 +24,7 @@ published: true
 
 ## Past meets the present (or future?)
 
-Today we will be invetigating how we can bring a traditional web application to the present/future by making it work with Docker containers.  We will be using a typical Umbraco MVC app, which thousands of websites are built with, and so many developers love. I know it's not the latest and sexiest technology out there, however wait until you see it with Docker. 
+Today we will be investigating how we can bring a traditional web application to the present/future by making it work with Docker containers.  We will be using a typical Umbraco MVC app, which thousands of websites are built with, and so many developers love. I know it's not the latest and sexiest technology out there, however wait until you see it with Docker. 
 
 There may be plans to [migrate Umbraco to .NET Core (host in Linux, yay)](https://growcreate.co.uk/blog/umbraco-review-2017-developing-websites-with-umbraco/), but until then we are stuck with Windows and IIS. Without further delay, let's get the ball rolling!
 
@@ -32,23 +32,25 @@ There may be plans to [migrate Umbraco to .NET Core (host in Linux, yay)](https:
 
 <img src="../images/umbraco-and-docker/Docker_logo_011.0.png">
 
-After it's release in 2013, the popularity of [Docker](https://www.docker.com/) has grown through the years. It allowed one to run software in containers - a virtualization technology which is comparable to virtual machines in its practical use. However, unlike virtual machines, it is much more compact, and more dynamic in its resource usage where you do not have to permanently set aside hardware for it. It enables portability where we can define images which are self contained, with all the dependencies it needs.
+After it's release in 2013, the popularity of [Docker](https://www.docker.com/) has grown through the years. It allowed one to run software in containers - a virtualization technology which is comparable to virtual machines in its practical use. However, unlike virtual machines, it is much more compact, and more dynamic in its resource usage where you do not have to permanently set aside resources for it. It enables portability where one can define images which are self-contained and isolated, with all the dependencies it needs.
 
-These **Docker images are portable** in that we can distribute them for others to run and get exactly the same behaviour everywhere, without the need to manually install all the elements that make up the image. The time savings is clear when you don't have to wait through all the number of installations that make up the single image. And you get the exact same running container as what the image creator had intended. 
+These **Docker images are portable** in that we can distribute them for others to run and get exactly the same behavior everywhere, without the need to manually install all the elements that make up the image. The time savings is clear when you don't have to wait through all the number of installations. And you get the exact same running container as what the image creator had intended. 
 
-There are many uses of Docker, but for this post, we will focus on it being a perfect candidate to use in a development team, to help in **develoment environment standardization**. In addition to that, when you work in a team, there is nothing more frustrating than trying to fix a bug and in the end find out that it was caused by a slightly differing configuration between developers. Using containers will make sure that all developers are working on the same environment. And because we are using containers, we can easily setup a new developer, and get them up and contributing quickly.
+There are many uses of Docker, but for this post, we will focus on it being a perfect candidate to use in a development team, to help in **development environment standardization**. In addition to that, when you work in a team, there is nothing more frustrating than trying to fix a bug and in the end find out that it was caused by a slightly different configuration between developers. Using containers will make sure that all developers are working on the same environment. And because we are using containers, we can easily setup a new developer, and get them up and contributing quickly.
 
 ## Umbraco
 
 <img src="../images/umbraco-and-docker/UmbracoLogo.jpg">
 
-[Umbraco](https://umbraco.com/) is a .Net based CMS (Content Management System) and started much earlier in 2000 and even though it has had multiple versions ever since, its architecture has not changed much. Umbraco has proved its longevity in the industry, and remains as one of the most popular .NET based CMS for developers. So in comparison to Docker, an Umbraco-based website is a traditional application. But that cannot stop us from taking advantage of the benefits of Docker and combine it with the utility of Umbraco.
+[Umbraco](https://umbraco.com/) is a .Net based CMS (Content Management System) and started around the year 2000 and even though it has had multiple versions ever since, its architecture has not changed much. Umbraco has proved its longevity in the industry, and remains as one of the most popular .NET based CMS for developers. So in comparison to Docker, an Umbraco-based website is a traditional application. But that cannot stop to take advantage of the benefits of Docker and combine it with the utility of Umbraco.
 
 ## Docker and Umbraco together
 
-Umbraco is a .NET application (not [.NET Core](https://github.com/dotnet/core)) first and foremost, and that is our main requirement. Docker was designed for Linux, but because it is not .NET Core, we cannot use Linux containers here, however Docker also has support for Windows containers. Their support for Windows is getting better although they are still not at par with the capabilities of their Linux cousins.
+Umbraco is a .NET application (not [.NET Core](https://github.com/dotnet/core)) first and foremost, and that is our main requirement. Docker was designed for Linux, but because it is not .NET Core, we cannot use Linux containers. However Docker now has support for Windows containers so we can use this with Umbraco. Their support for Windows is getting better although they are still not at par with the capabilities of their Linux cousins.
 
 We will be using [Docker Compose](https://docs.docker.com/compose/) to define our system, which will have 2 parts (or services as per docker-compose lingo). The first service is the Umbraco DB - an SQL based database which is the center of an Umbraco project. The second service is the .NET based website that houses the Umbraco system. Both services are defined in a docker-compose.yml as we'll see in the next section. This defines our system, the portable image that we can pass around our development team.
+
+This is an over simplified Docker system, a typical project might have multiple APIs referenced in the same docker compose file, with the idea that you can define your whole system in your computer, only limited by the your hardware. 
 
 ## How to create a Docker-based Umbraco web application
 >
@@ -135,7 +137,8 @@ We will be using [Docker Compose](https://docs.docker.com/compose/) to define ou
 > 	<figcaption>Finding the container's IP address is easy</figcaption>
 > </figure>    
 
-1. If you followed all the instructions, your Umbraco installation should have completed successfully! Now you can go and give yourself a pat on the back. You now have a Docker-based development environment that you can distibute among your team to help you become productive in no time at all. 
+1. If you followed all the instructions, your Umbraco installation should have completed successfully! Now you can go and give yourself a pat on the back.
+You now have a Docker-based development environment that you can distribute among your team to help you become productive in no time at all. 
     <figure>
 	    <a href="../images/umbraco-and-docker/umbraco-install-3.JPG"><img src="../images/umbraco-and-docker/umbraco-install-3.JPG"></a>
 	    <figcaption>Figure: Umbraco installation completed!</figcaption>
@@ -144,7 +147,7 @@ We will be using [Docker Compose](https://docs.docker.com/compose/) to define ou
 ## Explore further
 - add full support for [volumes](https://docs.docker.com/storage/volumes/) to achieve data persistence. So even if you perform a `docker-compose down` you will retain the data written to by the running Docker container.
 
-> **Tip #4** - You will have to manually update **UmbracoDBSN** to use the IP address of umbraco-db since there is an existing bug in windows containers wherein you cannot use localhost. Also if you want to load an existing *.mdf and *.ldf, you have to attach them in the docker-compose.yml using the **atach_dbs** environment varialble. I have commented it in the docker-compose file as a guide to you. And one more thing, you have to add the key to appSettings:
+> **Tip #4** - You will have to manually update **UmbracoDBSN** to use the IP address of umbraco-db since there is an existing bug in windows containers wherein you cannot use localhost. Also if you want to load an existing *.mdf and *.ldf, you have to attach them in the docker-compose.yml using the **attach_dbs** environment variable. I have commented it in the docker-compose file as a guide to you. And one more thing, you have to add the key to appSettings:
 >```xml
 ><add key="Umbraco.Core.ConfigurationStatus" value="8.0.1" />
 >```
@@ -152,11 +155,13 @@ We will be using [Docker Compose](https://docs.docker.com/compose/) to define ou
 
 - Note that disk based artifacts like media files, are not covered in this, and these may be covered by another article, and is beyond the scope of this post
 
-- in addition to using Docker as a mechanism fo standardizing our development environment, why don't you go one step further. You can utilize Docker fully by leveraging on it's deployment capabilities, that is, deployment to your staging and production environments. Container orchestration software such as [Kubernetes](https://kubernetes.io/), [Docker Swarm](https://docs.docker.com/engine/swarm/) or [Terraform](https://www.terraform.io/).
+- in addition to using Docker as a mechanism fo standardizing our development environment, why don't you go one step further. You can utilize Docker fully by leveraging on it's deployment capabilities, that is, deployment to your staging and production environments. Container orchestration software such as [Kubernetes](https://kubernetes.io/), [Docker Swarm](https://docs.docker.com/engine/swarm/) or [Terraform](https://www.terraform.io/) are options that can be explored.
 
 
 ## Summary
-If you have reached this part, you have a patience of a monk. In this rather long article, we have explored the viability of using Docker containers as a strategy for making local dev environments easy to work with. When a new developer starts, it will be a breeze to just use the images and get them up and productive in no time. But it doesn't have to be just Umbraco projects. Docker containers can be used for many different types and classes of applications, old and new. Maybe in a later post we can continue where we left off and try our hand with orchestration software to extend our use of Docker for deployments too.
+If you have reached this part, you have a patience of a monk. In this rather long article, we have explored the viability of using Docker containers as a strategy for making local dev environments easy to work with.
+
+When a new developer starts, it will be a breeze to just use the images and get them up and productive in no time. But it doesn't have to be just Umbraco projects. Docker containers can be used for many different types and classes of applications, old and new. Maybe in a later post we can continue where we left off and try our hand with orchestration software to extend our use of Docker for deployments too.
 
 Until then, see ya. 
 
