@@ -38,7 +38,7 @@ published: true
   QUIT     // and then disconnect
   +OK      // Redis reply
   ```
-  Now that's nice, however it is not clear what you need to do if you do this operation remotely from a Windows machine and plug it into your CI/CD system.
+  Now that's nice, however it is not clear what you need to do if you want to do this operation remotely from a Windows machine and plug it into your CI/CD system.
 - Powershell to the rescue!
 
 ## Here is the Powershell script
