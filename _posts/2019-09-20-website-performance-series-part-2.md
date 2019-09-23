@@ -22,10 +22,14 @@ published: false
   </div>
 </section>
 
-## Website Optimization
-In the previous article, [Website Performance Series - Part 1](https://jaeyow.github.io/fullstack-developer/website-performance-series-part-1/), we've seen how a slow-loading website can have an adverse effect on your conversions.
+## Improve Performance
+In the previous article, [Website Performance Series - Part 1](https://jaeyow.github.io/fullstack-developer/website-performance-series-part-1/), we've seen how a slow-loading website can have an adverse effect on your page's conversions. Not to mention increasing the frustration of visitors prompting them to abandon your site for your competitor's.
 
-But before we continue, let me just make it clear that when I mention web optimization, I mean the process in software development where we identify the reasons of slow loading sites, fix the causes of those delays, and integrate automation into the system continually enforce these policies. This ensures a site that performs optimally and not degrades as is the case when , not just as a one-off scenario.,   that  So to continue on this topic of website optimization, 
+For the rest of this series, we will be talking about techniques to **improve website performance** in the context of software development in general, and **NOT** website optimization techniques (using tools such as [Optimizely](https://www.optimizely.com), [Adobe Target](https://www.adobe.com/au/marketing/target.html) and [Google Optimize](https://optimize.google.com/optimize/home/)) which are mainly used by marketing teams for experimentation to increase page and site conversions.
+
+Tools like these, although they may ultimately improve page conversions, the mere fact of adding them to your page can actually slow down your page to some extent, so it may be a counter-intuitive exercise, and best left to be discussed more in a future post. 
+
+## Web Performance Tools
 - tools used to find gaps
 <figure>
 	<a href="../images/website-performance-series/tools-for-website-performance.png"><img src="../images/website-performance-series/tools-for-website-performance.png"></a><figcaption>Figure: Tools used for finding gaps in web performance</figcaption>
