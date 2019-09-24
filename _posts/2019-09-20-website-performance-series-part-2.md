@@ -22,66 +22,30 @@ published: false
   </div>
 </section>
 
-## Improve Performance
-In the previous article, [Website Performance Series - Part 1](https://jaeyow.github.io/fullstack-developer/website-performance-series-part-1/), we've seen how a slow-loading website can have an adverse effect on your page's conversions. Not to mention increasing the frustration of visitors prompting them to abandon your site for your competitor's.
+## Improve Site Performance
+In the previous article, [Website Performance Series - Part 1](https://jaeyow.github.io/fullstack-developer/website-performance-series-part-1/), we've seen how a slow-loading website can have an adverse effect on your page's conversions. This will lead to an increase in your visitor's frustration prompting them to abandon your site for your competitor's.
 
-For the rest of this series, we will be talking about techniques to **improve website performance** in the context of software development in general, and **NOT** website optimization techniques (using tools such as [Optimizely](https://www.optimizely.com), [Adobe Target](https://www.adobe.com/au/marketing/target.html) and [Google Optimize](https://optimize.google.com/optimize/home/)) which are mainly used by marketing teams for experimentation to increase page and site conversions.
+For the rest of this series, we will be talking about techniques to **improve website performance**, and **NOT** techniques for website optimization (using tools such as [Optimizely](https://www.optimizely.com), [Adobe Target](https://www.adobe.com/au/marketing/target.html) and [Google Optimize](https://optimize.google.com/optimize/home/)). These tools are mainly used by marketing teams for experimentation to increase page and site conversions. Typically, you will only start optimizing your website with these tools once you have maximized your site's loading speed. 
 
-Tools like these, although they may ultimately improve page conversions, the mere fact of adding them to your page can actually slow down your page to some extent, so it may be a counter-intuitive exercise, and best left to be discussed more in a future post. 
+> Although these tools may ultimately improve page conversions, they may have a negative effect and can actually slow down your page to some extent, so it may be a counter-intuitive exercise, and best left to be discussed in more detail perhaps in a future post. 
 
-## Web Performance Tools
-- tools used to find gaps
+## Discover your performance gaps
+Google has produced several tools to help you discover gaps in your site performance. Because ultimately your site was designed with for an audience, and not just for one person, your site performance may be highly variable due to many factors and multitude of users.
+
 <figure>
 	<a href="../images/website-performance-series/tools-for-website-performance.png"><img src="../images/website-performance-series/tools-for-website-performance.png"></a><figcaption>Figure: Tools used for finding gaps in web performance</figcaption>
 </figure>
-- Speed Tools Overview (https://developers.google.com/web/fundamentals/performance/speed-tools/)
-(https://developers.google.com/web/fundamentals/performance/speed-tools/pdf/Infographic-How_To_Think_About_Speed_Tools.pdf)
-- talk about lab data vs field data
-- talk about success case studies
+
+Visitor's devices and network latency can affect your site performance however this might not be always obvious in a lab environment.
+
+Google has tools that can collect both **lab data** for discovering fundamental performance issues and **field data** for identifying real-world performance. Here's a link to the following [Google Speed Tools](https://developers.google.com/web/fundamentals/performance/speed-tools/) which contains a guide on usage. 
+
+Using a combination of these tools like Lighthouse and Test My Site can give you a pretty good idea of your site's performance. Lighthouse results contain important details about your site, and some suggestions on how you can improve.c  
 
 - creating your performance budgets - time based, or size based or both, or easily based on computer metrics, like lighthouse scores, performance budgets make it possible to catch performance issues before shipping code, much like catching application issues with unit and/or integration tests.
 - what can we do to optimize and in what order
 - when to optimize - talk about more advanced website optimization tricks like A/B testing, personalization testing
 - a/b testing tools can adversely affect page loading time
-
-
-## Why web performance matters
-A webpage (and the website it belongs to) is created to serve a particular purpose for the business.
-
-For example a product page that sells digital cameras has the primary purpose of getting the visitor to click on the **add to cart** button, and eventually buying it.
-<figure>
-	<a href="../images/website-performance-series/screen-amazon-product-listing-900x600.jpg"><img src="../images/website-performance-series/screen-amazon-product-listing-900x600.jpg"></a><figcaption>Figure: Amazon product detail page</figcaption>
-</figure>
-A contact page is designed to direct the visitor how to get in contact with customer support to solve issues they are facing. 
-<figure>
-	<a href="../images/website-performance-series/sample-contact-us-page.png"><img src="../images/website-performance-series/sample-contact-us-page.png"></a><figcaption>Figure: HubSpot contact page</figcaption>
-</figure>
-
-Slower page response times results in a decrease in conversion rate and increase in page abandonment. The longer it takes for the page to load, the more chance for the visitor to abandon the page and possibly visit the competitor's offering. This means that without changing anything in the site other than improving page response times, we could potentially improve the conversion rate, and thus your bottom line. 
-
-There are many factors affecting page load speed, and we will discuss these in more detail in future posts, however, according to the following infographic here is what a slow loading site might mean to your business.
-
-<figure>
-	<a href="../images/website-performance-series/loading-time-sml.jpg"><img src="../images/website-performance-series/loading-time-sml.jpg"></a><figcaption>Figure: How loading time affects your bottom line</figcaption>
-</figure>
-
--  A 1 second delay in page response can result in a 7% reduction in conversions.
--  A 1 second delay decreases customer satisfaction by 16%
--  A 1 second page delay could potentially cost you $2.5 million in lost sales every year for a $100,000 per day site
-
-## Conversion Rate and Page Traffic (and SEO)
-**Web page conversion** is when the visitor takes the target action that the developer wanted them to take. It's not really always getting the visitor to buy something as web pages can serve different purposes.
-
-For example, a product detail page from Amazon's definition of a conversion may be a customer purchase. A dentist's book-an-appointment page's conversion is defined as the successful booking on an appointment through the page. Conversion rate is the percentage of successful conversion out of 100 visitors. Say for example out of 100 page visits, if there are 2 clicks to Amazon's buy now button, then the page's conversion rate is 2%.
-
-This is really simple maths, if we increase **page traffic** to 200, then we will have 4 potential buys. The problem is that we cannot infinitely increase the page traffic. It is more realistic to increase the conversion rate and given the same page traffic, have more successful conversions. So in this example, given the same 100 visitors, if we improved the conversion rate to 4%, we will now have 4 successful purchases, an increase compared to when our conversion rate was at 2%.
-
-Now we haven't even mentioned **SEO** yet. To optimize a website for Search engines, you can improve your page traffic as the search engines will want to serve your pages more, thus increasing your bottom line. If you have sound SEO practices, your conversion rates will also increase as these practices tend to improve your site organization making the page simpler and more favorable to navigate. 
-
-## This is interesting stuff
-Having been developing software for a while, most of my projects in the past have never been public facing pages with emphasis on optimizing conversion rates (come to think of it, they have not been websites at all).
-
-However, it would be awesome to be in a position to be able to positively influence the business' bottom line through their webpages. Because page metrics are easy to collect and understand, it is not that hard to have a go at conversion improvements, and receive timely feedback from them. It is imperative to setup these metrics before undergoing any attempts at improvement. Otherwise, it will be almost impossible to know if the introduced changes are having any positive effect.
   
 ## Conclusion
 This post is the first of a series discussing the topic of web performance optimization through conversion rate, page traffic, and SEO improvements which are all separate topics in their own rights, however best implemented together like in a symphony to achieve the best outcome. This will be the point of view of a full stack developer. See you later. 
