@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: Website Performance Series - Part 2
-excerpt: "Identifying performance gaps and formulating your performance budget"
+excerpt: "Tools for identifying performance gaps and formulating your performance budget"
 modified: 2019-09-19
 date: 2019-09-19
 tags: [web performance, conversion rate, page load times, web optimization, SEO, page traffic]
@@ -38,14 +38,35 @@ Google has produced several tools to help you discover gaps in your site perform
 
 Visitor's devices and network latency can affect your site performance however this might not be always obvious in a lab environment.
 
-Google has tools that can collect both **lab data** for discovering fundamental performance issues and **field data** for identifying real-world performance. Here's a link to the following [Google Speed Tools](https://developers.google.com/web/fundamentals/performance/speed-tools/) which contains a guide on usage. 
+Google has built tools that can collect both **lab data** for discovering fundamental performance issues and **field data** for identifying real-world performance. Here's a link to the following [Google Speed Tools](https://developers.google.com/web/fundamentals/performance/speed-tools/) which contains a guide on usage. 
 
-Using a combination of these tools like Lighthouse and Test My Site can give you a pretty good idea of your site's performance. Lighthouse results contain important details about your site, and some suggestions on how you can improve.c  
+Using a combination of these tools like [Lighthouse](https://developers.google.com/web/tools/lighthouse), [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) and [Test My Site](https://www.thinkwithgoogle.com/feature/testmysite/) can give you a pretty good idea of your site's performance in all sorts of environments, and present you with suggestions to improve. The idea is you can run these tools repeatedly as you improve your site. 
 
-- creating your performance budgets - time based, or size based or both, or easily based on computer metrics, like lighthouse scores, performance budgets make it possible to catch performance issues before shipping code, much like catching application issues with unit and/or integration tests.
-- what can we do to optimize and in what order
-- when to optimize - talk about more advanced website optimization tricks like A/B testing, personalization testing
-- a/b testing tools can adversely affect page loading time
+<figure>
+	<a href="../images/website-performance-series/pagespeed-insights.png"><img src="../images/website-performance-series/pagespeed-insights.png"></a><figcaption>Tool: PageSpeed Insights by Google</figcaption>
+</figure>
+
+> PageSpeed Insights combines tests from Lighthouse (for lab data) and [Chrome User Experience Report](https://developers.google.com/web/tools/chrome-user-experience-report) (for real-world field data) on both mobile and desktop devices and provides suggestions on how things can be improved. 
+
+<figure>
+	<a href="../images/website-performance-series/pwa-lighthouse.png"><img src="../images/website-performance-series/pwa-lighthouse.png"></a><figcaption>Tool: Lighthouse by Google</figcaption>
+</figure>
+
+> Lighthouse is a tool that you can run against your site as it performs audits against performance, accessibility, PWAs and more.
+>
+> It can be installed as a CLI and has a neat feature called [LightWallet](https://web.dev/use-lighthouse-for-performance-budgets#targetText=Use%20Lighthouse%20for%20performance%20budgets&targetText=Lighthouse%20now%20supports%20performance%20budgets,and%20quantity%20of%20page%20resources.) which allows you to create a **performance budget** to enable you to set build pass, warning or failure as you push your code through your CI/CD. 
+
+## Setting your performance budget
+It's great to be able to run all these tools to help us improve our sites, however, if we don't persist with these efforts, we will easily regress over time.
+
+What's good about Lighthouse is that you can add [performance budgets](https://developers.google.com/web/tools/lighthouse/audits/budgets) and can easily build this into your CI/CD system. Anytime you go close or get over your set budget, you will know immediately, the fast feedback is there for one to take immediate action. This audit is called *Keep Request Counts Low And File Sizes Small*.
+<figure>
+	<a href="../images/website-performance-series/requestcounts-perfbudget.png"><img src="../images/website-performance-series/requestcounts-perfbudget.png"></a><figcaption>Keep Request Counts Low And File Sizes Small audit</figcaption>
+</figure>
+
+<figure>
+	<a href="../images/website-performance-series/requestcounts-perfbudget-2.png"><img src="../images/website-performance-series/requestcounts-perfbudget-2.png"></a><figcaption>And if you have specified a budget file, you will know your budget status</figcaption>
+</figure>
   
 ## Conclusion
 This post is the first of a series discussing the topic of web performance optimization through conversion rate, page traffic, and SEO improvements which are all separate topics in their own rights, however best implemented together like in a symphony to achieve the best outcome. This will be the point of view of a full stack developer. See you later. 
