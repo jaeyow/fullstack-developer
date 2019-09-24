@@ -69,11 +69,10 @@ What's good about Lighthouse is that you can add [performance budgets](https://d
 </figure>
   
 ## Conclusion
-This post is the first of a series discussing the topic of web performance optimization through conversion rate, page traffic, and SEO improvements which are all separate topics in their own rights, however best implemented together like in a symphony to achieve the best outcome. This will be the point of view of a full stack developer. See you later. 
+
 
 ## Resources
-- [Website Performance Conversion Rates](https://www.cloudflare.com/learning/performance/more/website-performance-conversion-rates/)
-- [Optimizing Web Performance](https://speckyboy.com/optimizing-web-performance/)
-- [How speed affects website](https://hostingtribunal.com/blog/how-speed-affects-website/)
+- [Google Speed Tools](https://developers.google.com/web/fundamentals/performance/speed-tools/)
+- [Tools For Web Developers](https://developers.google.com/web/tools)
 
   
