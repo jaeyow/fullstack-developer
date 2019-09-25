@@ -22,6 +22,11 @@ published: true
   </div>
 </section>
 
+## Part of the Website Performance Series
+[Part 1 - Why web performance matters and what that means to your bottom line](https://jaeyow.github.io/fullstack-developer/website-performance-series-part-1/)
+
+[Part 2 - Tools for identifying performance gaps and formulating your performance budget](https://jaeyow.github.io/fullstack-developer/website-performance-series-part-2/)
+
 ## Why web performance matters
 A webpage (and the website it belongs to) is created to serve a particular purpose for the business.
 

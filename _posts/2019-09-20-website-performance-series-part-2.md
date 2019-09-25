@@ -4,12 +4,12 @@ title: Website Performance Series - Part 2
 excerpt: "Tools for identifying performance gaps and formulating your performance budget"
 modified: 2019-09-19
 date: 2019-09-19
-tags: [web performance, conversion rate, page load times, web optimization, SEO, page traffic]
+tags: [web performance, conversion rate, page load times, performance budget, lighthouse]
 header: 
   overlay_image: /images/website-performance-series/harley-davidson-bwxsi8tcxlk-unsplash.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 comments: true
-published: false
+published: true
 ---
 
 <section id="table-of-contents" class="toc">
@@ -21,6 +21,11 @@ published: false
   {:toc}
   </div>
 </section>
+
+## Part of the Website Performance Series
+[Part 1 - Why web performance matters and what that means to your bottom line](https://jaeyow.github.io/fullstack-developer/website-performance-series-part-1/)
+
+[Part 2 - Tools for identifying performance gaps and formulating your performance budget](https://jaeyow.github.io/fullstack-developer/website-performance-series-part-2/)
 
 ## Improve Site Performance
 In the previous article, [Website Performance Series - Part 1](https://jaeyow.github.io/fullstack-developer/website-performance-series-part-1/), we've seen how a slow-loading website can have an adverse effect on your page's conversions. This will lead to an increase in your visitor's frustration prompting them to abandon your site for your competitor's.
@@ -59,17 +64,24 @@ Using a combination of these tools like [Lighthouse](https://developers.google.c
 ## Setting your performance budget
 It's great to be able to run all these tools to help us improve our sites, however, if we don't persist with these efforts, we will easily regress over time.
 
-What's good about Lighthouse is that you can add [performance budgets](https://developers.google.com/web/tools/lighthouse/audits/budgets) and can easily build this into your CI/CD system. Anytime you go close or get over your set budget, you will know immediately, the fast feedback is there for one to take immediate action. This audit is called *Keep Request Counts Low And File Sizes Small*.
+What's good about Lighthouse is that you can add [performance budgets](https://developers.google.com/web/tools/lighthouse/audits/budgets) and can easily build this into your CI/CD system. Anytime you go close or get over your set budget, you will know immediately, the fast feedback is there for one to take immediate action. This Lighthouse audit is called *Keep Request Counts Low And File Sizes Small* and as shown in the image below, produces a list of request count and sizes from different resource types that make up your page.  
 <figure>
 	<a href="../images/website-performance-series/requestcounts-perfbudget.png"><img src="../images/website-performance-series/requestcounts-perfbudget.png"></a><figcaption>Keep Request Counts Low And File Sizes Small audit</figcaption>
 </figure>
 
+And as shown in the following, where a project's performance budget is specified, shows a summary of your results against your budget, and your results exceeding the budgets in **RED**. 
 <figure>
 	<a href="../images/website-performance-series/requestcounts-perfbudget-2.png"><img src="../images/website-performance-series/requestcounts-perfbudget-2.png"></a><figcaption>And if you have specified a budget file, you will know your budget status</figcaption>
 </figure>
   
 ## Conclusion
+In this post we have explored some of the tools made available to us from [**Google**](www.google.com). **PageSpeed Insights** combines the results from a lab-like environment (courtesy of Lighthouse), with real-world field data (from Chrome UX Report) for a result that is more representative of your audience and their devices.
 
+**Lighthouse**, on the other hand is my pick for the most comprehensive tool available with additional points for also being very easy to integrate into CI/CD systems. 
+
+Because these tools make it extremely easy to run audits against your sites, there is no excuse!
+
+Let's get auditing now!
 
 ## Resources
 - [Google Speed Tools](https://developers.google.com/web/fundamentals/performance/speed-tools/)
