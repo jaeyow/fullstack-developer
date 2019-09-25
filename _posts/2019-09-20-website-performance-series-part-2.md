@@ -86,5 +86,7 @@ Let's get auditing now!
 ## Resources
 - [Google Speed Tools](https://developers.google.com/web/fundamentals/performance/speed-tools/)
 - [Tools For Web Developers](https://developers.google.com/web/tools)
+- [Start Performance Budgeting](https://addyosmani.com/blog/performance-budgets/)
+- [Performance Budgets 101](https://web.dev/performance-budgets-101)
 
   
