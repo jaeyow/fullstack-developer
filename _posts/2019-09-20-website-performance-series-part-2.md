@@ -27,6 +27,8 @@ published: true
 
 [Part 2 - Tools for identifying performance gaps and formulating your performance budget](https://jaeyow.github.io/fullstack-developer/website-performance-series-part-2/)
 
+[Part 3 - Speeding up your site is easy if you know what to focus on](https://jaeyow.github.io/fullstack-developer/website-performance-series-part-3/)
+
 ## Improve Site Performance
 In the previous article, [Website Performance Series - Part 1](https://jaeyow.github.io/fullstack-developer/website-performance-series-part-1/), we've seen how a slow-loading website can have an adverse effect on your page's conversions. This will lead to an increase in your visitor's frustration prompting them to abandon your site for your competitor's.
 

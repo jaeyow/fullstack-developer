@@ -27,6 +27,8 @@ published: true
 
 [Part 2 - Tools for identifying performance gaps and formulating your performance budget](https://jaeyow.github.io/fullstack-developer/website-performance-series-part-2/)
 
+[Part 3 - Speeding up your site is easy if you know what to focus on](https://jaeyow.github.io/fullstack-developer/website-performance-series-part-3/)
+
 ## Why web performance matters
 A webpage (and the website it belongs to) is created to serve a particular purpose for the business.
 
