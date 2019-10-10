@@ -118,7 +118,7 @@ To get a performant site, make sure you score highly against 6 Lighthouse metric
 - [User Centric Performance Metrics](https://developers.google.com/web/fundamentals/performance/user-centric-performance-metrics)
 - [The Cost of JavaScript 2019](https://v8.dev/blog/cost-of-javascript-2019/)
 
-> **Bonus Tip - Import Cost VSCode Extension** - This extension will display inline in the editor the size of the imported package. Another tool that will be an asset to the gun JS developer. 
+> **Bonus Tip - Import Cost VSCode Extension** - This VSCode extension will display inline in the editor the size of the imported package. Another tool that will be an asset to the gun JS developer. 
 > <figure>
 	<a href="https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost"><img src="../images/website-performance-series/import-cost-extension.gif"></a><figcaption>Import Cost VS Code Extension</figcaption>
 > </figure>
