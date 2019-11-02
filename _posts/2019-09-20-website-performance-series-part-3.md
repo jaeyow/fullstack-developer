@@ -22,13 +22,6 @@ published: true
   </div>
 </section>
 
-## Part of the Website Performance Series
-[Part 1 - Why web performance matters and what that means to your bottom line](https://jaeyow.github.io/fullstack-developer/website-performance-series-part-1/)
-
-[Part 2 - Tools for identifying performance gaps and formulating your performance budget](https://jaeyow.github.io/fullstack-developer/website-performance-series-part-2/)
-
-[Part 3 - Speeding up your site is easy if you know what to focus on](https://jaeyow.github.io/fullstack-developer/website-performance-series-part-3/)
-
 ## Lighthouse Metrics (in weighted order of importance)
 <figure>
 	<a href="../images/website-performance-series/pwa-lighthouse.png"><img src="../images/website-performance-series/pwa-lighthouse.png"></a><figcaption>Tool: Lighthouse by Google</figcaption>
@@ -122,4 +115,13 @@ To get a performant site, make sure you score highly against 6 Lighthouse metric
 > <figure>
 	<a href="https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost"><img src="../images/website-performance-series/import-cost-extension.gif"></a><figcaption>Import Cost VS Code Extension</figcaption>
 > </figure>
+
+## Part of the Website Performance Series
+[Part 1 - Why web performance matters and what that means to your bottom line](../website-performance-series-part-1/)
+
+[Part 2 - Tools for identifying performance gaps and formulating your performance budget](../website-performance-series-part-2/)
+
+[Part 3 - Speeding up your site is easy if you know what to focus on](../website-performance-series-part-3/)
+
+[Part 4 - Real world case studies on effects of improving website performance](../website-performance-series-part-4/)
   

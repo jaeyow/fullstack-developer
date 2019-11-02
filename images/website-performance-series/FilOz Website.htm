@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)http://localhost:3000/news# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="shortcut icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <link href="./FilOz Website_files/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="./FilOz Website_files/css" rel="stylesheet" type="text/css">
+    <link href="./FilOz Website_files/css(1)" rel="stylesheet" type="text/css">
+    <link href="./FilOz Website_files/css(2)" rel="stylesheet" type="text/css">
+
+    <script src="./FilOz Website_files/react.production.min.js" crossorigin=""></script>
+    <script src="./FilOz Website_files/react-dom.production.min.js" crossorigin=""></script>
+    <script src="./FilOz Website_files/react-bootstrap.min.js" crossorigin=""></script>
+    <title>FilOz Website</title>
+  <style>body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+</style><style>.App {
+  text-align: center;
+  scroll-behavior: smooth;
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.img-overlay:after {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  content: "";
+}
+
+.img-fluid {
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  top: 50px;
+  padding: 0 50px;
+  height: 100%;
+  bottom: 15vh;
+}
+
+.image-widescreen img {
+  width: 100%;
+  min-height: 100%;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.white {
+  color: #fff;
+  font-family: 'Holtwood One SC', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+header .intro-text {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: #ffffff;
+  font-family: 'Holtwood One SC', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+/* default values - xs */
+.img-overlay {
+  position: relative;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/static/media/header-bg.8069af82.jpg);
+  height: 750px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.row-container {
+  padding: 30px;
+}
+
+header .intro-text .intro {
+  margin-bottom: 0px;
+  line-height: 50px;
+  font-size: 1.0em;
+}
+
+header .sub-text {
+  font-size: 0.8em;
+  font-weight: 600;
+  color: #f6bf01;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+header .intro-text.intro-title {
+  font-size: 1.8em;
+  color: #fff;
+}
+
+header .intro-text .sub-text-v1 {
+  font-size: 0.8em;
+  color: #ffffff;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+  .img-overlay {
+    position: relative;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/static/media/header-bg.8069af82.jpg);
+    height: 900px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+    
+  header .intro-text .intro {
+    margin-bottom: 0px;
+    line-height: 50px;
+    font-size: 1.0em;
+  }
+
+  header .sub-text {
+    font-size: 0.8em;
+    font-weight: 600;
+    color: #f6bf01;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  header .intro-text.intro-title {
+    font-size: 1.8em;
+    color: #fff;
+  }
+
+  header .intro-text .sub-text-v1 {
+    font-size: 0.8em;
+    color: #ffffff;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+  .img-overlay {
+    position: relative;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/static/media/header-bg.8069af82.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+    
+  header .intro-text .intro {
+    margin-bottom: 0px;
+    line-height: 50px;
+    font-size: 1.0em;
+  }
+
+  header .sub-text {
+    font-size: 0.8em;
+    font-weight: 600;
+    color: #f6bf01;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  header .intro-text.intro-title {
+    font-size: 1.8em;
+    color: #fff;
+  }
+
+  header .intro-text .sub-text-v1 {
+    font-size: 0.8em;
+    color: #ffffff;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+  .img-overlay {
+    position: relative;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/static/media/header-bg.8069af82.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  header .intro-text .intro {
+    margin-bottom: 0px;
+    line-height: 50px;
+    font-size: 1.8em;
+  }
+  
+  header .sub-text {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #f6bf01;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  
+  header .intro-text.intro-title {
+    font-size: 2.5em;
+    color: #fff;
+  }
+  
+  header .intro-text .sub-text-v1 {
+    font-size: 0.9em;
+    color: #ffffff;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+  .img-overlay {
+    position: relative;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/static/media/header-bg.8069af82.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  header .intro-text .intro {
+    margin-bottom: 0px;
+    line-height: 50px;
+    font-size: 1.8em;
+  }
+  
+  header .sub-text {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #f6bf01;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  
+  header .intro-text.intro-title {
+    font-size: 2.5em;
+    color: #fff;
+  }
+  
+  header .intro-text .sub-text-v1 {
+    font-size: 0.9em;
+    color: #ffffff;
+  }
+}
+
+.lazyload {
+  width: 100%;
+  padding: 10px;
+}
+
+.white-panel {
+  background: white;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  margin: 5px;
+}
+
+.white-panel:hover {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  margin-top: -5px;
+  transition: all 0.3s ease-in-out;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}</style><style id="erd_scroll_detection_scrollbar_style">/* Created by the element-resize-detector library. */
+.erd_scroll_detection_container > div::-webkit-scrollbar { display: none; }
+
+.erd_scroll_detection_container_animation_active { -webkit-animation-duration: 0.1s; animation-duration: 0.1s; -webkit-animation-name: erd_scroll_detection_container_animation; animation-name: erd_scroll_detection_container_animation; }
+@-webkit-keyframes erd_scroll_detection_container_animation { 0% { opacity: 1; } 50% { opacity: 0; } 100% { opacity: 1; } }
+@keyframes erd_scroll_detection_container_animation { 0% { opacity: 1; } 50% { opacity: 0; } 100% { opacity: 1; } }</style><link rel="stylesheet" id="coToolbarStyle" href="chrome-extension://cjabmdjcfcfdmffimndhafhblfmpjdpe/toolbar/styles/placeholder.css" type="text/css"><script type="text/javascript" id="cosymantecbfw_removeToolbar">(function () {				var toolbarElement = {},					parent = {},					interval = 0,					retryCount = 0,					isRemoved = false;				if (window.location.protocol === 'file:') {					interval = window.setInterval(function () {						toolbarElement = document.getElementById('coFrameDiv');						if (toolbarElement) {							parent = toolbarElement.parentNode;							if (parent) {								parent.removeChild(toolbarElement);								isRemoved = true;								if (document.body && document.body.style) {									document.body.style.setProperty('margin-top', '0px', 'important');								}							}						}						retryCount += 1;						if (retryCount > 10 || isRemoved) {							window.clearInterval(interval);						}					}, 10);				}			})();</script></head>
+  <body class="" style="">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div><nav class="navbar navbar-expand-lg navbar-dark bg-dark"><a class="nav-link" href="http://localhost:3000/"><img src="./FilOz Website_files/logo.png" width="100" alt="filoz-logo"></a><button aria-controls="basic-navbar-nav" type="button" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button><div class="navbar-collapse collapse" id="basic-navbar-nav"><div class="mr-auto navbar-nav"><a duration="800" href="http://localhost:3000/" role="tab" data-rb-event-key="1" tabindex="-1" aria-selected="false" class="nav-link nav-link">Home</a><a duration="800" href="http://localhost:3000/news" role="tab" data-rb-event-key="2" tabindex="-1" aria-selected="false" class="nav-link nav-link">News</a><a duration="800" href="http://localhost:3000/racing" role="tab" data-rb-event-key="3" tabindex="-1" aria-selected="false" class="nav-link nav-link">Racing</a><a duration="800" href="http://localhost:3000/results" role="tab" data-rb-event-key="4" tabindex="-1" aria-selected="false" class="nav-link nav-link">Results</a><a duration="800" href="http://localhost:3000/membership" role="tab" data-rb-event-key="5" tabindex="-1" aria-selected="false" class="nav-link nav-link">Membership</a><a duration="800" href="http://localhost:3000/calendar" role="tab" data-rb-event-key="6" tabindex="-1" aria-selected="false" class="nav-link nav-link">Calendar</a><a duration="800" href="http://localhost:3000/our-team" role="tab" data-rb-event-key="7" tabindex="-1" aria-selected="false" class="nav-link nav-link">Our Team</a><a duration="800" href="http://localhost:3000/sponsors" role="tab" data-rb-event-key="8" tabindex="-1" aria-selected="false" class="nav-link nav-link">Sponsors</a><a duration="800" href="http://localhost:3000/contact" role="tab" data-rb-event-key="9" tabindex="-1" aria-selected="false" class="nav-link nav-link">Contact</a></div></div></nav></div><section id="news"><div class="container"><h2 class="text-center section-heading">News</h2><div class="separator"></div><h3 class="text-center section-subheading text-muted">Read about club news and related issues here. This area is<br>constantly changing so check often!</h3><hr><section><div style="position: relative; transition: height 480ms ease-out 0s; height: 3479px;"><span style="z-index: 2; opacity: 1; display: block; position: absolute; top: 0px; left: 0px; width: 350px; transition: opacity 480ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s, transform 480ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s; transform: translateX(25px) translateY(0px);"><article class="white-panel"><img src="./FilOz Website_files/FilOzPortMac2017.jpg" alt="" class="lazyload"><h4><a href="http://localhost:3000/news#">FilOz at Port Macquarie Ironman, 7th May 2017</a></h4><p>The Philippines was well represented at the recently concluded Port Macquarie Ironman 2017 fielding about 30 athletes on the day. Joining our compatriots in the Ironman and 70.3 are the FilOz athletes from Sydney and the Gold Coast, competing in their very first races in the distance. Congratulations to Ferdinand Boydon, Alfie Ramirez and Anthony Lacsamana for completing their very first Ironman event and Arvin Reyes for the 70.3 race. Very well done boys, surely next year will see more FilOz acheiving that dream! </p></article></span><span style="z-index: 2; opacity: 1; display: block; position: absolute; top: 0px; left: 0px; width: 350px; transition: opacity 480ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s, transform 480ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s; transform: translateX(380px) translateY(0px);"><article class="white-panel"><img src="./FilOz Website_files/FilozFamilyFunDay2017.jpg" alt="" class="lazyload"><h4><a href="http://localhost:3000/news#">FilOz Awards and Celebration Night, 25th January 2017</a></h4><p>This is it! Once again, let us unite and support our first event for the year - FilOz Family Fun Day 2017! Its a combination of Team Time Trial, Fun Run and Individual Time Trial! Let us form a team that will represent our club for the ITT and TTT. Our event is supported by the Filipino Cycling group (UCCA). Hope to see you all there! </p></article></span><span style="z-index: 2; opacity: 1; display: block; position: absolute; top: 0px; left: 0px; width: 350px; transition: opacity 480ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s, transform 480ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s; transform: translateX(735px) translateY(0px);"><article class="white-panel"><img src="./FilOz Website_files/awards-celebration.jpg" alt="" class="lazyload"><h4><a href="http://localhost:3000/news#awardsmodal" data-toggle="modal">FilOz Awards and Celebration Night, 25th January 2017</a></h4><p>On the 25th of January 7pm, we will be having an Awards Night and Celebration for the success that was 2016 and hopeful plans for the club in the new year. We are cordially inviting you and your family to celebrate this momentous occasion with us. We have a special guest speaker for the night, Ms. Andrea Forrest, a professional triathlete specialising in the 70.3 distance. We hope to learn from Andrea the secret to her success in the sport we all love. We hope you can join us, if not for triathlon and multi-sport, then for a celebration of friendship, family, music, dancing and of living life to the fullest! To RSVP, please let us know by the 19th of January, details are in the attached poster. Thank you once again for your support. </p></article></span><span style="z-index: 2; opacity: 1; display: block; position: absolute; top: 0px; left: 0px; width: 350px; transition: opacity 480ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s, transform 480ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s; transform: translateX(25px) translateY(616px);"><article class="white-panel"><img src="./FilOz Website_files/FilozDuathlon2015HiRes.jpeg" alt="" class="lazyload"><h4><a href="http://localhost:3000/news#duathlonmodal" data-toggle="modal">FilOz Duathlon, 3rd September 2016</a></h4><p>Last year's Duathlon race was a huge success so we're bringing it again this year. Save the date - on the 3rd of September, FilOz Triathlon Club's Duathlon race is happening again and we promise this year's event will be even bigger and better. Same as our inaugural race last year, we will be accepting Individual and relay team entries, as well as juniors for the first time. Finisher medals and trophies for podium finishers awaits everyone so form your team, or set a goal for yourself and start training! </p></article></span><span style="z-index: 2; opacity: 1; display: block; position: absolute; top: 0px; left: 0px; width: 350px; transition: opacity 480ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s, transform 480ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s; transform: translateX(380px) translateY(751px);"><article class="white-panel"><img src="./FilOz Website_files/FilOzFunRun2016.jpg" alt="" class="lazyload"><h4><a href="http://localhost:3000/news#filofunrin2016modal" data-toggle="modal">FilOz Fun Run, 16th July 2016</a></h4><p>Exciting news! The FilOz Triathlon Club will be running a few races this season, and we're hopeful on finishing this with our very first Triathlon race. At the back of our successful regular 20/20 run sessions, the first race this season will be a running event; this should keep us all motivated, improve our running even more, and stay fit during this winter season. So, on the 16th of July, FilOz will be hosting a 5 and 10km fun run at the Regatta Centre. Finisher's medal, age group awards are on offer plus a great fun filled day. Join in and challenge a sibling or a mate and own the bragging rights! Our registration system is not quite ready yet but I will advise once its ready to accept entries. Details are on the attached flyer, any questions just give us a call or ask me during our run sessions. Thank you and have a great day. </p></article></span><span style="z-index: 2; opacity: 1; display: block; position: absolute; top: 0px; left: 0px; width: 350px; transition: opacity 480ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s, transform 480ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s; transform: translateX(735px) translateY(990px);"><article class="white-panel"><img src="./FilOz Website_files/port-mac-ironman-2016.jpg" alt="" class="lazyload"><h4><a href="http://localhost:3000/news#portmac2016modal" data-toggle="modal">Port Macquarie Ironman, 1st May 2016</a></h4><p>Thanks everyone for the kind words of support, congratulatory messages and for following every updates, thanks Jen as well as Mango for your countless cheers, it got us through. And of course to our wives who where there before the start, up until everyone finished, to make sure we get the best 'pictures' :) as well as shouting the loudest cheers. Port Macquarie bike course is honest and tough, add the rain and it became a brutal course. There were a few crashes that I saw, and I too had a near slip as my rear wheel skidded going up Matthew Flinders drive. I managed to recover luckily. The run course was wet, some sections looked like a tough mudder race with all the mud you had to go through. On the swim, due to low tide, one section was too shallow that we had to walk, but overall it was good, especially the weir crossing. Everyone finished safely, very painful legs for a few days but the finisher medal is well deserved as we worked hard for it today. - Rom Faro </p></article></span><span style="z-index: 2; opacity: 1; display: block; position: absolute; top: 0px; left: 0px; width: 350px; transition: opacity 480ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s, transform 480ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s; transform: translateX(25px) translateY(1459px);"><article class="white-panel"><img src="./FilOz Website_files/filoz-launch-party.jpg" alt="" class="lazyload"><h4><a href="https://www.dropbox.com/sh/5ix3b2lxdatyeko/AADMQZY4zBgEV03CaECLpNsUa?dl=0">FilOz Launch Party Recap, July 2015</a></h4><p>FilOz Family and friends all gathered for the official launch party last month. We were joined by representatives from different entities such as Triathlon NSW, and media company Kalatas Media. Based on all the feedback, it was a resounding success, befitting the launch of the first and only Filipino Triathlon group who are officially incorporated, and affiliated with Triathlon Australia. Here is the link to the <a href="https://www.dropbox.com/sh/5ix3b2lxdatyeko/AADMQZY4zBgEV03CaECLpNsUa?dl=0">official photos</a> of the night.</p></article></span><span style="z-index: 2; opacity: 1; display: block; position: absolute; top: 0px; left: 0px; width: 350px; transition: opacity 480ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s, transform 480ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s; transform: translateX(380px) translateY(1762px);"><article class="white-panel"><img src="./FilOz Website_files/tri-nsw.jpg" alt="" class="lazyload"><h4><a href="http://us3.campaign-archive2.com/?u=8726e39abf9efef079584f099&amp;id=ddb5c1ff05&amp;e=76dff28f16#Club%20Profile" data-toggle="modal">FilOz in the Triathlon NSW Newsletter, July 2015</a></h4><p>Triathlon NSW was obviously impressed by FilOz Triathlon Club as the group was featured in their July newsletter. Sarah Koen, Triathlon NSW Membership and Participation Manager, had a glowing report of the club thus far - she calls it "undeniable spirit of a community", but to us Filipinos, it's just plain old "Bayanihan" spirit. Read all about it <a href="http://us3.campaign-archive2.com/?u=8726e39abf9efef079584f099&amp;id=ddb5c1ff05&amp;e=76dff28f16#Club%20Profile">here.</a> </p></article></span><span style="z-index: 2; opacity: 1; display: block; position: absolute; top: 0px; left: 0px; width: 350px; transition: opacity 480ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s, transform 480ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s; transform: translateX(735px) translateY(1846px);"><article class="white-panel"><img src="./FilOz Website_files/in-the-media.png" alt="" class="lazyload"><h4><a href="http://kalatas.com.au/2015/07/08/getting-into-triathlon/" data-toggle="modal">FilOz Triathlon Club in the media, July 2015</a></h4><p>FilOz Triathlon Club was recently featured in the front page of the leading Filipino Australian publication, Ang Kalatas, in their monthly print, online, and eNewspaper editions. Millie Marcial-Phillips from Kalatas Media was present to celebrate the recently concluded and hugely successful launch party late last month. Please click on the link to read the article penned by our very own budding sportswriter Rommel Faro.</p></article></span><span style="z-index: 2; opacity: 1; display: block; position: absolute; top: 0px; left: 0px; width: 350px; transition: opacity 480ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s, transform 480ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s; transform: translateX(25px) translateY(2058px);"><article class="white-panel"><img src="./FilOz Website_files/1.png" alt="" class="lazyload"><h4><a href="http://localhost:3000/news#newsmodal1" data-toggle="modal">Official Launch Party, 27th June 2015</a></h4><p>The club is now affiliated with Triathlon Australia so we’re here to celebrate. Hear about what’s happening with the club, our future direction, socialize with all our members, listen to their ‘war stories’, or even swap training notes while you’re at it. Please RSVP soon to reserve your spot to this momentous occasion.</p></article></span><span style="z-index: 2; opacity: 1; display: block; position: absolute; top: 0px; left: 0px; width: 350px; transition: opacity 480ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s, transform 480ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s; transform: translateX(380px) translateY(2193px);"><article class="white-panel"> <img src="./FilOz Website_files/2.jpg" alt="" class="lazyload"><h4><a href="http://localhost:3000/news#subic5150">Subic 5i50, 7th June 2015</a></h4><p>Joey Guerrero, Manny Saguid, Jay Jueco, Ferdinand Boydon, Peter Loteria, and Delfin Posada travelled to the Philippines and raced the Regent 5i50 Olympic distance race in Subic. It was quite a challenge for the team due to the hot conditions in Manila but everyone got through and finished the race. Jay entered with Karen Romantico in mixed relay team, while Delfin did the run leg in his relay team. Well done to everyone.</p></article></span><span style="z-index: 2; opacity: 1; display: block; position: absolute; top: 0px; left: 0px; width: 350px; transition: opacity 480ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s, transform 480ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s; transform: translateX(735px) translateY(2569px);"><article class="white-panel"> <img src="./FilOz Website_files/3.jpg" alt="" class="lazyload"><h4><a href="http://localhost:3000/news#melbourneIronman2015">Melbourne Ironman, 22nd March 2015</a></h4><p>Marlon Malinao and Rommel Faro became the first official FilOz members to tackle and finish the gruelling Melbourne Ironman. Debuting in 2012, IRONMAN Melbourne has since attracted the world's finest competitors. Athletes begin their day in the town of Frankston, south of Melbourne. The one-loop, 2.4-mile swim course leaves from the south side of the Frankston pier and heads north, before turning south to finish on the opposite side of the pier. The 112-mile, two-lap bike course incorporates the Eastlink Tollway, a world-class expressway closed exclusively for the use of competitors on race day. The iconic point-to-point run course also starts in Frankston, and concludes in St. Kilda, a funky beachside neighborhood with views of the Melbourne skyline. </p></article></span><span style="z-index: 2; opacity: 1; display: block; position: absolute; top: 0px; left: 0px; width: 350px; transition: opacity 480ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s, transform 480ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s; transform: translateX(380px) translateY(2740px);"><article class="white-panel"> <img src="./FilOz Website_files/4.jpg" alt="" class="lazyload"><h4><a href="http://localhost:3000/news#wollonggong2015">Wollonggong Triathlon Festival, 8th March 2015</a></h4><p>The team joined forces once again and competed in the 2015 Wollonggong Triathlon Festival.The stunning harbour precinct and blue mile of Wollongong City came alive with a festival of fitness, health and family fun that offered everyone the chance to "have a go" or came along and enjoyed the colour and spectacle of the sport of triathlon. trithegong triathlon festival offers races for all ages and abilities. Enter as an individual or get some friends together and be part of a team and taste the excitement, exhilaration and sense of accomplishment that comes with participating in the trithegong triathlon festival. </p></article></span><div class="erd_scroll_detection_container erd_scroll_detection_container_animation_active" style="visibility: hidden; display: inline; width: 0px; height: 0px; z-index: -1; overflow: hidden; margin: 0px; padding: 0px;"><div dir="ltr" class="erd_scroll_detection_container" style="position: absolute; flex: 0 0 auto; overflow: hidden; z-index: -1; visibility: hidden; width: 100%; height: 100%; left: 0px; top: 0px;"><div class="erd_scroll_detection_container" style="position: absolute; flex: 0 0 auto; overflow: hidden; z-index: -1; visibility: hidden; left: -1px; top: -1px; right: 0px; bottom: 0px;"><div style="position: absolute; flex: 0 0 auto; overflow: scroll; z-index: -1; visibility: hidden; width: 100%; height: 100%;"><div style="position: absolute; left: 0px; top: 0px; width: 1121px; height: 3490px;"></div></div><div style="position: absolute; flex: 0 0 auto; overflow: scroll; z-index: -1; visibility: hidden; width: 100%; height: 100%;"><div style="position: absolute; width: 200%; height: 200%;"></div></div></div></div></div></div></section><hr></div></section></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script src="./FilOz Website_files/bundle.js"></script><script src="./FilOz Website_files/1.chunk.js"></script><script src="./FilOz Website_files/main.chunk.js"></script><script src="./FilOz Website_files/main.558c8612896bba452762.hot-update.js"></script>
+  <link rel="stylesheet" href="./FilOz Website_files/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</body><div id="coFrameDiv" style="height:0px;display:none;"><iframe id="coToolbarFrame" src="./FilOz Website_files/placeholder.html" style="height:0px;width:100%;display:none;"></iframe></div></html>

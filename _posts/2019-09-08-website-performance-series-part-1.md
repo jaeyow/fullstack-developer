@@ -22,13 +22,6 @@ published: true
   </div>
 </section>
 
-## Part of the Website Performance Series
-[Part 1 - Why web performance matters and what that means to your bottom line](https://jaeyow.github.io/fullstack-developer/website-performance-series-part-1/)
-
-[Part 2 - Tools for identifying performance gaps and formulating your performance budget](https://jaeyow.github.io/fullstack-developer/website-performance-series-part-2/)
-
-[Part 3 - Speeding up your site is easy if you know what to focus on](https://jaeyow.github.io/fullstack-developer/website-performance-series-part-3/)
-
 ## Why web performance matters
 A webpage (and the website it belongs to) is created to serve a particular purpose for the business.
 
@@ -74,5 +67,14 @@ This post is the first of a series discussing the topic of web performance optim
 - [Website Performance Conversion Rates](https://www.cloudflare.com/learning/performance/more/website-performance-conversion-rates/)
 - [Optimizing Web Performance](https://speckyboy.com/optimizing-web-performance/)
 - [How speed affects website](https://hostingtribunal.com/blog/how-speed-affects-website/)
+
+## Part of the Website Performance Series
+[Part 1 - Why web performance matters and what that means to your bottom line](../website-performance-series-part-1/)
+
+[Part 2 - Tools for identifying performance gaps and formulating your performance budget](../website-performance-series-part-2/)
+
+[Part 3 - Speeding up your site is easy if you know what to focus on](../website-performance-series-part-3/)
+
+[Part 4 - Real world case studies on effects of improving website performance](../website-performance-series-part-4/)
 
   
