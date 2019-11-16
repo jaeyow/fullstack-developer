@@ -38,7 +38,7 @@ I have not read the book myself yet, however what I learned from the short time 
 3. **Think critically**, and lastly
 4. **Resist passivity**.
 
-## Self leadership
+### Self leadership
 - have a plan, find out where I stand today, to determine where I am going. Much like when one sees a financial advisor, the first order of business is to find out where you are, before formulating where you want to go. Sometimes it is hard to find out where you are today, probably the easiest way is to ask family or a friend. Simply ask - `What is it like to be on the other side of me?`
   
 - be intentional day to day, instead of sleepwalking through the day, be mindful that I have the responsibility of shaping my environment, the same one that is ultimately responsible for shaping me.
@@ -51,7 +51,7 @@ I have not read the book myself yet, however what I learned from the short time 
   
 - what books I am reading and movies I am watching. Generally always being mindful of the thoughts I allow into my mind.
 
-## Choose Positivity
+### Choose Positivity
 - It's all about mindset and positivity. I know that not all of us can be leaders in a company, in a department, in a team, however, for each one of us, it's our responsibility to bring energy, and positivity every single day.
 
   <figure>
@@ -60,7 +60,7 @@ I have not read the book myself yet, however what I learned from the short time 
   
 - I have the ability to affect the climate in my team, I can affect change from within the team with my outlook and attitude. I have the power to influence the team from within. Conversely, I can adversely affect the mood of the team when I bring the worst attitude. This power of influence is real, and I have a choice.
 
-## Think Critically
+### Think Critically
 - Fundamental to critical thinking is ownership. When one considers things as your own, you tend to be more careful, more thoughtful about what's yours. You then start to think of ways to make things better, more efficient, in general to improve things all around. 
 
   <figure>
@@ -71,7 +71,7 @@ I have not read the book myself yet, however what I learned from the short time 
   
 - Critical thinkers are learners who notice things about themselves, and can connect problems and solutions together. 
   
-## Reject Passivity
+### Reject Passivity
 - Just because I don't have the authority right now, doesn't mean that I can just sit and let everything else happen around me. Bring my ideas, frustrations, excitement to the table for the team.
   
 - Who knows, these frustrations that I bring forward may be what my team needs to spur them to move in the right direction. The excitement I exude can be what my team needs for that jolt of energy to push us in the path of improvement.
