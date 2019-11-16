@@ -61,13 +61,13 @@ I have not read the book myself yet, however what I learned from the short time 
 - I have the ability to affect the climate in my team, I can affect change from within the team with my outlook and attitude. I have the power to influence the team from within. Conversely, I can adversely affect the mood of the team when I bring the worst attitude. This power of influence is real, and I have a choice.
 
 ## Think Critically
-- Fundamental to critical thinking is ownership. When one considers things as your own, you tend to be more careful, more thoughtful about what's yours. You then start to think of ways to make things better, more efficient, in general to improve tings all around. 
+- Fundamental to critical thinking is ownership. When one considers things as your own, you tend to be more careful, more thoughtful about what's yours. You then start to think of ways to make things better, more efficient, in general to improve things all around. 
 
   <figure>
     <img src="../images/software-and-leadership/leadership-image-1.jpg" style="width:500px"/>
   </figure>
   
-- Creating an oasis of excellence - what I am in charge of, and how I have some control on this domain, I can use the influence I have to make it better, make my own little oasis of excellence, whatever it is I am put in charge of.
+- Creating an oasis of excellence - so for the domain I am in charge of, I can use the influence I have to make it better, make my own little oasis of excellence, for whatever it is I am put in charge of.
   
 - Critical thinkers are learners who notice things about themselves, and can connect problems and solutions together. 
   
