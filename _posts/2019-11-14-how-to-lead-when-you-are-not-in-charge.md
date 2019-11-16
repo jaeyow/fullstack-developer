@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: How can I lead when I am not in charge? - an introspection
-excerpt: "Use the power of influence to move people even though I don't have the title"
+excerpt: "Use the power of influence to move people even even without a title"
 modified: 2019-11-13
 date: 2019-11-13
 tags: [leadership, influence, opportunity, soft skills]
