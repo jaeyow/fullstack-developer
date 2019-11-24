@@ -22,6 +22,8 @@ published: true
   </div>
 </section>
 
+## Part of the [Website Performance Series](../tags/#web-performance)
+
 ## Improve Site Performance
 In the previous article, [Website Performance Series - Part 1](https://jaeyow.github.io/fullstack-developer/website-performance-series-part-1/), we've seen how a slow-loading website can have an adverse effect on your page's conversions. This will lead to an increase in your visitor's frustration prompting them to abandon your site for your competitor's.
 
@@ -82,15 +84,4 @@ Let's get auditing now!
 - [Google Speed Tools](https://developers.google.com/web/fundamentals/performance/speed-tools/)
 - [Tools For Web Developers](https://developers.google.com/web/tools)
 - [Start Performance Budgeting](https://addyosmani.com/blog/performance-budgets/)
-- [Performance Budgets 101](https://web.dev/performance-budgets-101)
-
-## Part of the Website Performance Series
-[Part 1 - Why web performance matters and what that means to your bottom line](../website-performance-series-part-1/)
-
-[Part 2 - Tools for identifying performance gaps and formulating your performance budget](../website-performance-series-part-2/)
-
-[Part 3 - Speeding up your site is easy if you know what to focus on](../website-performance-series-part-3/)
-
-[Part 4 - Real world case studies on effects of improving website performance](../website-performance-series-part-4/)
-
-  
+- [Performance Budgets 101](https://web.dev/performance-budgets-101)  

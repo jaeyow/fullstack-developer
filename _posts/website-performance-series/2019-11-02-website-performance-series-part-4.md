@@ -22,6 +22,8 @@ published: true
   </div>
 </section>
 
+## Part of the [Website Performance Series](../tags/#web-performance)
+
 ## Real-world case studies
 In [Part 3](../website-performance-series-part-3/), we have looked into the metrics that make up Lighthouse, now we have a more complete idea of what they mean. Now let us step back from all those technical details, and visit case studies, and see for ourselves how an improvement in website and webpage performance affects the business.
 
@@ -105,15 +107,4 @@ And as we know all these are a numbers game, if you increase your visitors, you 
 ## Resources
 - [Miscellaneous Tools for Web Performance Improvement (Perf Rocks)](https://perf.rocks/tools/)
 - [Web Performance Optimization Stats](https://wpostats.com/)
-- [Modern Websites for E-commerce in the Real World](https://www.youtube.com/watch?v=SJiKWwBtQaU)
-
-## Part of the Website Performance Series
-[Part 1 - Why web performance matters and what that means to your bottom line](../website-performance-series-part-1/)
-
-[Part 2 - Tools for identifying performance gaps and formulating your performance budget](../website-performance-series-part-2/)
-
-[Part 3 - Speeding up your site is easy if you know what to focus on](../website-performance-series-part-3/)
-
-[Part 4 - Real world case studies on effects of improving website performance](../website-performance-series-part-4/)
-
-  
+- [Modern Websites for E-commerce in the Real World](https://www.youtube.com/watch?v=SJiKWwBtQaU)  

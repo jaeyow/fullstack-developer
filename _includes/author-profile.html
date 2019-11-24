@@ -18,10 +18,18 @@
           {% assign author_link = author.home | relative_url %}
         {% endif %}
         <a href="{{ author_link }}">
-          <img src="{{ author_src }}" alt="{{ author.name }}" itemprop="image">
+            <picture>
+                <source type="image/webp" srcset="{{author_src}}.webp">
+                <source type="image/jpeg" srcset="{{author_src}}.jpg">
+                <img src="{{author_src}}.jpg" alt="{{ author.name }}" itemprop="image">
+            </picture>
         </a>
       {% else %}
-        <img src="{{ author_src }}" alt="{{ author.name }}" itemprop="image">
+        <picture>
+            <source type="image/webp" srcset="{{author_src}}.webp">
+            <source type="image/jpeg" srcset="{{author_src}}.jpg">
+            <img src="{{author_src}}.jpg" alt="{{ author.name }}" itemprop="image">
+        </picture>
       {% endif %}
     </div>
   {% endif %}

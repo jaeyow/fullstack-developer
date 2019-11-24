@@ -1,15 +1,15 @@
 ---
 layout: posts
-title: Website Performance Series - Part 6
+title: Website Performance Series - Part 1
 excerpt: "Why web performance matters and what that means to your bottom line"
-modified: 2019-09-19
-date: 2019-09-19
+modified: 2019-09-14
+date: 2019-09-14
 tags: [web performance, conversion rate, page load times, web optimization, SEO, page traffic]
 header: 
   overlay_image: /images/website-performance-series/alex-holyoake-nf4rpvtgbey-unsplash.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 comments: true
-published: false
+published: true
 ---
 
 <section id="table-of-contents" class="toc">
@@ -21,6 +21,8 @@ published: false
   {:toc}
   </div>
 </section>
+
+## Part of the [Website Performance Series](../tags/#web-performance)
 
 ## Why web performance matters
 A webpage (and the website it belongs to) is created to serve a particular purpose for the business.
