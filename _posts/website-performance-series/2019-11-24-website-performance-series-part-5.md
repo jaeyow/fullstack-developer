@@ -75,7 +75,7 @@ A big gotcha here is that you cannot change your response headers in Github page
 
 Another option is to use resources in CDN. For example for the FontAwesome file `https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/js/all.min.js`, instead of hosting it myself, and be limited by the max-age of 600 seconds imposed by Github pages, I decided to use FontAwesome CDNs which have a max-age of 86400 seconds. Plus you get the advantage of the multiple edge locations that the CNDs can give you. 
 
-Finally we have achieved all green! If this was an important page to for you, then this is the perfect time to run your experiments with the many packages like [Optimizely](https://www.optimizely.com/anz/), or [Freshmarketer](https://www.freshworks.com/marketing-automation/).
+Finally we have achieved all green! If this was an important page to you, then this is the perfect time to run your experiments with the many packages like [Optimizely](https://www.optimizely.com/anz/), or [Freshmarketer](https://www.freshworks.com/marketing-automation/).
 
 **It is counterproductive to start split testing activities until you have high scores in Lighthouse.** 
 
