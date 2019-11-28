@@ -9,7 +9,7 @@ header:
   overlay_image: /images/website-performance-series/marc-olivier-jodoin-nqoinj-ttqm-unsplash.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 comments: true
-published: false
+published: true
 ---
 
 <section id="table-of-contents" class="toc">
@@ -36,9 +36,12 @@ We didn't really do too bad, with a Performance score of 77, which positions us 
 
 ## Opportunities for improvement according to Lighthouse
 For this simple site, there is just one major issue category really. All the opportunities for improvement is related to the site images. Obviously our use the [Minimal Mistakes Jekyll](https://mmistakes.github.io/minimal-mistakes/) theme helped a lot in us scoring highly in the other categories. These minor image issues are caused by no other than yours truly, but they were quite easy to rectify<sup>*</sup>.
+
 <figure>
 	<a href="../../images/website-performance-series/lighthouse-results-opportunities.png"><img src="../../images/website-performance-series/lighthouse-results-opportunities.png"></a><figcaption>Figure: Lighthouse opportunities for improvement</figcaption>
 </figure>
+
+There is a long list of improvement suggestions from Lighthouse, but the following are noteworthy:
 
 ### Serve images in next-gen formats
 In our case I have chosen to use [Google's WebP format](https://developers.google.com/speed/webp) instead of the usual PNG and JPG formats. For the same quality, WebP typically achieves about 25% to 35% smaller files than PNG and JPG for the same visible image quality. However the only problem against this clearly more superior data format is that [not all browsers support it](https://caniuse.com/#search=webp), even though WebP has been around since 2010.
@@ -54,12 +57,12 @@ Using WebP is straightforward when using the Html `picture` tag. It is not that 
 </figure>
 
 If you have thousands of images, and if you did not want the overhead of running a script at build time to generate WebP versions of your images (you would still need the jpg versions created for fallback), you can use an image handler that supports runtime conversion to WebP format. [In a previous post](/serverless-image-handler/), I discussed how to create an AWS image handler quite easily. We can use AWS Serverless Image Handler - either v3 or v4 has support for runtime WebP format generation. It even has CloudFront in front of it to provide cached access to the API. 
-### Properly size and encode images
 
-### Load 3rd party JS faster
+### Properly size and encode images
+The images that you host on your website should be the optimal quality for the page it is in. Ideally you should not serve images that are larger than required for the user's screen. This means that using a single image to serve your multiple page breakpoints to support responsiveness is probably not the best way to do it. You can have as many versions of the image as you have breakpoints, I know this is more work however, there are tools that can assist in automating the generation of these multiple formats. More detailed suggestions can be found [direct from the source](https://developers.google.com/web/tools/lighthouse/audits/oversized-images?utm_source=lighthouse&utm_medium=devtools).
 
 ### Consider using gzip compression
-Ask for gzip compression from your server. And if your server supports it, it will respond with compressed payload. Of course because Github pages used Nginx under the covers, it supports gzip compression and we get that by default.  
+Ask for gzip compression from your server. And if your server supports it, it will respond with compressed payload. Of course because Github pages used [Nginx](https://www.nginx.com/) under the covers, it supports gzip compression and we get that by default.  
 
 ### Serve static assets with an efficient cache policy
 To instruct the browser to cache your static pages, you can change the [Cache-Control header](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching#defining-optimal-cache-control-policy) to have a longer time. For this site, Github Pages fixed the `max-age` to 600 seconds or 10 minutes, after which it will need to fetch from the server again. Lighthouse complains that 600 seconds is not enough, so you could try 86400 seconds which I know it is fine with. 
@@ -72,20 +75,25 @@ A big gotcha here is that you cannot change your response headers in Github page
 
 Another option is to use resources in CDN. For example for the FontAwesome file `https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/js/all.min.js`, instead of hosting it myself, and be limited by the max-age of 600 seconds imposed by Github pages, I decided to use FontAwesome CDNs which have a max-age of 86400 seconds. Plus you get the advantage of the multiple edge locations that the CNDs can give you. 
 
+Finally we have achieved all green! If this was an important page to for you, then this is the perfect time to run your experiments with the many packages like [Optimizely](https://www.optimizely.com/anz/), or [Freshmarketer](https://www.freshworks.com/marketing-automation/).
+
+**It is counterproductive to start split testing activities until you have high scores in Lighthouse.** 
+
 <figure>
 	<a href="../../images/website-performance-series/lighthouse-improvement.png"><img src="../../images/website-performance-series//lighthouse-improvement.png"></a><figcaption>Figure: Lighthouse improvements</figcaption>
 </figure>
   
-## Conclusion
+## My Picks
+From this post onwards, I plan list down a couple of my choice picks, which doesn't have to be software related, it just needs to have had an impact to me in the past couple of weeks:
 
-## Picks
-- dfdfad
-- adfad
-- adfad
+- [Bullet Journal](https://bulletjournal.com/) - The Analog Method for the Digital Age 
+- [Kayaking in Sydney](https://www.sydney.com/things-to-do/beach-lifestyle/kayaking?gclid=CjwKCAiA_f3uBRAmEiwAzPuaMzkxjf1dVBST0GdKyaM_bOHCfNGYuFZkadCgBNv7WMCLLsYgntba2BoC0QYQAvD_BwE&gclsrc=aw.ds) - Experience the best of Sydney's waterways
+- [Dance Monkey](https://www.youtube.com/watch?v=q0hyYWKXF0Q) by Tones and I
 
 ## Resources
 - [Let's build the future of the web](https://web.dev/)
-- [Optimizing Web Performance](https://speckyboy.com/optimizing-web-performance/)
-- [How speed affects website](https://hostingtribunal.com/blog/how-speed-affects-website/)
+- [Javascript Performance Optimizations](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/javascript-startup-optimization/)
+- [HTTP Caching](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching#defining-optimal-cache-control-policy)
+- [Loading 3rd Party Javascript](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript)
 
   
