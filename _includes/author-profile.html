@@ -42,7 +42,7 @@
     {% endif %}
     {% if author.cert %}
     <a href="{{ author.cert-url }}">
-      <picture>
+      <picture style="margin-left: -8px;">
           <source type="image/jpeg" srcset="{{author.cert-img}}">
           <img src="{{author.cert-img}}" alt="{{ author.name }}" itemprop="image">
       </picture>
