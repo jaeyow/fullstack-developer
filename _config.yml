@@ -111,13 +111,13 @@ author:
   bio              : "Full stack software developer, keen marathoner and triathlete. All around nice guy.  🏊🏼‍♂️🚴🏼‍♂️🏃🏽"
   location         : "Sydney NSW"
   email            :
+  cert             : "AWS Certified Developer - Associate"
+  cert-url         : "https://www.certmetrics.com/amazon/public/badge.aspx?i=2&t=c&d=2019-12-18&ci=AWS01182439"
+  cert-img         : "/images/aws-certified-logo_color-horz_270x45.png"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       # url: mailto:your.name@email.com
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/joreyes/"      
