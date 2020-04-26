@@ -6,7 +6,7 @@ modified: 2020-02-09
 date: 2020-02-09
 tags: [React, state management, Context API, Redux, MobX]
 header: 
-  overlay_image: /images/lucas-benjamin-wQLAGv4_OYs-unsplash.jpg
+  overlay_image: /images/react-state-management/lucas-benjamin-wQLAGv4_OYs-unsplash.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 comments: true
 published: true
@@ -133,7 +133,7 @@ store.subscribe(render);
 
 {% endhighlight %}
 
-Github link to the source](https://github.com/jaeyow/react-state-management)
+[Github link to the source](https://github.com/jaeyow/react-state-management)
 
 ## The MobX approach
 
