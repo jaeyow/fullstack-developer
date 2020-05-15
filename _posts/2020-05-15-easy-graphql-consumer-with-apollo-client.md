@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: Simple GraphQL consumer with Apollo Client 
-excerpt: Creating our own GraphQL client in ReactJS
+excerpt: A GraphQL web client in ReactJS and Apollo
 modified: 2020-05-15
 date: 2020-05-15
 tags: [GraphQL, Apollo Client, Github Actions, Formula 1, AWS S3]
@@ -127,6 +127,8 @@ I have shown the integration in ReactJS above, however, many other platforms are
 Today's article is a concise introduction to Apollo Client, and and the sample application demonstrates that creating a GraphQL client is simple specially if you use Apollo Client. With it's declarative style, caching, developer tools and easy integration with your project, you can get started and be productive in no time.
 
 Please try [F1 GraphQL Client live](https://f1-graphql-client.s3.amazonaws.com/index.html) here! [Source code for F1 GraphQL Client](https://github.com/jaeyow/f1-graphql) is available here.
+
+![Production Build](https://github.com/jaeyow/f1-graphql/workflows/Production%20Build/badge.svg)
 
 ## My Picks
 These picks are things that have had a positive impact to me in recent weeks:
