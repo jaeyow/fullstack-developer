@@ -133,7 +133,7 @@ Please try [F1 GraphQL Client live](https://f1-graphql-client.s3.amazonaws.com/i
 ## My Picks
 These picks are things that have had a positive impact to me in recent weeks:
 
-- [AWS ReInvent 2019 Amazon DynamoDB Deep Dive](https://www.youtube.com/watch?v=6yqfmXiZTlM&t=2951s) - Hands down the best material out there on DynamoDB. Lots of Aha moments in this one. When I started learning DynamoDB I find myself watching over and over again.
+- [AWS ReInvent 2019 Amazon DynamoDB Deep Dive](https://www.youtube.com/watch?v=6yqfmXiZTlM&t=2951s) - Hands down the best material out there on DynamoDB. Lots of Aha moments in this one. When I started learning DynamoDB I find myself watching this over and over again.
 - [International Cycling (and Running) without leaving your house](https://zwift.com/) - In this age of months long lockdowns, I have never really left cycling thanks to [Zwift](https://zwift.com/).   
 
 ## Resources
