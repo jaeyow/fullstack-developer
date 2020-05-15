@@ -78,27 +78,27 @@ export default function QualifyingResultsTable() {
 
   return (
     <TableContainer component={Paper}>
-        <Table className={classes.table} aria-label="simple table">
-            {/*... removed for brevity ...*/}
-            <TableBody>
-                {
-                    quals &&
-                    quals.map((result, row_i) => {                        
-                        return (
-                            <TableRow key={row_i}>
-                                <TableCell align="left" component="th" scope="row">{result.position}</TableCell>
-                                <TableCell align="left">{result.number}</TableCell>
-                                <TableCell align="left">{result.Driver.givenName}</TableCell>
-                                <TableCell align="left">{result.Constructor.name}</TableCell>
-                                <TableCell align="left">{result.Q1}</TableCell>
-                                <TableCell align="left">{result.Q2}</TableCell>
-                                <TableCell align="left">{result.Q3}</TableCell>
-                            </TableRow>
-                        );
-                    })
-                }
-            </TableBody>
-        </Table>
+      <Table className={classes.table} aria-label="simple table">
+        {/*... removed for brevity ...*/}
+        <TableBody>
+          {
+            quals &&
+            quals.map((result, row_i) => {                        
+            return (
+              <TableRow key={row_i}>
+                <TableCell align="left" component="th" scope="row">{result.position}</TableCell>
+                <TableCell align="left">{result.number}</TableCell>
+                <TableCell align="left">{result.Driver.givenName}</TableCell>
+                <TableCell align="left">{result.Constructor.name}</TableCell>
+                <TableCell align="left">{result.Q1}</TableCell>
+                <TableCell align="left">{result.Q2}</TableCell>
+                <TableCell align="left">{result.Q3}</TableCell>
+              </TableRow>
+            );
+            })
+          }
+        </TableBody>
+      </Table>
     </TableContainer>
   );
 }
