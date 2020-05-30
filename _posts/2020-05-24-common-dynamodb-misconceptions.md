@@ -93,6 +93,14 @@ Today we covered the top 5 common misconceptions about NoSQL and DynamoDB in par
 
 The two references I have listed in the Resources below taught me everything I needed to know about DynamoDB. However I did my part too. Putting a bit of effort in getting to know DynamoDB a little bit better resulted me not only debunking these misconceptions, but enabled me to use DynamoDB as AWS intended.
 
+In the next articles about DynamoDB, we will explore:
+
+- The approach I use to effectively design my DynamoDB tables
+  
+- Use DynamoDB how Amazon intended through an example project and walkthrough
+  
+- Migrating an existing DynamoDB project when you need to add access patterns unknown when first developed
+
 ## My Picks
 
 These picks are things that have had a positive impact to me in recent weeks:
