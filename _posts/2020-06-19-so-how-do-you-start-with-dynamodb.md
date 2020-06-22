@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: DynamoDB and Single-Table Design 
-excerpt: Follow along as I implement DynamoDB Single-Table Design from scratch - find out the tools and methods I use to make the process easier, and finally the light-bulb moment 💡 when it all made sense!
+excerpt: Follow along as I implement DynamoDB Single-Table Design - find out the tools and methods I use to make the process easier, and finally the light-bulb moment 💡 when it all made sense!
 modified: 2020-06-19
 date: 2020-06-19
 tags: [DynamoDB, NoSQL, Single-Table Design, Serverless, NodeJS, Formula 1]
