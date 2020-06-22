@@ -117,7 +117,7 @@ With single-table design, because we are storing multiple entity types in the sa
 
 Unlike in multiple-table design where you can be more descriptive of your primary key and sort key names to reflect more closely what items the table contains.
 
-And here is a screenshot of NoSQL Workbench visualizing in <span style="color:red">Red</span> the **Season** item collection, containing both **RaceItem**(<span style="color:green">Green</span>) and **ResultItem**(<span style="color:blue">Blue</span>) data. These related race data can be requested in a single request, simulating the join-like behavior in RDBMS, and this is where the penny dropped for me!
+And here is a screenshot of NoSQL Workbench visualizing in <span style="color:red">Red</span> the **Season** item collection, containing both **RaceItem**(<span style="color:green">Green</span>) and **ResultItem**(<span style="color:blue">Blue</span>) data. These related race data can be requested in a single request, simulating the join-like behavior in RDBMS, and this is when the penny dropped for me!
 
 <figure>
 	<a href="../images/single-table-design/nosql-workbench-item-collection.png"><img src="../images/single-table-design/nosql-workbench-item-collection.png"></a><figcaption>Figure 4: NoSQL Workbench screenshot of the Season Item collection</figcaption>
@@ -174,7 +174,7 @@ I have loaded a minimal data set for the API so that we can quickly invoke our n
 
 We covered a bit of ground with our DynamoDB learnings in this article. DynamoDB plays a very important role inside Amazon where they have migrated hundreds of mission critical and thousands of secondary services.
 
-However, it still gets a bad reputation from the developer community. It is important to understand that in adopting a new technology like DynamoDB, one should learn how to use it the correct way before applying it in production.
+However, it still gets mixed reviews from the developer community. It is important to understand that in adopting a new technology like DynamoDB, one should learn how to use it the correct way before applying it in production.
 
 Developers who are experts in RDBMS technology by default apply that same method to DynamoDB, but that just does not work. They find that as they scale, their application becomes slower and slower, or more expensive to run, or both.
 
