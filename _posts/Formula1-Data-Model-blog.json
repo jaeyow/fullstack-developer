@@ -1,0 +1,244 @@
+{
+  "ModelName": "Formula 1 Data Model",
+  "ModelMetadata": {
+    "Author": "Jose Reyes",
+    "DateCreated": "May 21, 2020, 10:35 PM",
+    "DateLastModified": "Jun 14, 2020, 07:57 AM",
+    "Description": "",
+    "Version": "1.0"
+  },
+  "DataModel": [
+    {
+      "TableName": "Formula1",
+      "KeyAttributes": {
+        "PartitionKey": {
+          "AttributeName": "PK",
+          "AttributeType": "S"
+        },
+        "SortKey": {
+          "AttributeName": "SK",
+          "AttributeType": "S"
+        }
+      },
+      "NonKeyAttributes": [
+        {
+          "AttributeName": "SeasonUrl",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "RaceName",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "CircuitName",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "RaceDate",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "SeasonId",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "Type",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "Laps",
+          "AttributeType": "N"
+        },
+        {
+          "AttributeName": "FinishTime",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "FinishStatus",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "DriverId",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "DriverName",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "ConstructorId",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "ConstructorName",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "FinishPosition",
+          "AttributeType": "N"
+        },
+        {
+          "AttributeName": "DriverNumber",
+          "AttributeType": "N"
+        },
+        {
+          "AttributeName": "FinishPoints",
+          "AttributeType": "N"
+        }
+      ],
+      "TableData": [
+        {
+          "PK": {
+            "S": "SEASON#2019"
+          },
+          "SK": {
+            "S": "SEASON#2019"
+          },
+          "SeasonUrl": {
+            "S": "2019 Url"
+          }
+        },
+        {
+          "PK": {
+            "S": "SEASON#2018"
+          },
+          "SK": {
+            "S": "SEASON#2018"
+          },
+          "SeasonUrl": {
+            "S": "2018 Url"
+          }
+        },
+        {
+          "PK": {
+            "S": "SEASON#2019"
+          },
+          "SK": {
+            "S": "RACE#1"
+          },
+          "RaceName": {
+            "S": "Australian Grand Prix"
+          },
+          "CircuitName": {
+            "S": "Albert Park Grand Prix Circuit"
+          },
+          "RaceDate": {
+            "S": "2019-03-17"
+          }
+        },
+        {
+          "PK": {
+            "S": "SEASON#2019"
+          },
+          "SK": {
+            "S": "RACE#2"
+          },
+          "RaceName": {
+            "S": "Bahrain Grand Prix"
+          },
+          "CircuitName": {
+            "S": "Bahrain International Circuit"
+          },
+          "RaceDate": {
+            "S": "2019-03-31"
+          }
+        },
+        {
+          "PK": {
+            "S": "SEASON#2018"
+          },
+          "SK": {
+            "S": "RACE#1"
+          },
+          "RaceName": {
+            "S": "Australian Grand Prix"
+          },
+          "CircuitName": {
+            "S": "Albert Park Grand Prix Circuit"
+          },
+          "RaceDate": {
+            "S": "2018-03-25"
+          }
+        },
+        {
+          "PK": {
+            "S": "SEASON#2019"
+          },
+          "SK": {
+            "S": "RACE#1#RESULT#1"
+          }
+        },
+        {
+          "PK": {
+            "S": "SEASON#2019"
+          },
+          "SK": {
+            "S": "RACE#1#RESULT#2"
+          }
+        },
+        {
+          "PK": {
+            "S": "SEASON#2019"
+          },
+          "SK": {
+            "S": "RACE#1#RESULT#3"
+          }
+        },
+        {
+          "PK": {
+            "S": "F1#SEASONS"
+          },
+          "SK": {
+            "S": "SEASON#2018"
+          },
+          "SeasonUrl": {
+            "S": "2018 url"
+          },
+          "SeasonId": {
+            "S": "2018"
+          },
+          "Type": {
+            "S": "SeasonItem"
+          }
+        },
+        {
+          "PK": {
+            "S": "F1#SEASONS"
+          },
+          "SK": {
+            "S": "SEASON#2017"
+          },
+          "SeasonUrl": {
+            "S": "2017 url"
+          },
+          "SeasonId": {
+            "S": "2017"
+          },
+          "Type": {
+            "S": "SeasonItem"
+          }
+        },
+        {
+          "PK": {
+            "S": "F1#SEASONS"
+          },
+          "SK": {
+            "S": "SEASON#2019"
+          },
+          "SeasonUrl": {
+            "S": "2019 url"
+          },
+          "SeasonId": {
+            "S": "2019"
+          },
+          "Type": {
+            "S": "SeasonItem"
+          }
+        }
+      ],
+      "DataAccess": {
+        "MySql": {}
+      }
+    }
+  ]
+}
