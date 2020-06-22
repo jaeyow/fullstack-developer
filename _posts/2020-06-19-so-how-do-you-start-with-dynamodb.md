@@ -24,7 +24,7 @@ published: true
 
 ## Part of the [DynamoDB Series](../tags/#dynamodb)
 
-Before I first started working with DynamoDB, I thought that working with NoSQL databases like DynamoDB is easy, akin to any relational database I'm used to. I realized that DynamoDB is different, and a there is a somewhat steep learning curve involved.
+Before I first started working with DynamoDB, I thought that working with NoSQL databases like DynamoDB is easy, similar to any relational database I'm used to. I realized that DynamoDB is different, and there is a steep learning curve involved.
 
 To reap all the benefits of DynamoDB, you have to use it [how Amazon intended](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-general-nosql-design.html){:target="_blank"} - using as few tables as possible, ideally a single table per application, instead of the usual one-table-per-entity method that we have been doing with RDBMS all these time.
 
@@ -127,15 +127,15 @@ And here is a screenshot of NoSQL Workbench visualizing in <span style="color:re
 
 OK, now this is when we start looking at some real code! First of all, I have [F1 DynamoDB in Github](https://github.com/jaeyow/f1-dynamodb){:target="_blank"}, so if you want to, clone this repo and do anything that you want with it! Source code has been adapted from [The DynamoDB Book](https://www.dynamodbbook.com/){:target="_blank"}, props to Alex for creating an excellent DynamoDB resource.
 
-#### Step 1 - Defining the serverless setup
+- Step 1 - Defining the serverless setup
 
 The very first thing is to add Serverless setup in [serverless.yml](https://github.com/jaeyow/f1-dynamodb/blob/master/serverless.yml){:target="_blank"} file. I am a proponent of infrastructure-as-code and Serverless enables us to do this easily.
 
 Our Serverless configuration does the following noteworthy items:
 
-- creates/updates the DynamoDB resources, including specifying **On-Demand** provisioning
-- creates/updates the AWS Lambda containing the API
-- enables running the Lambda for local development
+  1. creates/updates the DynamoDB resources, including specifying **On-Demand** provisioning
+  1. creates/updates the AWS Lambda containing the API
+  1. enables running the Lambda for local development
 
 ![alt text](../images/single-table-design/serverless-deployment.png "Serverless Deployment")
 *Figure 5: Output of the Serverless DynamoDB deployment*
@@ -145,27 +145,27 @@ And in the file [package.json](https://github.com/jaeyow/f1-dynamodb/blob/master
 ![alt text](../images/single-table-design/serverless-offline-debug.png "Serverless Offline for Debug")
 *Figure 6: Output of the Serverless offline for local development*
 
-#### Step 2 - Defining your entities
+- Step 2 - Defining your entities
 
 Based on our [ERD we have 3 entities](#2-creating-the-entity-relationship-diagram){:target="_blank"} - seasons, races, and results. This corresponds to our 3 entities in our application. [Seasons](https://github.com/jaeyow/f1-dynamodb/blob/master/entities/f1Seasons.js){:target="_blank"}, [Races](https://github.com/jaeyow/f1-dynamodb/blob/master/entities/races.js){:target="_blank"} and [Results](https://github.com/jaeyow/f1-dynamodb/blob/master/entities/results.js){:target="_blank"}.
 
-#### Step 3 - Defining your data access layer
+- Step 3 - Defining your data access layer
 
 Each Entity will also have a data access code to talk to DynamoDB using [AWS-SDK](https://aws.amazon.com/sdk-for-node-js/) - [Seasons](https://github.com/jaeyow/f1-dynamodb/blob/master/data/getF1Seasons.js){:target="_blank"}, [Races](https://github.com/jaeyow/f1-dynamodb/blob/master/data/getF1SeasonRaces.js){:target="_blank"} and [Results](https://github.com/jaeyow/f1-dynamodb/blob/master/data/getRaceResults.js){:target="_blank"}.
 
-#### Step 4 - Defining your Lambda handlers
+- Step 4 - Defining your Lambda handlers
 
 Finally we define our lambda handlers to enable the functionality to be exposed to the world. Following the previous pattern, we also have one handler for each entity - [Season](https://github.com/jaeyow/f1-dynamodb/blob/master/handlers/getF1Seasons.js){:target="_blank"}, [Races](https://github.com/jaeyow/f1-dynamodb/blob/master/handlers/getF1SeasonRaces.js){:target="_blank"} and [Results](https://github.com/jaeyow/f1-dynamodb/blob/master/handlers/getRaceResults.js){:target="_blank"}.
 
-#### Step 5 - Call the APIs
+- Step 5 - Call the APIs
 
 I have loaded a minimal data set for the API so that we can quickly invoke our new serverless functions. Ideally we will need some ETL process or some scripting to load the database with our seed data. I have created a sample [Python script](https://github.com/jaeyow/f1-dynamodb/blob/master/scripts/upsert-items-from-csv.py){:target="_blank"} that can be used for this purpose. The following are the 3 queries created by the preceding steps:
 
-- [Get F1 Seasons](https://nztmcl1r5d.execute-api.us-east-1.amazonaws.com/prod/f1-seasons){:target="_blank"}
+  1. [Get F1 Seasons](https://nztmcl1r5d.execute-api.us-east-1.amazonaws.com/prod/f1-seasons){:target="_blank"}
 
-- [Get Season Races](https://nztmcl1r5d.execute-api.us-east-1.amazonaws.com/prod/f1-season-races/2017){:target="_blank"}
+  2. [Get Season Races](https://nztmcl1r5d.execute-api.us-east-1.amazonaws.com/prod/f1-season-races/2017){:target="_blank"}
 
-- [Get Race Results](https://nztmcl1r5d.execute-api.us-east-1.amazonaws.com/prod/f1-race-results/2017/1){:target="_blank"}
+  3. [Get Race Results](https://nztmcl1r5d.execute-api.us-east-1.amazonaws.com/prod/f1-race-results/2017/1){:target="_blank"}
   
 ![alt text](../images/single-table-design/lambda-api-f1-results.png "Lambda API Formula 1 Results")
 *Figure 7: Lambda API Formula 1 Results using Postman*  
@@ -174,11 +174,11 @@ I have loaded a minimal data set for the API so that we can quickly invoke our n
 
 We covered a bit of ground with our DynamoDB learnings in this article. DynamoDB plays a very important role inside Amazon where they have migrated hundreds of mission critical and thousands of secondary services.
 
-However, it still gets a bad reputation from the developer community. It is important to understand that in adopting a new technology like DynamoDB, one should learn how to use that technology the correct way before using it in production.
+However, it still gets a bad reputation from the developer community. It is important to understand that in adopting a new technology like DynamoDB, one should learn how to use it the correct way before applying it in production.
 
-Developers can be experts in RDBMS technology and by default apply that method to DynamoDB, but that just does not work. Doing so, they find that as they scale, their application becomes slower and slower, or more expensive to run, or both.
+Developers who are experts in RDBMS technology by default apply that same method to DynamoDB, but that just does not work. They find that as they scale, their application becomes slower and slower, or more expensive to run, or both.
 
-We were introduced to the single-table method - the recommended (yet lesser known) way to model data in DynamoB. DynamoDB promises single-digit millisecond latency, however to achieve this, one should be ready to compromise.
+We were introduced to the single-table method - the recommended (yet lesser known) way to model data in DynamoDB. DynamoDB promises single-digit millisecond latency, however to achieve this, one should be ready to accept the compromises.
 
 If DynamoDB is good enough for Amazon, it's good enough for me too.
 
@@ -186,9 +186,9 @@ If DynamoDB is good enough for Amazon, it's good enough for me too.
 
 These picks are things that have had a positive impact to me in recent weeks:
 
-- [SpaceX](https://www.spacex.com/) - Keep this site in your bookmarks to keep tabs on SpaceX, exciting to see every launch, feeds the planet's imagination.
-- [Easy Recipes with your Crock Pot multi-cooker](https://www.crockpot.com.au/) - Rediscovered my love for cooking - with more time available due to work-from-home arrangements, this kitchen gadget makes cooking fin again.
-- [Call For Code](https://callforcode.org/) - Create open source solutions that make an immediate and lasting impact.
+- [SpaceX](https://www.spacex.com/){:target="_blank"} - Keep this site in your bookmarks to keep tabs on SpaceX, exciting to see every launch, feeds the planet's imagination.
+- [Easy Recipes with your Crock Pot multi-cooker](https://www.crockpot.com.au/){:target="_blank"} - Rediscovered my love for cooking - with more time available due to work-from-home arrangements, this kitchen gadget makes cooking fun again.
+- [Call For Code](https://callforcode.org/){:target="_blank"} - Create open source solutions that make an immediate and lasting impact.
 
 ## Resources
 - [NoSQL Design for DynamoDB - AWS DynamoDB Developer Guide ](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-general-nosql-design.html){:target="_blank"}
