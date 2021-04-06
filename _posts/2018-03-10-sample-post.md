@@ -3,7 +3,7 @@ layout: posts
 title: Sample Post
 excerpt: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
 modified: 2018-03-10
-published: false
+published: true
 tags: [intro, beginner, jekyll, tutorial]
 comments: true
 image:
