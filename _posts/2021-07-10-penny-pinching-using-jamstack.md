@@ -1,10 +1,10 @@
 ---
 layout: posts
 title: Penny Pinching using the Jamstack Architecture 
-excerpt: Volunteering my software development services allows me to think outside the box and help organizations and non-profits achieve their goal of an awesome web presence without breaking the bank
+excerpt: How to ace your Core Web Vitals without breaking the bank, hint, its FREE!
 modified: 2021-07-10
 date: 2021-07-10
-tags: [Jamstack, volunteering, penny pinching, Gatsby]
+tags: [Jamstack, volunteering, penny pinching, Gatsby, Lighthouse, Core Web Vitals]
 header: 
   overlay_image: /images/jamstack/jonathan-pielmayer-c69hk1hkhys-unsplash.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
@@ -38,7 +38,11 @@ Sometime later, I started hearing about static websites using frameworks like [H
 
 I gave them a try, in fact I have moved this [blog](https://fullstackdeveloper.tips/) to Jekyll and Github pages.
 
-That was great and it opened my eyes to the this 'new' architecture they call the [Jamstack](https://jamstack.org/) architecture. **J** for Javascript, **A** for API, and **M** for Markup. It was supposedly the modern way to build websites and apps that delivers better performance.
+That was great and it opened my eyes to the this 'new' architecture they call the [Jamstack](https://jamstack.org/) architecture.
+
+**J** for Javascript, **A** for API, and **M** for Markup.
+
+It was supposedly the modern way to build websites and apps that delivers better performance.
 
 ![alt text](../images/jamstack/Jamstack_Logo_Original_Solid.png "Jamstack")
 
@@ -86,7 +90,7 @@ And I did it in a few simple steps:
 
 1. Once I was happy with the website running locally, I was now ready to deploy it to Netlify. By default, they deploy it to a randomly generated domain name (eg. dfadfad-fadfa.netlify.com), however you can easily transfer it to your preferred domain name. Getting your custom domain cost money, but that is the only cash outlay for this project.
 
-1. Result is a **free super-fast static generated website** based on the modern Jamstack architecture. You get that for free with GatsbyJS as performance is built-in the framework. I am pleased with that honestly, and yeah I was able to save the club **$200 per year**, how about that!
+1. Result is a **free super-fast static generated website** based on the modern Jamstack architecture. The speed you get for free courtesy of GatsbyJS as performance is built-in the framework. I am pleased with that honestly, and yeah I was able to save the club **$200 per year**, how about that!
 
 ![alt text](../images/jamstack/lighthouse-blazing-fast.png "Lighthouse blazing fast")
 
