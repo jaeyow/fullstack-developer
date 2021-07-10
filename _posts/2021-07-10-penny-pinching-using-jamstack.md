@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: Penny Pinching using the Jamstack Architecture 
-excerpt: How to ace your Core Web Vitals without breaking the bank, hint, its FREE!
+excerpt: How to ace your Core Web Vitals without breaking the bank, hint, its FREE! With Netlify, Github and GatsbyJS. 
 modified: 2021-07-10
 date: 2021-07-10
 tags: [Jamstack, volunteering, penny pinching, Gatsby, Lighthouse, Core Web Vitals]
