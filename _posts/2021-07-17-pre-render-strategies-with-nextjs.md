@@ -22,9 +22,13 @@ published: true
   </div>
 </section>
 
+[Github Repo is available](https://github.com/jaeyow/nextjs-trials) for the demo app used in this article.
+
 ## A Quick introduction to NextJS
 
-In the [last blog post](../penny-pinching-using-jamstack/), we were talking about the use of GatsbyJS as an option to create modern performant websites in the React ecosystem. It was created with performance in mind and get around the issues that were typical of client rendered javascript. 
+In the [last blog post](../penny-pinching-using-jamstack/), we were talking about the use of GatsbyJS as an option to create modern performant websites in the React ecosystem. It was created with performance in mind and get around the web performance and SEO issues that were typical of client rendered javascript.
+
+![alt text](../images/nextjs/2560px-Nextjs-logo.svg.png "Next JS")
 
 In this article, we will be introducing [NextJS](https://nextjs.org/), a modern Javascript framework with similar objectives as GatsbyJS, however, while the latter focuses on the static generation of pages, NextJS has a more complete approach where it focuses on great DX (developer experience), fuss-free NextJS deployment, static generation, server side rendering and a combined (static and server-rendered) hybrid model. And of course client side rendering since it is after all still a React application.
 
@@ -35,6 +39,12 @@ NextJS is a feature rich framework, and has many capabilities, however, we will 
 ## Comparison of the different pre-rendering options in NextJS
 
 For this article, I have built a [small project](https://github.com/jaeyow/nextjs-trials) to illustrate these pre-rendering options. This article, like all the ones I have created in this website, are really future notes to myself disguised as blog posts. So I do hope that you will find these tips useful, as much as I had fun researching and trying them out.
+
+[Static Generated Page](https://nextjs-trials.vercel.app/){:target="_blank"}
+
+[Server Side Rendered Page](https://nextjs-trials.vercel.app/server-side){:target="_blank"}
+
+[Client Side Rendered Page](https://nextjs-trials.vercel.app/client-side){:target="_blank"}
 
 If you want to follow along, please clone the above project to your local development environment and open the folder with VSCode. 
 
@@ -78,7 +88,6 @@ export async function getStaticProps() {       // to static generate
 {% endhighlight js %}
 
 Above shows a [code snippet from the SSG page](https://github.com/jaeyow/nextjs-trials/blob/main/pages/index.js), showing that NextJS allows you to also get some data at build time (ie. using an API, read from DB, or from a file) in the process of generating the static html. NextJS makes this all possible using NextJS' [`getStaticProps`](https://nextjs.org/docs/basic-features/data-fetching). This is a function that NextJS calls at build time, so all you have to do is return `props` and that data will be available to your application.
-
 
 [![alt text](../images/nextjs/nextjs-static-site-generated.png "Static Generated Page in Next JS")](../images/nextjs/nextjs-static-site-generated.png)
 
@@ -135,7 +144,7 @@ Instead of the usual flash of empty screen in a typical React application, we ca
 
 [![alt text](../images/nextjs/nextjs-client-side-rendered.png "Client Side Rendered Page in Next JS")](../images/nextjs/nextjs-client-side-rendered.png)
 
-> Image above shows the client rendered page in action. The statically rendered part returns to the browser in speedy 40.90 ms, and we have achieved FCP and LCP of 79.7 ms. However, notice the delayed call to the GraphQL API. Client side rendering is also an option where we can quickly return some content, then rehydrate to complete the page. 
+> Image above shows the client rendered page in action. The statically rendered part returns to the browser in speedy 40.90 ms, and we have achieved FCP and LCP of 79.7 ms. However, notice the delayed call to the GraphQL API. Client side rendering is also an option where we can quickly return some content, then rehydrate to complete the page. Interestingly, Lighthouse is detecting a Layout Shift (LS) of 1265.1 ms and too many shifts on a page will adversely affect the Cumulative Layout Shift (CLS) metric for the page.
 
 I have the [client side code](https://github.com/jaeyow/nextjs-trials/blob/main/pages/client-side.js) available here too. We have used `useEffect` hook to ensure that we are calling the API only on the client side. 
 
