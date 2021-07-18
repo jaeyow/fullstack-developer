@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: Pre-render strategies in NextJS
-excerpt: Static Site Generated, Server Side Rendered or Client Side Rendered, what's the difference? 
+excerpt: Static Site Generation, Server Side Render or Client Side Render, what's the difference? 
 modified: 2021-07-17
 date: 2021-07-17
 tags: [Jamstack, GraphQL, NextJS, Static Site Generation, Server Side Render, Client Side Render]
