@@ -38,7 +38,7 @@ In this short article, let's investigate why React Context did not quite work as
 
 Below I have created a Context Provider for our simple application. This context provides a counter and functions to increment and decrement its value. We also have a counter name and its setter. This code is also available [in this Code Sandbox](https://codesandbox.io/s/xifmu){:target="_blank"}.
 
- {% highlight js %}
+ {% highlight jsx linenos %}
 import React, { useState } from "react";
 
 const defaultValue = {
@@ -85,7 +85,7 @@ First we have a **Card** component that renders our card component containing ou
 
 You know when a component state and props changes, the component re-renders? This is the same with components that consume a context. When the context changes, the component that consumes that context will get a re-render to give it a chance to update itself.
 
-{% highlight js %}
+{% highlight jsx linenos %}
 import { useContext, useEffect } from "react";
 import { AppContext } from "./AppContext";
 
@@ -111,7 +111,7 @@ In the snippet below, I have wrapped each consumer component **Card** with our *
 
 However, to my surprise the code below does not work as intended. Can you guess why?
 
-{% highlight js %}
+{% highlight jsx linenos %}
 import AppContextProvider from "./AppContext";
 import { Card } from "./Card";
 import "./styles.css";
@@ -144,7 +144,7 @@ It turns out that in the above code, we are actually creating 3 separate context
 
 To fix this issue, instead of creating multiple contexts, we need to move the **AppContextProvider** up the tree to create the single context, effectively creating the global context that all the counters share. Like so: 
 
-{% highlight js %}
+{% highlight jsx linenos %}
 import AppContextProvider from "./AppContext";
 import { Card } from "./Card";
 import "./styles.css";
