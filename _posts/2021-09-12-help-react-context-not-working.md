@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: Help! React Context does not work!
+title: Updating React Context does not update my component
 excerpt: Updating Context will re-render context consumers, only in this example, it doesn't
 modified: 2021-09-12
 date: 2021-09-12
