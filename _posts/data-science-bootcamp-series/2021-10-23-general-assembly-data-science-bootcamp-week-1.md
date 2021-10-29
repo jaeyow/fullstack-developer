@@ -4,7 +4,7 @@ title: Data Science Bootcamp - Week 1
 excerpt: Follow along as I go through General Assembly's 10-week Data Science Bootcamp
 modified: 2021-10-22
 date: 2021-10-22
-tags: [General Assembly, Bootcamp, Data Science]
+tags: [General Assembly Bootcamp, Data Science]
 header: 
   overlay_image: /images/general-assembly/sajad-nori-xihagoynhn4-unsplash.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
@@ -22,6 +22,7 @@ published: true
   </div>
 </section>
 
+### Part of the [General Assembly Data Science Bootcamp Series](../tags/#general-assembly-bootcamp)
 
 ## I enrolled in a Bootcamp
 
