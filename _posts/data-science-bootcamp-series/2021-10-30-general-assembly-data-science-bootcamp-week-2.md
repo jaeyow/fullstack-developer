@@ -21,7 +21,7 @@ published: true
   </div>
 </section>
 
-## Part of the [General Assembly Data Science Bootcamp Series](../tags/#general-assembly-bootcamp)
+### Part of the [General Assembly Data Science Bootcamp Series](../tags/#general-assembly-bootcamp)
 
 ## Week 2 - Exploratory Data Analysis in Pandas
 
