@@ -1,9 +1,9 @@
 ---
 layout: posts
-title: Data Science Bootcamp - Week 2
-excerpt: We explore Exploratory Data Analysis in Pandas and start thinking about the course Capstone Project
-modified: 2021-10-29
-date: 2021-10-29
+title: Data Science Bootcamp - Week 3
+excerpt: On the third week the GA Data Science bootcamp, we explore ideas for the Capstone Project
+modified: 2021-11-06
+date: 2021-11-06
 tags: [General Assembly Bootcamp, Data Science]
 header: 
   overlay_image: /images/general-assembly/sajad-nori-xihagoynhn4-unsplash.jpg
@@ -23,15 +23,15 @@ published: true
 
 #### Part of the [General Assembly Data Science Bootcamp Series](../tags/#general-assembly-bootcamp)
 
-## Week 2 - Exploratory Data Analysis in Pandas
+## Week 3 - More Pandas
 
-The advantage of being already proficient in one or more programming languages is that learning Python (or any other programming language for that matter) is relatively easy. I say that with a bit of a caveat though. Python is quite simple to pick up, however it's got a reputation of being quite terse. But like anything, practice makes perfect.
+I still remember the moment that piqued my interest in subject of Data Science. It was probably a couple of years or so ago, I saw this segment in a popular [HBO sitcom - Silicon Valley](https://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)){:target="_blank"}, and I wasn't even following the series. I don't remember, but for some reason I found myself watching [this on Youtube](https://www.youtube.com/watch?v=pqTntG1RXSY){:target="_blank"}. So hilarious when Jian Yang first demoed the Hotdog - Not Hotdog app. It was funny, but when I discovered that it was actually a real app that they developed for the series, I couldn't resist, but I had to find out exactly [how they made it](https://medium.com/@timanglade/how-hbos-silicon-valley-built-not-hotdog-with-mobile-tensorflow-keras-react-native-ef03260747f3){:target="_blank"}. 
 
-Coming from a C/C++/C# background, many of the language constructs also exist in Python, so no problem there. However when we are trying to learn list comprehension, for example, the C# developer in me automatically defaults to thinking about using loops (almost any problem can be solved with it), or LINQ. But the `Python` way is to reach for list comprehension as a first preference versus using looping constructs.
+This week, we spent more time getting deeper experience with Pandas, how data scientists use it to slice and dice data and effectively use it for exploratory data analysis. As we get to use it more, we get the appreciation of how indespensible it is at this stage of this end to end process. And one can undestand why data scientists love using Jupyter notebooks at this stage in the process. 
 
-In the second week, we were introduced to [Pandas](https://pandas.pydata.org/), a general purpose data analysis and manipulation tool built on top of Python. This is one of the Libraries that will be a staple in each Data Science professional. Like Python, it is also open source, with a very active community, a tell-tale sign of a good library. 
+The course instructor always talks about that in data science, one needs to build this **intuition**, of being able to identify if the data we have available is good quality. And that we can have all the volume of data we want, and if it is no good, then they still belong in the rubbish bin. My goal, by the end of this course, is to not only complete the Capstone project, but more importantly, I want to be able to understand at least how to achieve that intuition that he keeps on talking about. 
 
-Before Python, I would have picked something like Excel or Google sheets to do something with data analysis. However, after having briefly used Pandas, I can quickly see the value this tool can add to the process. It is known in the community as the **Swiss Army Knife of data manipulation**. 
+[![alt text](../images/general-assembly/hotdog-not-hotdog.png "Silicon Valley Seson 4")](https://www.youtube.com/watch?v=pqTntG1RXSY)
 
 ## Unit Project due after this weekend
 
@@ -63,6 +63,6 @@ There are countless Final Project possibilities, based on the readily available 
 I will likely choose my own dataset that are more in line with my interests. 
 
 ## Resources
-- [Kaggle](https://www.kaggle.com/){:target="_blank"}
+- [How HBO’s Silicon Valley built “Not Hotdog” with mobile TensorFlow, Keras & React Native](https://medium.com/@timanglade/how-hbos-silicon-valley-built-not-hotdog-with-mobile-tensorflow-keras-react-native-ef03260747f3){:target="_blank"}
 - [Miscellaneous Data Science Project Ideas](https://github.com/NirantK/awesome-project-ideas){:target="_blank"}
 - [Pandas](https://pandas.pydata.org/){:target="_blank"}

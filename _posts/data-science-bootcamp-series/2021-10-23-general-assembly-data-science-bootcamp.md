@@ -22,7 +22,7 @@ published: true
   </div>
 </section>
 
-### Part of the [General Assembly Data Science Bootcamp Series](../tags/#general-assembly-bootcamp)
+#### Part of the [General Assembly Data Science Bootcamp Series](../tags/#general-assembly-bootcamp)
 
 ## I enrolled in a Bootcamp
 
