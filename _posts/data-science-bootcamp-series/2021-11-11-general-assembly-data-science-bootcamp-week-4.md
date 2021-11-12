@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: Data Science Bootcamp - Week 4
-excerpt: Fourth week into the GA Data Science bootcamp, we cover reason and options for data visualizations
+excerpt: Fourth week into the GA Data Science bootcamp, and we find out why we have to do data visualizations at all
 modified: 2021-11-10
 date: 2021-11-10
 tags: [General Assembly Bootcamp, Data Science]
