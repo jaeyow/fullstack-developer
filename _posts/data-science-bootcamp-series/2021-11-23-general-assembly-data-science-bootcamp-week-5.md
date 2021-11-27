@@ -49,15 +49,15 @@ It is still a bit unclear to me because the the lines are really blurred with bo
 
 ### Prediction
 
-When we aim to predict the outcome of a future race, as in the case of my Capstone Project.  this is an example of a prediction, fairly obvious there. In applying machine learning techniques, we typically train the machine learning model using a training/test set. When the time comes where we need the model to make a prediction, we pass the input variables to the model, and we expect the prediction as the output of that model.
+When we aim to predict the outcome of a future race, as in the case of my Capstone Project, this is an example of a prediction, fairly obvious there. In applying machine learning techniques, we typically train the machine learning model using a training/test set. When we need to make a prediction, we pass the input variables to the model, and we expect the prediction as the output of that model.
 
 Machine learning is better at predictions, but it can also do a good job in inference. 
 
 ### Inference
 
-Inference, is similar, but with a subtle difference. For example, you are a Data Scientist in the Formula 1 organization, and it has been decided to add a new race to the Global calendar. Your boss approached you with this problem - Can you create a statistical model that can infer which country/where the best location of that new race is going to be?
+Inference, is similar, but with a subtle difference. For example, you are a Data Scientist in the Formula 1 organization, and it has been decided that a new race will be added to the Global calendar. Your boss approached you with this problem - *Can you create a statistical model that can infer which country/where the best location of that new race is going to be?*
 
-This differs from prediction, because we are not actually predicting something, however, we are somewhat creating an outcome based on the enormous amount of past and current data to scrutinize their relationships, and come up with the best country/location for the next race. 
+This differs from prediction, because we are not actually predicting something, however, we are somewhat creating an outcome based on past and current data to find relationships, and come up with the best country/location for the next race. 
 
 Statistical modeling tend to be better at making inferences, but they can also be good in making predictions.
 
