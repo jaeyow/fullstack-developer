@@ -41,7 +41,7 @@ Who knew!? I never knew they were different until I've attended this course!
 	<a href="https://becominghuman.ai/an-introduction-to-machine-learning-33a1b5d3a560">
     <img src="../images/general-assembly/machine-learning.png">
   </a>
-  <figcaption>Machine Learning VS Statistics</figcaption>
+  <figcaption>Machine Learning VS Statistics (Copyright becominghuman.ai)</figcaption>
 </figure>
 
 
