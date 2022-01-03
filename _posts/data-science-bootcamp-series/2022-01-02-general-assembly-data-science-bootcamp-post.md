@@ -1,7 +1,7 @@
 ---
 layout: posts
-title: MLOps on the cheap!
-excerpt: Using [Github Actions](https://github.com/features/actions){:target="_blank"} as a practical (and Free<sup>*</sup>) MLOps Workflow tool for your Data Pipeline
+title: Data Science Bootcamp - MLOps on the cheap!
+excerpt: Using [Github Actions](https://github.com/features/actions){:target="_blank"} as a practical (and Free<sup>*</sup>) MLOps Workflow tool for your Data Pipeline. This completes the [Data Science Bootcamp Series](https://fullstackdeveloper.tips/tags/#general-assembly-bootcamp){:target="_blank"}
 modified: 2022-01-02
 date: 2022-01-02
 tags: [General Assembly Bootcamp, Data Science, MLOps]
@@ -33,11 +33,11 @@ After recently finishing the Capstone Project, one of the "What's Next" actions 
 - automate the training, building model deployment
 - create an API that exposes this functionality
 
-After looking into this a little bit more, I realized that there is a term for this activity - [MLOps](https://towardsdatascience.com/what-is-mlops-everything-you-must-know-to-get-started-523f2d0b8bd8){:target="_blank"} - the crossover of [Machine Learning](https://towardsdatascience.com/machine-learning-an-introduction-23b84d51e6d0){:target="_blank"} and [DevOps](https://www.atlassian.com/devops){:target="_blank"}. This relatively new term is defined by Towards Data Science as:
+After looking into this a little bit more, I realized that there is a term for this activity - [MLOps](https://towardsdatascience.com/what-is-mlops-everything-you-must-know-to-get-started-523f2d0b8bd8){:target="_blank"} - the crossover of [Machine Learning](https://towardsdatascience.com/machine-learning-an-introduction-23b84d51e6d0){:target="_blank"} and [DevOps](https://www.atlassian.com/devops){:target="_blank"}. This relatively new term is defined by [Towards Data Science](https://towardsdatascience.com/what-is-mlops-everything-you-must-know-to-get-started-523f2d0b8bd8) as:
 
 > It is an engineering discipline that aims to unify ML systems development(dev) and ML systems deployment(ops) to standardize and streamline the continuous delivery of high-performing models in production.
 
-And there is more to MLOps than just that, in fact these are the other operations that are collectively known under MLOps:
+And there is more to MLOps than just that, in fact listed below are the other operations that are collectively grouped under the MLOps umbrella:
 - data sourcing
 - data preparation
 - feature engineering 
@@ -53,7 +53,7 @@ As you can see, model building is merely a tiny part in that process. To facilit
 
 ## OK, Let's use GitHub Actions, then!
 
-There's not much ML resources using GitHub actions as an ML Workflow tool, but having used actions in previous projects, I know that with little work, it can be used satisfactorily, instead of the more popular tool [Apache Airflow](https://airflow.apache.org/). 
+There's not much ML resources using GitHub actions as an ML Workflow tool, but having used actions in previous projects, I know that with little work, it can be used satisfactorily, instead of more popular tools such as [Azure Machine Learning](https://docs.microsoft.com/en-us/azure/machine-learning/concept-model-management-and-deployment) or [Apache Airflow](https://airflow.apache.org/). 
 
 <script src="https://gist.github.com/jaeyow/9f9143d09c0438876b42da374982e5b5.js"></script>
 
@@ -78,7 +78,7 @@ Chrome is also required since part of our Feature Engineering is web scraping Wi
 
 ### Run data sourcing scripts
 
-Our data comes from [Ergast Motor Racing](http://ergast.com/mrd/){:target="_blank"}, so we read this API and dump the data into MongoDB. You'll notice that even though there are secrets involved, we are not sharing these in the actual file. 
+Our data comes from [Ergast Motor Racing](http://ergast.com/mrd/){:target="_blank"}, so we read this API and dump the data into MongoDB. You'll notice that even though there are secrets involved, we are not sharing these in the actions yml file. 
 
 ### Run data preparation scripts
 
@@ -104,7 +104,9 @@ Serverless makes it easy to setup our AWS Lambda as a public API. I wanted to us
 
 ### Deploy ML Model and API to production
 
-The last but not the least! Certainly the most exciting part! The final part of the GitHub MLOps workflow is to be able to deploy our model (and the Serverless API) to production. I have opted to use [Flask](https://flask.palletsprojects.com/en/2.0.x/), since I already had scripts in Python, so it was minimal work to adapt for the public API. 
+The last but not the least! Certainly the most exciting part! The final part of the GitHub MLOps workflow is to be able to deploy our model (and the Serverless API) to production.
+
+I have opted to use [Flask](https://flask.palletsprojects.com/en/2.0.x/), since I already had scripts in Python, so it was minimal work to adapt for the public API. 
 
 ![](../images/general-assembly/deploy-model-and-api.png)
 
