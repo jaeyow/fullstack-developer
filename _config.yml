@@ -108,12 +108,12 @@ analytics:
 author:
   name             : "Jose Reyes"
   avatar           : "/images/img_6136-small"
-  bio              : "Lifelong learner | software builder | triathlete | all around nice guy  🏊🏼‍♂️🚴🏼‍♂️🏃🏽"
-  location         : "Sydney NSW"
+  bio              : "Lifelong learner | AWS Community Builder | triathlete | all around nice guy  🏊🏼‍♂️🚴🏼‍♂️🏃🏽"
+  location         : "Sydney Australia"
   email            :
-  cert             : "AWS Certified Developer - Associate"
-  cert-url         : "https://www.certmetrics.com/amazon/public/badge.aspx?i=2&t=c&d=2019-12-18&ci=AWS01182439"
-  cert-img         : "/images/aws-certified-logo_color-horz_270x45.png"
+  cert             : "AWS Community Builder"
+  cert-url         : "https://aws.amazon.com/developer/community/community-builders/"
+  cert-img         : "/images/community-builder-linkedIn.png"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
