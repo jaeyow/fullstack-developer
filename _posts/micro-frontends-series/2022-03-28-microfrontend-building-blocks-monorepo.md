@@ -42,7 +42,7 @@ Monorepos excel with dependency management now that all the code is co-located i
 
 It can cache previously performed operations, so that running them again will skip the work that has already been done to produce substantial time savings.
 
-The **node_modules** folder needs no introduction, its that deep dark place where all project dependencies end up in. Current monorepo tooling can save a substantial amount of disk space by hoisting common dependencies to the top level, so that all lower level dependencies there instead.
+The **node_modules** folder needs no introduction, its that deep dark place where all project dependencies end up in. Current monorepo tooling can save a substantial amount of disk space by hoisting common dependencies to the top level, so that all lower level dependencies are satisfied from there instead.
 
 ## Monorepo is one version for all
 With monorepos, version configuration is simple, there is only one version, and this essentially is a snapshot of the system removing the need to manage the multiple different versions of your application and its dependencies. 
@@ -58,12 +58,12 @@ Tools like [Lerna](https://github.com/lerna/lerna){:target="_blank"}, [Bazel](ht
 [Monorepo.tools](https://monorepo.tools/) is an excellent resource detailing the many intelligent features of these tools that help manage your monorepo projects.
 
 ## Monorepo is collaboration
-Because all the team's code (maybe even the whole organization's) in the same repository, monorepos encourage code sharing, transparency and cross team collaboration. This does not come for free, though. There will be more noise, but with good management and the help of efficient tooling, this is all possible.
+Because all the team's code (maybe even the whole organization's) exist in the same repository, monorepos encourage code sharing, transparency and cross team collaboration. This does not come for free, though. There will be more noise, but with good management and the help of efficient tooling, this is all possible.
 
 ## Monorepo is people
 Software engineering is as much technical as it is people. Yes monorepo is a technical strategy to structure your project and workspace.
 
-However, it is actually much more than that. Because is encourages people to collaborate effectively and work efficiently together, it represents the change that probably many software teams need today.
+However, it is actually much more than that. Because is encourages people to collaborate effectively and work efficiently together, it represents a change that probably many software teams need today.
 
 ## Conclusion
 Moving to monorepos represents a paradigm shift in software engineering. There are reason's why many organizations have made the shift. There are obviously many gains with using monorepos that made these organizations move. But because it represents a fundamental change and shift in thinking, there are also many detractors.
