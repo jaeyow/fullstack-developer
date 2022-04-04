@@ -26,6 +26,10 @@ published: true
 ## A monorepo, what's that?
 A while back I was finishing work with an employer and was due to join my new team. I remember feeling excited when I heard that the new project will be using monorepos. I did not have a clue what monorepos were, only I've heard that that's what the big boys were using.
 
+<figure>
+	<a href="../images/micro-frontends-series/monorepo-image.png"><img src="../images/micro-frontends-series/monorepo-image.png"></a><figcaption>What is a Monorepo, image from Voiceflow.com</figcaption>
+</figure>
+
 Definitely not mainstream (still not these days) they were supposed to promote better collaboration, and give the teams using it full autonomy and are perfect for when you're anticipating the project to scale. 
 
 >Yeah, OK that sounds good, however, I just didn't understand how just by co-locating all your sub-projects into a single repository will magically give you all the advantages mentioned. 
@@ -75,3 +79,4 @@ Because on the surface what may look like a simple change in project and workspa
 - [Monorepo.tools](https://monorepo.tools/){:target="_blank"}
 - [Misconceptions about Monorepos: Monorepo != Monolith](https://blog.nrwl.io/misconceptions-about-monorepos-monorepo-monolith-df1250d4b03c){:target="_blank"}
 - [Guide to Monorepos for Front-end Code](https://www.toptal.com/front-end/guide-to-monorepos){:target="_blank"}
+- [How monorepos can help improve your productivity](https://www.voiceflow.com/blog/how-monorepos-can-help-improve-your-productivity){:target="_blank"}
