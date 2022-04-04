@@ -2,8 +2,8 @@
 layout: posts
 title: "Micro-frontends building blocks: Monorepos"
 excerpt: What you always wanted to know about Monorepos but were too afraid to ask
-modified: 2022-04-05
-date: 2022-04-05
+modified: 2022-04-04
+date: 2022-04-04
 tags: [Micro-frontends building blocks, Monorepo, software engineering]
 header: 
   overlay_image: /images/micro-frontends-series/rsz_75_dustin-humes-gwim_hpiswi-unsplash.jpg
