@@ -24,13 +24,13 @@ published: true
 ### Part of the [Micro-frontends building blocks Series](../tags/#micro-frontends-building-blocks)
 
 ## Meet Module Federation
-The next micro-frontends building block we will cover is Module Federation.
+The next [micro-frontends](https://micro-frontends.org/) building block we will cover is [Module Federation](https://webpack.js.org/concepts/module-federation/).
 
-It was initially created to enable asynchronous loading of Javascript bundles, so one can easily share and consume code in the Javascript ecosystem, ie. any Javascript project, think browser, Node.js or Electron.
+It was initially created to enable asynchronous loading of Javascript bundles, so one can easily share and consume code in the Javascript ecosystem, ie. any Javascript project, think browser, [Node.js](https://nodejs.org/en/) or [Electron](https://www.electronjs.org/).
 
-Later on, it was extended to support server-side rendering scenarios. Since the method I'm going to explore in building my micro-frontends is client-side composition using React.js, I've identified Module Federation as the perfect technology to use. 
+Later on, it was extended to support server-side rendering scenarios. Since the method I'm going to explore in building my micro-frontends is client-side composition using [React.js](https://reactjs.org/), I've identified Module Federation as the perfect technology to use. 
 
-Module Federation was created by Zack Jackson, a Webpack core maintainer himself, and was integrated as a flagship feature of Webpack 5 in [October 2020](https://webpack.js.org/blog/2020-10-10-webpack-5-release/#major-changes-development-support). 
+Module Federation was created by [Zack Jackson](https://twitter.com/ScriptedAlchemy?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor), a [Webpack](https://webpack.js.org/) core maintainer himself, and was integrated as a flagship feature of Webpack 5 in [October 2020](https://webpack.js.org/blog/2020-10-10-webpack-5-release/#major-changes-development-support). 
 
 <figure>
 	<a href="../images/micro-frontends-series/module-federation-main-image.png"><img src="../images/micro-frontends-series/module-federation-main-image.png"></a><figcaption>Webpack Module Federation</figcaption>
@@ -41,7 +41,7 @@ Module Federation was created by Zack Jackson, a Webpack core maintainer himself
 
 So that **large applications** can be split easily where each part can then be shared among other parts and may be developed by **separate teams**.
 
-Module Federation is a game-changer in Javascript Architecture because before this, sharing code was clunky and just didn't feel smooth enough. The usual module sharing method that we have been using for years is using NPM packages, enabling developers to create build-time dependencies. Although NPM works, it cannot help us when we need to load dependencies at run-time.
+Module Federation is a game-changer in Javascript Architecture because before this, sharing code was clunky and just didn't feel smooth enough. The usual module sharing method that we have been using for years is using NPM packages, enabling developers to create build-time dependencies. Although [NPM](https://www.npmjs.com/) works, it cannot help us when we need to load dependencies at run-time.
 
 As micro-frontends evolved, we now have a need to resolve Javascript modules at run-time. This is where Module Federation shines.
 
@@ -61,7 +61,7 @@ And because Module Federation provides excellent dependency management, it effic
 
 ### Import code from other builds, at runtime
 
-Instead of sharing code and thinking of "libraries" when using NPM package approach, we can think of applications that use Module Federation not dissimilar to APIs. Now web applications can expose functionality to other applications, the same way that it can also consume from other applications.
+Instead of sharing code and thinking of "libraries" when using NPM package approach, we can think of applications that use Module Federation not dissimilar to [APIs](https://en.wikipedia.org/wiki/API). Now web applications can expose functionality to other applications, the same way that it can also consume from other applications.
 
 ### Deploy independent code, without needing to re-deploy consumers
 
@@ -69,7 +69,7 @@ The ability to have evergreen functionality is very appealing to the developer. 
 
 ### Redundancy and self-healing capabilities
 
-With shared dependencies, Module Federation maintains a dependency graph for your whole application, so that even though applications fail to declare a dependency or when there are network issues, it knows the needed dependencies so that it takes care of downloading it as required.
+With shared dependencies, Module Federation maintains a [dependency graph](https://en.wikipedia.org/wiki/Dependency_graph) for your whole application, so that even though applications fail to declare a dependency or when there are network issues, it knows the needed dependencies so that it takes care of downloading it as required.
 
 ### Micro-frontends will work like a monolith
 
@@ -83,19 +83,19 @@ Think about all the things that Webpack can bundle - scripts, assets, styles, im
 
 ## Caveat
 
-However, as great as Module Federation is, it is important to remember that it is not a framework, and as such it does not handle any of the implementation details for you. For example, you could use awesome client-side composition libraries such as Single SPA, or Next.js and just leverage Module Federation to do the module loading over the wire for you.
+However, as great as Module Federation is, it is important to remember that it is not a framework, and as such it does not handle any of the implementation details for you. For example, you could use awesome client-side composition libraries such as [Single SPA](https://single-spa.js.org/), or [Next.js](https://nextjs.org/) and just leverage Module Federation to do the module loading over the wire for you.
 
 ## Conclusion
 
 In this article we have introduced Module Federation as an excellent option for building your micro-frontend application. 
 
-- It enables multiple teams to work on a single application by allowing applications to share and consume functionality at runtime. 
+- It promotes scalability by enabling multiple teams to work on a separate applications by allowing applications to share and consume functionality at runtime. 
 
-- It makes your applications more compact through the use of shareable dependencies.
+- It makes applications more compact through the use of shareable dependencies.
 
-- It enables evergreen functionality so that you won't need to build and deploy your consumers.
+- It enables evergreen functionality so that you won't need to build and deploy your consumers when the shared functionality changes.
 
-- Developer experience is great since many developers are familiar with the Webpack ecosystem
+- Developer experience is great since many developers are already familiar with the Webpack ecosystem
 
 - Once configured, your application will work like a monolith which is awesome.
 
