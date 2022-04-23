@@ -2,8 +2,8 @@
 layout: posts
 title: "Micro-frontends building blocks: Webpack Module Federation"
 excerpt: What is Module Federation and why it's perfect for building your Micro-frontend project
-modified: 2022-04-18
-date: 2022-04-18
+modified: 2022-04-23
+date: 2022-04-23
 tags: [Micro-frontends building blocks, Webpack Module Federation, software engineering]
 header: 
   overlay_image: /images/micro-frontends-series/rsz_teng-yuhong-qmehmiyaxvy-unsplash.jpg
