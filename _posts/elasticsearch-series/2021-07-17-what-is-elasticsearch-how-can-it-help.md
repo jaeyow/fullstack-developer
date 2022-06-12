@@ -12,7 +12,7 @@ comments: true
 published: false
 ---
 
-<section id="table-of-contents" class="toc">
+<section id="table-of-contents">
   <header>
     <h3>Overview</h3>
   </header>
