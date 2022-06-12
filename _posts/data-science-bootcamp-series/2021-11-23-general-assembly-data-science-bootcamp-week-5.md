@@ -11,7 +11,7 @@ header:
 comments: true
 published: true
 ---
-<section id="table-of-contents" class="toc">
+<section id="table-of-contents">
   <header>
     <h3>Overview</h3>
   </header>
