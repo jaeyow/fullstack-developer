@@ -30,6 +30,6 @@
     "add-banner": "node banner.js",
     "watch:js": "onchange \"assets/js/**/*.js\" -e \"assets/js/main.min.js\" -- npm run build:js",
     "build:js": "npm run uglify && npm run add-banner",
-    "serve": "bundle exec jekyll serve --incremental --port 4001"
+    "serve": "bundle exec jekyll serve --port 4001"
   }
 }
