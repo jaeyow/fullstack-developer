@@ -30,17 +30,17 @@ It's undeniable that leadership is instrumental in any company and project succe
 
 ## Why Metaflow
 
-Metaflow was created in Netflix where they used it internally in demanding real-life data science projects and [was open-sourced](https://github.com/Netflix/metaflow) in 2019. And because of AWS tight experience with AWS, it plays really well with many AWS services, in fact these are all [described in detail here](https://docs.metaflow.org/metaflow-on-aws).
+Metaflow was created in Netflix where they used it internally in demanding real-life data science projects and [was open-sourced](https://github.com/Netflix/metaflow) in 2019. And because of its tight experience with AWS, it plays really well with many AWS services, in fact these are all [described in detail here](https://docs.metaflow.org/metaflow-on-aws).
 
 <figure>
-	<a href="../images/metaflow-logo.png"><img src="../images/metaflow-logo.png"></a><figcaption>Metaflow by Netflix</figcaption>
+	<img src="../images/metaflow-logo.png"><figcaption>Metaflow by Netflix</figcaption>
 </figure> 
 
-As I researched about it and used it in a project we will be discussing shortly, I came to the realization that its secret I think is in its simplicity. But don't let this simplicity fool you. 
+As I researched about it and used it in a project, I came to the realization that its secret I think is in its simplicity. But don't let this simplicity fool you. 
 
 In a nutshell, Metaflow allows you to create DAGs ([Directed Acyclic Graph](https://en.wikipedia.org/wiki/Directed_acyclic_graph)), so we are now touching graph theory here, but in the end it is really just a fancy term for a workflow, but one that doesn't form a closed loop.
 
-These DAGs, combined with Python, Serverless and Open stack, is a very powerful combination. This results in the democratization of the Machine Learning function, making it easier than ever to kick off that personal ML project, or scale your company's capability in the ML Space.
+These DAGs, combined with Python, Serverless and the Open stack, is a very powerful combination. This results in the democratization of the Machine Learning function, making it easier than ever to kick off that personal ML project, or scale your company's capability in the ML Space.
 
 ## Scalability
 
@@ -76,9 +76,9 @@ Code is freely [available here](https://github.com/jaeyow/metaflow-f1-predictor)
 
 ## Summary
 
-The main disconnect with many new to Data Science and Machine Learning is the difficulty of shipping models to production. Many Data Science courses may teach you the basics of the whys and hows of using algorithms and model building, however, throw you to the wolves with deployment and scalability. With Metaflow it is easy to create ML pipelines for development when you're working locally, and when it is time to push it to production, there will be minimal work involved in moving that workload on the AWS cloud.
+The main disconnect with many new to Data Science and Machine Learning is the difficulty of shipping models to production. Many Data Science courses may teach you the basics of the whys and hows of using algorithms and model building, however, throw you to the wolves with deployment and scalability. With Metaflow, it is easy to create ML pipelines for development when you're working on your laptop, and when it is time to push it to production, there will be minimal work involved in moving that workload on the AWS cloud.
 
-We saw how easy it was to create a workflow that performs feature engineering, model training and testing in parallel, and easily integrate 3rd party tools. This is only the tip of the iceberg, it really does enable one to have the ability to do ML using the open stack, 3rd party SAAS offerings, many free tools, and do ML at par with the big boys.
+The example project shows that it was easy to create a workflow that performs feature engineering, model training and testing in parallel, and easily integrate 3rd party tools. This is only the tip of the iceberg, it really does enable one to have the ability to do ML using the open stack, 3rd party SAAS offerings, many free tools, and do ML at par with the big boys.
 
 ## Resources
 - [MLOps at Reasonable Scale](https://www.youtube.com/watch?v=Ndxpo4PeEms){:target="_blank"}
