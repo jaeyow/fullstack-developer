@@ -70,7 +70,7 @@ Most of the code is from my [General Assembly capstone project](https://fullstac
 	<a href="../images/metaflow-training-pipeline.png"><img src="../images/metaflow-training-pipeline.png"></a><figcaption>Simple Metaflow Training and Test Pipeline</figcaption>
 </figure> 
 
-The intention is to show how easy it is to leverage Metaflow not just for orchestrating the parallel workflow, but also for enabling the repeatability of your experiments. It is also stops after training and testing phase, however, as with any Metaflow project, pushing to production can be done easily by extending the code that we already have.
+The intention is to show how easy it is to leverage Metaflow not just for orchestrating the parallel workflow, but also for enabling the repeatability of your experiments. It finishes after the parallel training and testing of models, however in reality you could do a myriad of tasks after this, such as model selection, model deployment or even scheduling for retraining.
 
 Code is freely [available here](https://github.com/jaeyow/metaflow-f1-predictor). 
 
