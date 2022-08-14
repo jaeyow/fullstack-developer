@@ -46,18 +46,18 @@ And lastly, AWS SageMaker has been in the ML game for a while, and AWS is still 
 
 ## But why use the three together?
 
-It all boils down to the use of Metaflow and its inherent scalability. You can start using Metaflow even when you are still running your experiments on you laptop.
+It all boils down to the use of Metaflow and its inherent scalability. You can start using Metaflow even when you are still running your experiments on your laptop.
 
-But when you want to move to the cloud, you will need a basic (and free/cheap) scheduler/orchestrator to kick-off your workflows, enter Github Actions. There are some limitations with using Github Actions as your workflow scheduler/orchestrator, but for simple projects, or in the case when you're leaning on SageMaker for your training and deployment workloads, it is more than sufficient.
+But when you want to move to the cloud, you will need a basic (and free/cheap) scheduler/orchestrator to kick-off your workflows - enter Github Actions. There are some limitations with using Github Actions as your workflow scheduler/orchestrator, but for simple projects, or in the case when you're leaning on SageMaker for your training and deployment workloads, it is more than sufficient.
 
-And as to AWS SageMaker, teams that are already on the AWS ecosystem will appreciate the almost unlimited deployment possibilities on their fingertips. Typically SageMaker workflows are created and controlled through the AWS console, but to enable us to go to Production in this article, we will be using the AWS Python SDK, through Metaflow.
+And as to AWS SageMaker, teams that are already on the AWS ecosystem will appreciate the almost unlimited deployment possibilities in their fingertips. Typically SageMaker workflows are created and controlled through the AWS console, but to enable us to go to Production in this article, we will be using the AWS Python SDK, through Metaflow.
 
 
 ## What does *Going to Production* mean?
 
-A typical Data Science project starts with the Prototyping stage, and the tool which is the perennial favorite among data professionals is **[Jupyter Notebooks](https://jupyter.org/)**. And this is also my personal playground when I start looking at DS and ML problems, awesome for quick iterations.
+A typical Data Science project starts with the Prototyping stage, and the tool which is the perennial favorite among data professionals is **[Jupyter Notebooks](https://jupyter.org/)**. And this is also my personal playground when I start looking at DS and ML problems, and it's awesome for quick iterations.
 
-It allows me to quickly play with the data, create visualizations, transform data, train and deploy them to an extent. It is awesome, and it has become my favorite too. However, when and if the project needs to progress to production, we need a better tool and work practice. Many teams still deploy to production with their laptop and Jupyter Notebook setup, and you can, however you really shouldn't.
+It allows me to quickly play with the data, create visualizations, transform data, train and deploy them to an extent. It is awesome, and it has become my favorite too. However, when and if the project needs to progress to production, we need a better tool and work practice. Many teams still deploy to production with their laptop and Jupyter Notebook setup, and though you can, you really shouldn't.
 
 > The main characteristic of production workflows is that they should run without a human operator: they should start, execute, and output results automatically. Note that automation doesn’t imply that they work in isolation. They can start as a result of some external event, such as new data becoming available. --Ville Tuulos, [Effective Data Science Infrastructure](https://www.manning.com/books/effective-data-science-infrastructure){:target="_blank"}
 
@@ -70,9 +70,9 @@ This is exactly what we want to happen when we want to push ML projects to Produ
 
 ## The Sample Project
 
-As I'm currently studying towards the AWS ML Specialty certification, I wanted play a bit more with the built-in algorithms that SageMaker has in its portfolio. One of the first algorithms I checked out was [Linear Learner](https://docs.aws.amazon.com/sagemaker/latest/dg/linear-learner.html). It's a type of supervised learning algorithm for solving classification and regression problems.
+As I'm currently studying towards the AWS ML Specialty certification, I wanted to play a bit more with the built-in algorithms that SageMaker has in its portfolio. One of the first algorithms I checked out was [Linear Learner](https://docs.aws.amazon.com/sagemaker/latest/dg/linear-learner.html). It's a type of supervised learning algorithm for solving classification and regression problems.
 
-I did not create the notebook from scratch by myself, however I based it from the examples AWS SageMaker - [An Introduction to Linear Learner with MNIST](https://sagemaker-examples.readthedocs.io/en/latest/introduction_to_amazon_algorithms/linear_learner_mnist/linear_learner_mnist.html). 
+I did not create the notebook from scratch by myself, however I based it from the examples in AWS SageMaker - [An Introduction to Linear Learner with MNIST](https://sagemaker-examples.readthedocs.io/en/latest/introduction_to_amazon_algorithms/linear_learner_mnist/linear_learner_mnist.html). 
 
 I basically ported it into Metaflow DAGs as seen in the flow image below:
 
@@ -80,13 +80,15 @@ I basically ported it into Metaflow DAGs as seen in the flow image below:
 	<a href="../images/sagemaker-series/sagemaker-metaflow-dag.png"><img src="../images/sagemaker-series/sagemaker-metaflow-dag.png"></a><figcaption>SageMaker Linear Learner with Metaflow</figcaption>
 </figure> 
 
-I've leaned on Python for all my ML work, and Metaflow is based on Python (you can use R too), and AWS SageMaker has an extensive [SageMaker Python SDK](https://sagemaker.readthedocs.io/en/stable/).
+I've leaned on Python for all my ML work, and Metaflow is based on Python (you can use R too), and AWS SageMaker has an extensive [SageMaker Python SDK](https://sagemaker.readthedocs.io/en/stable/) at your disposal.
 
-Looking at the above flow, we are able to do an end to end ML workflow including model training on AWS SageMaker, leveraging on AWS ML instances for ML training workloads, to creating the endpoint. For brevity, I have skipped the part of serving that endpoint to the public, but this can easily be done by serving the endpoint behind an API Gateway and a Lambda. Perhaps we can do this operation in a separate article. Also take note that we have deleted the endpoint, before we end the flow.
+Looking at the above flow, we are able to do an end to end ML workflow including model training on AWS SageMaker, leveraging on AWS ML instances for ML training workloads, to endpoint creation with your required AWS instance type.
+
+For brevity, I have skipped the part of serving that endpoint to the public, but this can easily be done by serving the endpoint behind an API Gateway and a Lambda. Perhaps we can do this operation in a separate article. Also take note that we have deleted the endpoint, before we end the flow to avoid the dreaded AWS bill specially now as we are just checking out the service.
 
 <script src="https://gist.github.com/jaeyow/aab705a405ebec15bc3de36e385bd822.js"></script>
 
-In this sample project, I have also leveraged on Github Actions as our workflow scheduler/orchestrator, this is really to prove that Github Actions, even in the free tier can really be used in 'production', albeit a very simple flow.
+In this sample project, I have also leveraged on Github Actions as our workflow scheduler/orchestrator, this is really to prove that Github Actions, even in the free tier can really be used in 'production', albeit in a very simple flow.
 
 <figure>
 	<a href="../images/sagemaker-series/github-actions-metaflow.png"><img src="../images/sagemaker-series/github-actions-metaflow.png"></a><figcaption>Github Actions, in action with Metaflow</figcaption>
