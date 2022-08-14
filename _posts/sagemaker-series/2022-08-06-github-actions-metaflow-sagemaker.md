@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: Going to Production with Github Actions, Metaflow and AWS SageMaker
-excerpt: A scalable (and low cost) strategy to transition your Machine Learning project from prototype to production
+excerpt: A scalable (and cost-effective) strategy to transition your Machine Learning project from prototype to production
 modified: 2022-08-05
 date: 2022-08-05
 tags: [Machine Learning, SageMaker, ML algorithms, Metaflow]
