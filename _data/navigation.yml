@@ -2,5 +2,7 @@
 main:
   - title: "Machine Learning"
     url: /machine-learning-projects/
+  - title: "Masters"
+    url: /master-of-data-science-coursework/
   # - title: "Resume"
   #   url: /jose-reyes-resume/
