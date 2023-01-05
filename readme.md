@@ -1,11 +1,11 @@
-[fullstack-developer blog](https://jaeyow.github.io/fullstack-developer/)
+**[Full Stack Developer Tips](https://jaeyow.github.io/fullstack-developer/)**
 
-Install ruby bundler for first time use:
-
-`sudo gem install bundler`
-`gem install thread_safe -v 0.3.6`
-`bundle install`
-
-To run locally, simply: 
-
-`jekyll serve`
+To build and run the blog locally do the following:
+1. Using the terminal, navigate to the folder that contains `_config.yml`
+2. Then run the following command in the terminal:
+```
+docker run --rm --label=jekyll --volume=$(pwd):/srv/jekyll  -it -p 4000:4000 jekyll/jekyll jekyll serve
+```
+3. With your browser, navigate to `http://0.0.0.0:4000/`
+4. Using Docker, you will not need to fiddle with Ruby dependencies ever!
+5. **Profit!!!**
