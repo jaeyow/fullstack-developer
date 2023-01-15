@@ -34,9 +34,9 @@ Wait, when was the last time I had to make an ER diagram? I honestly cannot reme
 ## Am I alone with this thinking?
 This exercise made me question if I'm a real developer at all? However, I know that I am not alone in this. Many, if not all of the developers I've worked with over the years would have the same experience as I have. 
 
-## Why we are not using ER Diagram anymore
+## Why ER Diagrams are not so common anymore
 
-So what may be the reasons why we are not using ER diagrams to develop SQL databases as much as they used to? Here are my thoughts:
+So what may be the reasons why we are not using ER diagrams to develop relational databases as much as they used to? Here are my thoughts:
 
 ### Agile development methodologies
 
@@ -52,10 +52,10 @@ NoSQL databases have become increasingly popular and in some cases, they offer m
 
 ### Up to date documentation
 
-ER Diagrams being a conceptual model of a database, it is the shared vision of you system made available to all stakeholders, regardless of technical ability. However, as the project matures, more and more changes will need to be implemented, which means that the ER Documentation will need to be maintained with these new changes. This definitely is a candidate for more documentation that will most likely will not get updated. 
+ER Diagrams being a conceptual model of a database, it is the shared vision of you system made available to all stakeholders, regardless of technical ability. However, as the project matures, more and more changes will need to be implemented, which means that the ER Documentation will need to be maintained with these new changes. More documentation that will most likely will not get updated as new changes are introduced. 
 
 ## Designing Data Warehouses
-With the advent of Data Warehouses where an increasingly complex web of data sources need to be intertwined together and the increase in the use of data for the creation of analytical reports, there has been a recent push to bring back data modelling, not just to help convey the shared data vision, but of equal importance for more practical and financial reasons.
+With the advent of Data Warehouses where an increasingly complex web of data sources need to be intertwined together and the increase in the use of data for the creation of analytical reports, there has been a recent push to [bring back data modelling](https://medium.com/the-future-of-data/data-modeling-is-back-at-scale-3b574e974654) (data warehouses use Dimensional models, a derivative of ER models), not just to help convey the shared data vision, but of equal importance for more practical and financial reasons.
 
 ### Good data modelling benefits
 Having a good and correct data model means end users will have accurate data, the same data put in front of the decision makers. Correct data means correct and better decisions.
@@ -63,15 +63,16 @@ Having a good and correct data model means end users will have accurate data, th
 Good data models help in creating pipelines that use simpler queries, simpler queries that translate to cheaper compute. Good data models that avoid having to create duplicate pipelines that return the same data, and these will most definitely translate to savings in cloud compute costs.  
 
 ## Summary
-As I review and re-learn the use of Entity Relationship diagrams in not only building databases, but also larger systems in Data Warehouses and Data Lakes, I have to remind myself that we do these not *just* for documentation:
+As I review and re-learn the use of Entity Relationship diagrams in not only building databases, but in extension to larger systems in Data Warehouses and Data Lakes, I have to remind myself that we do these not *just* for documentation:
 
-- initially used for documentation and a vessel to disseminate the shared vision
+- initially used for documentation and a vessel to disseminate the shared vision to stakeholders including the non-technical ones
 - can be used to define the data architecture for an organization
 - can aid in building systems that can use simpler and cheaper queries
 - can avoid the creation of pipelines that will return duplicate data, translating to savings in compute costs
 
 ## Resources
+- [Entity–relationship model](https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model){:target="_blank"}
 - [Data modeling is back — at scale](https://medium.com/the-future-of-data/data-modeling-is-back-at-scale-3b574e974654){:target="_blank"}
 - [The Future of Data Modeling](https://www.linkedin.com/video/event/urn:li:ugcPost:6986056970424262656/?isInternal=true){:target="_blank"}
-- [Entity–relationship model](https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model){:target="_blank"}
+
 
