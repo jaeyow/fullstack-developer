@@ -55,7 +55,7 @@ One area where the course fell short was its outdated approach. As someone who h
 
 Overall, I would rate the course a **6 out of 10**. While I appreciated the comprehensive coverage of SQL, I would have preferred to see more focus on database design and maintenance. Additionally, incorporating more material on the use of SQL in data science would have made the course more relevant for current trends.
 
-
+<<< TO BE CONTINUED >>>
 
 
 
