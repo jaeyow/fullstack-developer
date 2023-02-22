@@ -47,13 +47,14 @@ This week you will be introduced to SQL performance tuning. You will learn how t
 
 ### My comments
 
-The title of the course is a disappointment. Although the title says database systems, it is really a course on SQL. What I like about this is that it is designed to be taken as a full online learning experience. The course is structured in a way that allows students to learn at their own pace. 
+The course I took on database systems was titled as such, but was primarily focused on teaching SQL. Despite the discrepancy between the course title and content, I found the course to be a worthwhile online learning experience, as it allowed for flexible self-paced learning.
 
-Although I have been using SQL in many of my past projects, I have never taken a course on it. I am glad that I am taking this course because it has helped me to understand the fundamentals of SQL and how to use it to solve real-world problems. I have also learned how to use the Postgres database and how to use the PLpgSQL language to write stored procedures and triggers. Whats great was the time spent in learning the basics of ER Diagrams, it seems easy, it is easy, however I never really spent too much time understanding it really well. I am glad that I have and now I feel that I have a better understanding of how to design a database.
+While I had previously used SQL in various projects, this course provided me with a solid foundation in the fundamentals of SQL and its practical applications for solving real-world problems. In addition, the course also covered the use of the Postgres database and the PLpgSQL language for writing stored procedures and triggers. I particularly appreciated the time spent on learning ER Diagrams, which was an area I had not fully grasped before, but now feel more confident in designing databases.
 
-Also I felt that the course was a bit dated. I have worked with databases for many years and there are many things we do on a regular basis, like analysing slow queries, maintaining databases like approaches to backups, schema and data migration, interfacing with web and mobile applications, and issues that you would encounter in a day to day life of working with databases. Well, the course is only 6 weeks after all, a focused 6 weeks at that. Not sure how to fit all that in that time. 
+One area where the course fell short was its outdated approach. As someone who has worked with databases for many years, I expected to see topics such as analyzing slow queries, database maintenance, backups, schema, and data migration, interfacing with web and mobile applications, and dealing with day-to-day issues that are commonly encountered while working with databases. However, given the course's duration of only 6 weeks, I understand that it would have been challenging to cover all these areas in-depth.
 
-All in all I would rate the course a 6/10. I did enjoy getting very familiar with SQl and I'm happy with that. I would have liked to see more on database design and maintenance. I would have also liked to see more on the use of SQL in the context of data science.
+Overall, I would rate the course a **6 out of 10**. While I appreciated the comprehensive coverage of SQL, I would have preferred to see more focus on database design and maintenance. Additionally, incorporating more material on the use of SQL in data science would have made the course more relevant for current trends.
+
 
 
 
