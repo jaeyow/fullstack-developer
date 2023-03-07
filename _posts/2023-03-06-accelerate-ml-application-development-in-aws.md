@@ -27,7 +27,7 @@ canonical_url: https://cevo.com.au/post/accelerate-ml-application-development-in
 
 In 2006, [Jeff Bezos](https://en.wikipedia.org/wiki/Jeff_Bezos), the founder of [Amazon](https://en.wikipedia.org/wiki/Amazon_(company)), [delivered a keynote speech at an MIT conference](https://aws.amazon.com/blogs/aws/we_build_muck_s/), where he spoke about Amazon’s growth and his focus on helping entrepreneurs overcome obstacles in bringing their ideas to market. Despite already being a giant company, with only 10 distinct web services at the time, Amazon continued to rapidly expand.
 
-During his speech, Bezos highlighted Amazon’s approach to building products that take care of what he referred to as the “undifferentiated heavy lifting” – the “muck” – the mundane yet necessary tasks required to create and operate a web application, such as server hosting, scaling, and network management.
+During his speech, Bezos highlighted Amazon’s approach to building products that take care of what he referred to as the **“undifferentiated heavy lifting”** – the **“muck”** – the mundane yet necessary tasks required to create and operate a web application, such as server hosting, scaling, and network management.
 
 It’s clear that Bezos recognised the importance of relieving entrepreneurs of the burden of non-value-adding tasks, so they could focus on developing and delivering products that truly differentiate themselves from their competitors. This philosophy has been a key driver of Amazon’s success, and has enabled countless entrepreneurs to turn their ideas into thriving businesses.
 
