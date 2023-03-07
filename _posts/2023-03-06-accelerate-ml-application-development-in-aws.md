@@ -107,7 +107,7 @@ As a result, users only need to provide a small set of images to train their mod
 The following image shows Custom Labels training results, where for a **train/test** split of **630/174** images, or **80/20** split, the model training completed in 1.44 hours, and an **F1 score of 0.984**. I must admit that it’s a bit slow, however, knowing that it is performing transfer learning and tuning on deep learning algorithms under the covers, it’s actually doing a lot, so that we don’t have to.
 
 <figure>
-	<a href="../images/accelerate-ml-application-development-in-aaws/custom-labels-training.png"><img src="../images/accelerate-ml-application-development-in-aws/custom-labels-training.png"></a><figcaption>Rekognition Custom Labels Training</figcaption>
+	<a href="../images/accelerate-ml-application-development-in-aws/custom-labels-training.png"><img src="../images/accelerate-ml-application-development-in-aws/custom-labels-training.png"></a><figcaption>Rekognition Custom Labels Training</figcaption>
 </figure>
 
 When deciding to use Custom Labels, it’s important to note that it has a limit of 250 classes per dataset. This limit can be a significant limitation for some projects, so it’s essential to keep this in mind going forward. To get the custom labels for the input images, we used [Rekognition Custom Labels API](https://boto3.amazonaws.com/v1/documentation/api/1.18.53/reference/services/rekognition.html#Rekognition.Client.detect_custom_labels) similar to how we did it with the Rekognition example.
