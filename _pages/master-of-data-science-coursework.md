@@ -15,9 +15,9 @@ I am currently pursuing my [Master of Data Science from the University of New So
 
 The coursework is fully online and utilizes the well-known learning platform, [Moodle](https://moodle.org/), to facilitate the learning experience. The program is designed as Hexamesters, where students take one course per term, with six teaching terms per year. If I am able to attend every teaching term, I anticipate completing the program in just over two years.
 
-## Course 1 - Database Systems
+I've copied each course introduction straight from the course materials. At the end of each course, I have shared my thoughts on it.
 
-I've copied the course introductions straight from the course materials. At the end of the post, I have shared my thoughts on the it.
+## Course 1 - Database Systems
 
 **Week 1: Data models and database design**
 
@@ -55,7 +55,44 @@ One area where the course fell short was its outdated approach. As someone who h
 
 Overall, I would rate the course a **6 out of 10**. While I appreciated the comprehensive coverage of SQL, I would have preferred to see more focus on database design and maintenance. Additionally, incorporating more material on the use of SQL in data science would have made the course more relevant for current trends.
 
-<<< TO BE CONTINUED >>>
+## Course 2 - Data and Ethics
+
+"The human capacity to determine what we can do has outstripped our ability to decide what we ought to do." (Noel Preston, 2014)
+
+This course provides the conceptual foundations for ethical data analytics practice. You will learn to consider data analytics in the context of the broader social, economic and value systems within which data analytics takes place. You will identify ethical concerns and apply ethical thinking tools and frameworks to resolve actual ethical dilemmas. Ultimately, this course aims to develop your ability to be a capable and ethical data professional.
+
+**Week 1: Why ethics?**
+
+We start this week by examining data as a resource and its increasingly central role in society. You will learn about the social embeddedness of data and interconnections between data analytics and wider social, political and economic contexts. We will briefly discuss what is meant by ethics, why ethics matter and what the ethical dimensions of data generation, manipulation and use for stakeholders at various stages of the data supply chain might be. You will also begin to reflect on your own role as a reflective practitioner and potential agent of positive change in data and analytics practices.
+
+**Week 2: Frameworks for ethical decision-making - part 1**
+
+We start the second week of this course by examining how to develop moral reasoning skills and the roles that moral imagination and ethical judgement play in this process. We will then introduce four ethical frameworks; consequentialism, utilitarianism, deontology and justice, and consider how they might guide data-related decisions. You will apply consequentialist, deontological and justice theories to real-world data situations and explain which is the best approach for the problems you’re facing. At the end of this week we kick off the News from a Better World exercise, which helps you to develop your own agency in building a more just and ethical world.
+
+**Week 3: Frameworks for ethical decision-making - part 2**
+
+During the third week of this course we continue our examination of ethical frameworks that can be used to guide data-related decisions. We will discuss the basic principles of virtue ethics and care ethics, and look at practical applications of these moral philosophies. We will then use a case study to understand how the ethical decision-making tools discussed in weeks 2 and 3 are put to use to solve real-world data problems. At the end of this week we wrap up the ‘News from a better world’ exercise and discuss the ideas that you and your classmates have suggested to achieve a more just and ethical world.
+
+**Week 4: Data governance and stewardship**
+
+In our fourth week, we move from moral frameworks to the principles of data governance and stewardship. We will discuss the implications of data as a public resource, examine the effects of data governance on decision making and consider how data stewardship can be enacted in practice. In our class discussion this week, we ask if data practitioners should be required to meet professional standards and what those standards might look like for data analytics. 
+
+**Week 5: Legal and regulatory frameworks**
+
+The fifth week of this course examines key legal and regulatory frameworks that apply to data analytics. We will examine the regulatory system in Australia to help you understand how laws are made and to identify the different types of legal principles that inform your work with data. We will take a close look at the Australian Privacy Principles (the key rules in the Privacy Act 1988), and examine the concept of ‘personal information’, including the key aspects of its definitions. You will also learn about the regulatory significance of de-identification and the risk of re-identification, as well as current issues and debates in the generation, manipulation and use of data, some of which fall under other areas of law.
+
+Please note that we have provided additional videos for you to watch if you wish to learn more about the different types of law and legal processes that you may encounter in your data analytics practice. You can find these optional resources under the second extension activity.
+
+**Week 6: Data for good**
+
+Welcome to the final week of this course. After examining data decisions through the lenses of ethical frameworks, governance, professional standards, and laws and regulation, we now turn our focus to the ways in which data can be used for positive impact. We will discuss the potential of data for resolving humanitarian problems, addressing the UN Sustainable Development Goals, advancing democracy and building a more ethical and just future. You will also reflect on your own ethical agency as a data practitioner.
+
+The journey towards more ethical practice is an ongoing one—we never reach our destination. But along this road you will have hopefully picked up some new ways of thinking, new skills, new self-awareness and ultimately, confidence in yourself.
+
+### My comments
+
+
+~~~ TO BE CONTINUED ~~~
 
 
 
