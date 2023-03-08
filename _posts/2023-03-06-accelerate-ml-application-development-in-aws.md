@@ -74,11 +74,11 @@ We’ve built a web application that classifies images of fruits and vegetables.
 
 ### Accelerated application development
 
-Using Rekognition and Custom Labels freed up our time to also work on the web application and get it up and running in production in about 24 hours. A full-stack machine learning web application built and deployed to production in 24 hours, how’s that for productivity? As a business owner, I would rather pass on the complexities of the building and maintaining the ML system to an expert and free myself to do more important and exciting things.
+Using **Rekognition** and **Custom Labels** freed up our time to also work on the web application and get it up and running in production in about 24 hours. A full-stack machine learning web application built and deployed to production in 24 hours, how’s that for productivity? As a business owner, I would rather pass on the complexities of the building and maintaining the ML system to an expert and free myself to do more important and exciting things.
 
 ### Thoughts on Amazon Rekognition
 
-Amazon Rekognition is a highly advanced AI service in AWS’s extensive range of computer vision solutions. It enables users to incorporate image and video analysis into their applications effortlessly, utilising cutting-edge deep learning algorithms, without requiring any specialised knowledge of machine learning.
+**Amazon Rekognition** is a highly advanced AI service in AWS’s extensive range of computer vision solutions. It enables users to incorporate image and video analysis into their applications effortlessly, utilising cutting-edge deep learning algorithms, without requiring any specialised knowledge of machine learning.
 
 With Rekognition, you can perform tasks such as identifying objects, people, text, and even detecting inappropriate content, all without the need to train a model yourself. This user-friendly service provides an efficient and straightforward way to incorporate computer vision capabilities into your applications.
 
@@ -98,7 +98,7 @@ The default Rekognition model can identify hundreds of classes, however what if 
 
 For example, if we want to classify an image amongst a fixed list of categories (ie, orange, apple, banana, pear only), and not others, we may not want to identify cats or dogs, this is when Rekognition Custom Labels comes into the picture. 
 
-Amazon Rekognition Custom Labels is a powerful extension to Rekognition that enables users to identify specific objects in both images and videos based on their unique needs. Custom Labels builds on Rekognition’s existing training data, which includes tens of millions of images.
+**Amazon Rekognition Custom Labels** is a powerful extension to Rekognition that enables users to identify specific objects in both images and videos based on their unique needs. Custom Labels builds on Rekognition’s existing training data, which includes tens of millions of images.
 
 As a result, users only need to provide a small set of images to train their model, without having to start from scratch. The training process is incredibly user-friendly and straightforward, requiring only a single click of a button. With Rekognition Custom Labels, you can customise your computer vision capabilities to meet most of your specific needs with minimal effort.
 
@@ -135,6 +135,6 @@ In this article, we have seen the [vast range of ML and AI services offered by A
 
 We took Rekognition and Custom Labels for a spin when we built a simple full stack web application and deployed it to production in 24 hours. 
 
-For entrepreneurs looking to bring their products to market quickly, time to market is critical. With all these challenges, now is the perfect time to leverage the expertise of a giant like Amazon. By leaning on their expertise and allowing them to handle the heavy lifting, we can quickly bring our products to market without worrying about the complexities of building and managing these systems ourselves.
+For entrepreneurs looking to bring their products to market quickly, time to market is critical. With all these challenges, now is the perfect time to leverage the expertise of a giant like Amazon. By leaning on their expertise and allowing them to **handle the heavy lifting**, we can quickly bring our products to market without worrying about the complexities of building and managing these systems ourselves.
 
 Note: This article was originally published on [Cevo Australia's website](https://cevo.com.au/post/accelerate-ml-application-development-in-aws/)
