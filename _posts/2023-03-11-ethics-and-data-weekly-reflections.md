@@ -35,7 +35,7 @@ As a software developer, I am excited about the possibilities of these tools. I 
 
 From the point of view of [GitHub](https://github.com/) and [Amazon](https://aws.amazon.com/), it makes great business sense, as it uses open source code freely available on the web. It's akin to a Mining company that mines and exploits resources for free, then selling it for a huge profit. 
 
-I am almost certain that the original authors did not intend their code to be used in this manner. There is a [class action](https://githubcopilotlitigation.com/) filed against Copilot on behalf of the millions of GitHub users whose code was used to train the tool. The outcome of this litigation could have significant implications for the these **products**, the millions of **developers** already using them, and the source code **authors**.
+I am almost certain that the original authors did not intend their code to be used in this manner. There is a [class action](https://githubcopilotlitigation.com/) filed against Copilot on behalf of the millions of GitHub users whose code was used to train the tool. The outcome of this litigation could have significant implications for the these **products**, the millions of **developers** already using them, and the source code **authors** of code used to train these products.
 
 <!-- ## Week 2: Coming soon...
 
