@@ -32,7 +32,7 @@ In this project, we tackle the MNIST dataset using [Amazon SageMaker's](https://
 This project is to explore the use of Amazon Rekognition for image classification. Amazon Rekognition is a high level AI service that allows you to perform image classification, object detection, face detection, face recognition, and text detection. I have created an end-to-end application using [AWS Amplify](https://aws.amazon.com/amplify/), [Amazon Rekognition](https://aws.amazon.com/rekognition/), and Amazon S3. This was to play around with the capabilities of this AutoML service.
 
 - [Trying AutoML with Amazon Rekognition](/accelerate-ml-application-development-in-aws/#)
-- [GitHub Repo - using Amazon Rekognition](https://github.com/cevoaustralia/poc1-with-rekognition)
+- [GitHub Repo - using Amazon Rekognition (Private Repo)](https://github.com/cevoaustralia/poc1-with-rekognition)
 
 
 
