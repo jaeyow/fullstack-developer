@@ -61,9 +61,24 @@ Thousands of organisations have reported significant increases in productivity a
 
 What do you think, do you think it is ethical? 
 
-<!--## Week 3: Coming soon...
+# Week 3: PredPol: predictive analytics to forecast crime
 
-## Week 4: Coming soon...
+In this third week, we will be looking at AI and ML away from the context of the tech industry. Let's see how AI and ML are being used in the public sector, specifically in the field of policing. In LA, the police department has been using a predictive policing tool called [PredPol](https://www.predpol.com/). The tool uses machine learning to predict where and when crimes are likely to occur. [This video](https://youtu.be/4ycC0DJqrpc?t=783) explains how it works.
+
+<figure>
+	<a href="https://youtu.be/4ycC0DJqrpc?t=783"><img src="../images/ethics-and-data-weekly-reflections/predictive_policing.png"></a><figcaption>PredPol: predictive analytics to forecast crime</figcaption>
+</figure>
+
+On the surface, it looks like the is a very good practical application of AI and ML. It helps the police department allocate their resources more efficiently, and in turn, help reduce crime. However, the reality is the situation is much more complex that that, as it involves several stakeholders and we need to be mindful of their rights and interests.
+
+The **City of LA** is a vibrant multicultural city, however there is a large population of homeless as well as low-income residents. **LAPD** has been using **PredPol** daily to help them effectively allocate their resources. PredPol has been used to predict the likely location where crimes will occur, and the police department has been using this information to allocate their resources to areas where they are most needed. 
+
+However, a group of **citizen activists** have been protesting against it's use, as they have identified that there is a tendency to misuse this information and target the **low income and homeless**. People like **Anthony, an ex-offender**, is complaining that he is being unfairly targeted by the police. Even though he has done his time, and is now a productive member of the community, the algorithms are still flagging him as a potential criminal and still being added to the crime watch bulletin. However, we also need to remember why this was done in the first place, there are **criminals** all over the city that the police department needs to keep an eye on.
+
+In the context of **Care Ethics**, we need to practice our moral imagination and put ourselves in the shoes of the care givers (**LAPD**, **PredPol**) and the care receivers (**the homeless**, **low income residents**, **Anthony**). The **care givers** I'm sure are coming from a good place of wanting to help the community and make it a safe place for everyone, and the **care receivers** simply want to live a normal life, of course we can't deny that many criminals roam the city and its a balancing act to keep everyone safe. But having said that, there needs to be a way to **police the police**, to ensure that they don't overstep their authority, and this is where the **citizen activists** come in, to ensure that the police are not abusing their power.
+
+
+<!--### Week 4: Coming soon...
 
 ## Week 5: Coming soon...
 
