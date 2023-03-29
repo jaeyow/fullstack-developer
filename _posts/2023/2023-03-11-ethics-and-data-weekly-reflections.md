@@ -88,7 +88,7 @@ Having said that, there are standards like **data stewardship and governance**, 
 	<a href="../images/ethics-and-data-weekly-reflections/1thisisengineering-raeng-i8_uhiniu1y-unsplash.jpg"><img src="../images/ethics-and-data-weekly-reflections/1thisisengineering-raeng-i8_uhiniu1y-unsplash.jpg"></a><figcaption>Do data practitioners need professional standards?</figcaption>
 </figure>
 
-In a previous project we needed to clone data in a production database for testing purposes, there wasn't really a violation of the [Ethics for Data Projects principles](https://siddarth.design/ethics-for-data-projects-5af0af333e71), however, the situation would have benefited from more rigour in the process. After the cloning was done and the test environment was stood up, there were no checks from the customer to ensure that everything was in order.
+In a past project we needed to clone data in a production database for testing purposes, there wasn't really a violation of the [Ethics for Data Projects principles](https://siddarth.design/ethics-for-data-projects-5af0af333e71), however, the situation would have benefited from more rigour in the process. After the cloning was done and the test environment was stood up, there were no checks from the customer to ensure that everything was in order.
 
 However reflecting back on **Principle number 4** - "Practice responsible transparency as the default where possible, throughout the entire data life cycle.", we could have been more **transparent** and **socialised the process** and the effort we went through to make sure that the data was **anonymised** and **de-identified**. This would have helped the customer to understand the effort we took to ensure that the **data was safe and secure**. 
 
