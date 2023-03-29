@@ -78,9 +78,21 @@ However, a group of **citizen activists** have been protesting against it's use,
 In the context of **Care Ethics**, we need to practice our moral imagination and put ourselves in the shoes of the care givers (**LAPD**, **PredPol**) and the care receivers (**the homeless**, **low income residents**, **Anthony**). The **care givers** I'm sure are coming from a good place of wanting to help the community and make it a safe place for everyone, and the **care receivers** simply want to live a normal life, of course we can't deny that many criminals roam the city and its a balancing act to keep everyone safe. But having said that, there needs to be a way to **police the police**, to ensure that they don't overstep their authority, and this is where the **citizen activists** come in, to ensure that the police are not abusing their power.
 
 
-<!--### Week 4: Coming soon...
+# Week 4: Do data practitioners need professional standards?
 
-## Week 5: Coming soon...
+Being part of the **tech industry**, I have seen the benefits that data can contribute to the advancement of society. I also understand that this industry changes so fast, and that it is difficult to keep up with the latest developments. So I understand the reluctance of many in my industry to have a program for **formal professional registration** like what you see in industries like medicine and engineering.
 
-## Week 6: Coming soon... -->
+Having said that, there are standards like **data stewardship and governance**, which are typically vendor agnostic, so they are somewhat insulated from the rapid changes in the tech industry. Having a national program around this capability will ensure that there are standards and the people registered professionally in these programs are up to date with the latest developments and best practices. This also means that they are accountable to the industry and the public, and will be held to a higher standard of **ethics and professionalism**.
+
+<figure>
+	<a href="../images/ethics-and-data-weekly-reflections/1thisisengineering-raeng-i8_uhiniu1y-unsplash.jpg"><img src="../images/ethics-and-data-weekly-reflections/1thisisengineering-raeng-i8_uhiniu1y-unsplash.jpg"></a><figcaption>Do data practitioners need professional standards?</figcaption>
+</figure>
+
+In a previous project we needed to clone data in a production database for testing purposes, there wasn't really a violation of the [Ethics for Data Projects principles](https://siddarth.design/ethics-for-data-projects-5af0af333e71), however, the situation would have benefited from more rigour in the process. After the cloning was done and the test environment was stood up, there were no checks from the customer to ensure that everything was in order.
+
+However reflecting back on **Principle number 4** - "Practice responsible transparency as the default where possible, throughout the entire data life cycle.", we could have been more **transparent** and **socialised the process** and the effort we went through to make sure that the data was **anonymised** and **de-identified**. This would have helped the customer to understand the effort we took to ensure that the **data was safe and secure**. 
+
+<!--# Week 5: Coming soon...
+
+# Week 6: Coming soon... -->
 
