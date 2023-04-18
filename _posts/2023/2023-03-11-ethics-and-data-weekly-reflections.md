@@ -96,9 +96,17 @@ However reflecting back on **Principle number 4** - "Practice responsible transp
 
 *Now that this [new law](https://www.kwm.com/au/en/insights/latest-thinking/data-availability-and-transparency-act-passes-parliament.html) to criminalise certain types of re-identification of data has been passed, how will this affect you in your professional or personal context? This is relation to an incident in this [Department of Health case](https://www.itnews.com.au/news/health-pulls-medicare-dataset-after-breach-of-doctor-details-438463) where de-identified Medicare data was relatively easily re-identified.*
 
-Working in software development, I'm used to used to working with application requirements specifications as a means to communicate the requirements of a project to the development team. I've had experience on both sides of the fence, as a developer and as a customer working with a sub-contractor to develop a software solution.
+Working in software development, I'm used to used to working with application **requirements specifications** as a means to communicate the requirements of a project to the development team. I've had experience on both sides of the fence, as a developer and as a customer working with a sub-contractor to develop a software solution.
 
 As a software developer, I will have to get used to seeing these requirements relating to this bill, and will need to take into account the extra effort that will be required to ensure that if we have de-identified data, we will need to ensure that it cannot re-identified. And my clients will rest assured that it will now be a **criminal offence** for a third party to re-identify and transmit this data. Because this is now criminalised, then malicious actors will be discouraged to re-identify data or risk hefty fines or even jail time.
 
-<!--# Week 6: Coming soon... -->
+# Week 6: What three (3) changes can you make in your own data or analytics practice to become an agent of positive change?
+
+There are several things that I can do to become an **agent of positive change**, even if I am not in a leadership position. People in a similar position as myself often underestimate our influential power. In these instances, you don’t really need to be a manager or in a leadership position to affect positive change into your team or even the company you are part of. 
+
+I can start with ethical awareness activities such as when building case studies or proof of concepts as is common in my consulting practice, I could make ethical and regulatory data concepts **more prominent**. I did several of such activities in the past, without any regard to these topics. I have the power to shape the environment I live in and the world around me. 
+
+Continuing with the educational endeavour, and working with clients and building the projects for them, I have noticed that my clients may need some hand holding and guidance on the way forward. **Ethical intelligence** is not often a strong characteristic for companies and they will need someone to help them understand their responsibility for building a better world, together with their aspirations of increasing profits. 
+
+Lastly, if I want to impart more positive impact to my company and to the world around me, I may need to push myself and go for a higher level position than where I am right now, one that will have more leadership opportunities. Becoming a great and **ethically-aware leader** will undoubtedly help others rise and the company and the community around me will positively benefit from it. 
 
