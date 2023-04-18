@@ -92,7 +92,13 @@ In a past project we needed to clone data in a production database for testing p
 
 However reflecting back on **Principle number 4** - "Practice responsible transparency as the default where possible, throughout the entire data life cycle.", we could have been more **transparent** and **socialised the process** and the effort we went through to make sure that the data was **anonymised** and **de-identified**. This would have helped the customer to understand the effort we took to ensure that the **data was safe and secure**. 
 
-<!--# Week 5: Coming soon...
+# Week 5: Criminalise the re-identification of de-identified data
 
-# Week 6: Coming soon... -->
+*Now that this [new law](https://www.kwm.com/au/en/insights/latest-thinking/data-availability-and-transparency-act-passes-parliament.html) to criminalise certain types of re-identification of data has been passed, how will this affect you in your professional or personal context? This is relation to an incident in this [Department of Health case](https://www.itnews.com.au/news/health-pulls-medicare-dataset-after-breach-of-doctor-details-438463) where de-identified Medicare data was relatively easily re-identified.*
+
+Working in software development, I'm used to used to working with application requirements specifications as a means to communicate the requirements of a project to the development team. I've had experience on both sides of the fence, as a developer and as a customer working with a sub-contractor to develop a software solution.
+
+As a software developer, I will have to get used to seeing these requirements relating to this bill, and will need to take into account the extra effort that will be required to ensure that if we have de-identified data, we will need to ensure that it cannot re-identified. And my clients will rest assured that it will now be a **criminal offence** for a third party to re-identify and transmit this data. Because this is now criminalised, then malicious actors will be discouraged to re-identify data or risk hefty fines or even jail time.
+
+<!--# Week 6: Coming soon... -->
 
