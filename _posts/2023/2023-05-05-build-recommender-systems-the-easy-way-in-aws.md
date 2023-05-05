@@ -4,7 +4,7 @@ title: Build Recommender Systems the Easy Way in AWS
 excerpt: Building and maintaining a recommender system that is tuned to your business' products or services can take great effort. The good news is that AWS can do the heavy lifting for you. Let's get started. 
 modified: 2023-05-04
 date: 2023-05-04
-tags: [AI, ML, Data, Ethics, Data Ethics, Fairness]
+tags: [AI, ML, Recommender System, Recommender Engine, Recommendation System, Recommendation Engine]
 header: 
   overlay_image: /images/amazon-personalize/rsz_hoover-tung-bslsdcqww0m-unsplash.webp
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
