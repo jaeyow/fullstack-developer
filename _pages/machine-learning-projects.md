@@ -17,7 +17,7 @@ In this article, we will explore the fascinating world of recommender systems. A
 This AWS service is called [Amazon Personalize](https://aws.amazon.com/personalize/) - a fully managed and scalable AI service that simplifies the ability to add personalisation into your product.
 
 - [Build Recommender Systems the Easy Way in AWS](/build-recommender-systems-the-easy-way-in-aws/#)
-- [GitHub Repo - Build Recommender Systems the Easy Way in AWS](/build-recommender-systems-the-easy-way-in-aws/#)
+- [GitHub Repo - Build Recommender Systems the Easy Way in AWS](https://github.com/cevoaustralia/cevo-shopping-demo)
 
 ### AutoML with Amazon Rekognition
 
