@@ -8,6 +8,17 @@ toc: true
 
 This space is for my projects that are related to Data Science and Machine Learning.
 
+### Build Recommender Systems the Easy Way in AWS
+
+AWS provides users with the flexibility to build machine learning (ML) applications from scratch, but they also offer various high-level AI services that allow consumers to leverage the power of machine learning without any prior knowledge of the subject.
+
+In this article, we will explore the fascinating world of recommender systems. As this is our first foray into this topic, let’s use an AWS service to speed up our ability to add recommendations into our product.
+
+This AWS service is called [Amazon Personalize](https://aws.amazon.com/personalize/) - a fully managed and scalable AI service that simplifies the ability to add personalisation into your product.
+
+- [Build Recommender Systems the Easy Way in AWS](/build-recommender-systems-the-easy-way-in-aws/#)
+- [GitHub Repo - Build Recommender Systems the Easy Way in AWS](/build-recommender-systems-the-easy-way-in-aws/#)
+
 ### AutoML with Amazon Rekognition
 
 This project is to explore the use of Amazon Rekognition for image classification. Amazon Rekognition is a high level AI service that allows you to perform image classification, object detection, face detection, face recognition, and text detection. I have created an end-to-end application using [AWS Amplify](https://aws.amazon.com/amplify/), [Amazon Rekognition](https://aws.amazon.com/rekognition/), and Amazon S3. This was to play around with the capabilities of this AutoML service.
