@@ -1,5 +1,5 @@
 ---
-title: "Machine Learning"
+title: "Machine Learning Projects"
 permalink: /machine-learning-projects/
 layout: single
 author_profile: true
@@ -7,6 +7,15 @@ toc: true
 ---
 
 This space is for my projects that are related to Data Science and Machine Learning.
+
+### How to Build, Train and Deploy Your Own Recommender System – Part 1
+
+In [my previous blog post](https://cevo.com.au/post/build-recommender-systems-the-easy-way-in-aws/), we explored Amazon Personalize, a high level AWS service that gives you a product recommender system without building and hosting one from scratch. While it is very effective in getting you from zero to production in a very short time, it can also be an expensive exercise, especially as your users, products or user-product interactions grow. With these high-level services, the pricing structures are tied to the size of your system. There might also be privacy requirements that prevent you from using these services.
+
+In this article, we will be building a recommender system from the ground up using a popular machine learning algorithm, similar to the one used in popular sites like Facebook and Spotify.
+
+- [How to Build, Train and Deploy Your Own Recommender System – Part 1](/build-train-deploy-your-own-recommender-system/#)
+- [GitHub Repo - How to Build, Train and Deploy Your Own Recommender System – Part 1](https://github.com/cevoaustralia/matrix_factorization_recommender/tree/matrix-factorization-part-1)
 
 ### Build Recommender Systems the Easy Way in AWS
 
