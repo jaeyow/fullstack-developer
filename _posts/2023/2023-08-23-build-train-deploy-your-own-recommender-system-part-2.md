@@ -4,7 +4,7 @@ title: How to Build, Train and Deploy Your Own Recommender System – Part 2
 excerpt: We build a recommender system from the ground up with matrix factorization for implicit feedback systems. We then deploy the model to production in AWS. 
 modified: 2023-08-22
 date: 2023-08-22
-tags: [AI, AWS Lambda, AWS SAM, Comet, Implicit Feedback, Matrix Factorisation, Metaflow, ML, MLOps, recommender system]
+tags: [AI, AWS Lambda, AWS SAM, Comet, Implicit Feedback, Matrix Factorization, Metaflow, ML, MLOps, recommender system]
 header: 
   overlay_image: /images/matrix-factorization-recommender/rsz_anton-maksimov-5642-su-qm37iptlcny-unsplash.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
@@ -25,7 +25,7 @@ canonical_url: https://cevo.com.au/post/how-to-build-train-and-deploy-your-own-r
 
 ## Introduction
 
-[In part 1 of this series](https://cevo.com.au/post/build-train-deploy-your-own-recommender-system/), we introduced how to build a recommender system (RecSys) using matrix factorisation for implicit feedback systems. We implemented a simple MLOps workflow using third-party tools [Metaflow](https://metaflow.org/) and [Comet](https://www.comet.com/docs/v2/), where we built up our RecSys through the parallel training of multiple models, tracking all experiment metrics, selecting the best model and finally pushing our best model to a model registry. 
+[In part 1 of this series](https://fullstackdeveloper.tips/build-train-deploy-your-own-recommender-system/), we introduced how to build a recommender system (RecSys) using matrix factorization for implicit feedback systems. We implemented a simple MLOps workflow using third-party tools [Metaflow](https://metaflow.org/) and [Comet](https://www.comet.com/docs/v2/), where we built up our RecSys through the parallel training of multiple models, tracking all experiment metrics, selecting the best model and finally pushing our best model to a model registry. 
 
 In this article, we will:
 
@@ -72,7 +72,7 @@ AWS Lambda is often a compelling choice for building serverless applications, th
 
 While Lambda offers an extensive list of Python modules, essential libraries like numpy, scikit-learn, and [pandas](), commonly used in machine learning systems (some of which we use here), are notably absent.
 
-Furthermore, Lambda has an uncompressed size limit of 250MB for function packages. These missing libraries that we needed, such as [numpy]() (108MB), [scipy](https://scipy.org/) (156MB), and [pandas](https://numpy.org/) (151MB), already exceed this limit. Considering we haven’t even accounted for the Implicit library yet, crucial for our matrix factorisation recommender, the size constraints become even more restrictive.
+Furthermore, Lambda has an uncompressed size limit of 250MB for function packages. These missing libraries that we needed, such as [numpy]() (108MB), [scipy](https://scipy.org/) (156MB), and [pandas](https://numpy.org/) (151MB), already exceed this limit. Considering we haven’t even accounted for the Implicit library yet, crucial for our matrix factorization recommender, the size constraints become even more restrictive.
 
 <figure>
 	<a href="../images/matrix-factorization-recommender/lambda-layers-image.png"><img src="../images/matrix-factorization-recommender/lambda-layers-image.png" style="width:500px"></a>
@@ -104,7 +104,7 @@ Asking the [Cevo Hive Mind](https://cevo.com.au/about-us/), I got my answer with
 	<a href="../images/matrix-factorization-recommender/matrix-factorization-dockerfile-1536x443.webp"><img src="../images/matrix-factorization-recommender/matrix-factorization-dockerfile-1536x443.webp"></a>
 </figure>
 
-## Deploying Matrix Factorisation Recommender in AWS Lambda
+## Deploying Matrix Factorization Recommender in AWS Lambda
 
 Now that we have successfully built our Lambda using SAM, it’s time to integrate it into our MLOps workflow. To achieve this, we revisit our Metaflow script and pinpoint the exact moment in the flow where we need to invoke SAM to deploy the model with the highest MAP@K score, as determined during the model evaluation.
 
@@ -124,7 +124,7 @@ Once we have obtained the path and location of our best model (we can also check
 
 At last, we have concluded our experiment’s culmination in building our very own recommender system. Looking back, it has been quite a journey. We began by acquainting ourselves with recommender systems, taking our first steps with Amazon Personalize. [In the prequel](https://fullstackdeveloper.tips/build-recommender-systems-the-easy-way-in-aws/), we even crafted a sample e-commerce web application to test it out. This initial experience provided a smooth entry into recommender systems, but we craved more.
 
-[In Part 1](https://fullstackdeveloper.tips/build-train-deploy-your-own-recommender-system/), we decided to delve deeper and experiment with building our system. We opted for a simple matrix factorisation method, a simple embedding method, which, while not cutting-edge, offered valuable insight into how popular sites tackle this challenge.
+[In Part 1](https://fullstackdeveloper.tips/build-train-deploy-your-own-recommender-system/), we decided to delve deeper and experiment with building our system. We opted for a simple matrix factorization method, a simple embedding method, which, while not cutting-edge, offered valuable insight into how popular sites tackle this challenge.
 
 In this final instalment, Part 2, we took the model we constructed in Part 1 and deployed it to a serverless infrastructure on AWS, using the open-source [Serverless Application Model](https://aws.amazon.com/serverless/sam/). This final leg of the journey brought us full circle as we integrated our recommender system into the original e-commerce web application we built in the first article.
 
