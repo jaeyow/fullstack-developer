@@ -25,7 +25,7 @@ canonical_url: https://cevo.com.au/post/how-to-build-train-and-deploy-your-own-r
 
 ## Introduction
 
-[In part 1 of this series](https://fullstackdeveloper.tips/build-train-deploy-your-own-recommender-system/), we introduced how to build a recommender system (RecSys) using matrix factorization for implicit feedback systems. We implemented a simple MLOps workflow using third-party tools [Metaflow](https://metaflow.org/) and [Comet](https://www.comet.com/docs/v2/), where we built up our RecSys through the parallel training of multiple models, tracking all experiment metrics, selecting the best model and finally pushing our best model to a model registry. 
+[In part 1 of this series](https://fullstackdeveloper.tips/build-train-deploy-your-own-recommender-system-part-1/), we introduced how to build a recommender system (RecSys) using matrix factorization for implicit feedback systems. We implemented a simple MLOps workflow using third-party tools [Metaflow](https://metaflow.org/) and [Comet](https://www.comet.com/docs/v2/), where we built up our RecSys through the parallel training of multiple models, tracking all experiment metrics, selecting the best model and finally pushing our best model to a model registry. 
 
 In this article, we will:
 
@@ -137,7 +137,7 @@ If you want to go and look back at the articles and source code for the whole se
 [Build Recommender Systems the Easy Way in AWS](https://fullstackdeveloper.tips/build-recommender-systems-the-easy-way-in-aws/)
 - [source code](https://github.com/cevoaustralia/cevo-shopping-demo/tree/main)
 
-[How to Build, Train and Deploy Your Own Recommender System – Part 1](https://fullstackdeveloper.tips/build-train-deploy-your-own-recommender-system/)
+[How to Build, Train and Deploy Your Own Recommender System – Part 1](https://fullstackdeveloper.tips/build-train-deploy-your-own-recommender-system-part-1/)
 - [source code – frontend](https://github.com/cevoaustralia/cevo-shopping-demo)
 - [source code – MLOps](https://github.com/cevoaustralia/matrix_factorization_recommender/tree/matrix-factorization-part-1)
 
